@@ -1,0 +1,66 @@
+experiment_name: qwen3_4b_latent_similarity
+seed: 42
+output_dir: results/qwen3_4b_latent_similarity
+cache_dir: data/cache
+
+model:
+  model_name_or_path: Qwen/Qwen3-4B
+  torch_dtype: bfloat16
+  device_map: auto
+  attn_implementation: flash_attention_2
+  max_input_length: 4096
+  max_new_tokens: 256
+  temperature: 0.0
+  top_p: 1.0
+  enable_thinking: false
+  trust_remote_code: true
+
+representation:
+  layers: [-1, -4, -8, -16]
+  poolings: [mean, last_token]
+  use_prompt_residual: [false, true]
+
+metrics:
+  lexical: [exact_match, token_f1, rouge_l]
+  semantic: [bertscore_f1, simcse_cosine]
+  latent: [cosine]
+  compute_dataset_level_cka: true
+
+datasets:
+  - name: stsb_validation
+    source: hf
+    path: glue
+    config_name: stsb
+    split: validation
+    candidate_field: sentence1
+    reference_field: sentence2
+    human_score_field: label
+    task_type: regression
+
+  - name: paws_validation
+    source: hf
+    path: paws
+    config_name: labeled_final
+    split: validation
+    candidate_field: sentence1
+    reference_field: sentence2
+    binary_label_field: label
+    task_type: binary
+
+  - name: sickr_local
+    source: jsonl
+    path: data/raw/sickr_test.jsonl
+    candidate_field: sentence1
+    reference_field: sentence2
+    human_score_field: relatedness_score
+    task_type: regression
+
+  - name: summeval_local
+    source: jsonl
+    path: data/raw/summeval.jsonl
+    prompt_field: prompt
+    candidate_field: candidate
+    reference_field: reference
+    human_score_field: consistency_score
+    task_type: generation
+    generate_candidate: false
