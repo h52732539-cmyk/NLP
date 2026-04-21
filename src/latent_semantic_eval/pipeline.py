@@ -40,24 +40,37 @@ def run_experiment(config_path: str | Path) -> Path:
     ensure_directory(output_dir)
     write_json(output_dir / "resolved_config.json", dump_resolved_config(config))
 
-    extractor = QwenRepresentationExtractor(config.model)
+    extractor: QwenRepresentationExtractor | None = None
     generator: QwenGenerator | None = None
     summary_frames: list[pd.DataFrame] = []
 
     for recipe in config.datasets:
+        dataset_dir = output_dir / recipe.name
+        ensure_directory(dataset_dir)
+
+        record_scores_path = dataset_dir / "record_scores.csv"
+        metric_summary_path = dataset_dir / "metric_summary.csv"
+
+        if record_scores_path.exists() and metric_summary_path.exists():
+            tqdm.write(f"[cache] Loading existing results for {recipe.name}, skipping evaluation.")
+            summary_frame = pd.read_csv(metric_summary_path)
+            summary_frames.append(summary_frame)
+            continue
+
         records = load_records(config, recipe, prefer_processed=True)
         if recipe.generate_candidate:
             if generator is None:
                 generator = QwenGenerator(config.model)
             _populate_missing_candidates(records, generator)
 
-        dataset_dir = output_dir / recipe.name
-        ensure_directory(dataset_dir)
+        if extractor is None:
+            extractor = QwenRepresentationExtractor(config.model)
+
         row_frame, summary_frame = _evaluate_dataset(config, recipe.name, records, extractor)
 
-        row_frame.to_csv(dataset_dir / "record_scores.csv", index=False)
+        row_frame.to_csv(record_scores_path, index=False)
         write_jsonl(dataset_dir / "record_scores.jsonl", row_frame.to_dict(orient="records"))
-        summary_frame.to_csv(dataset_dir / "metric_summary.csv", index=False)
+        summary_frame.to_csv(metric_summary_path, index=False)
         write_json(dataset_dir / "metric_summary.json", summary_frame.to_dict(orient="records"))
         summary_frames.append(summary_frame)
 
