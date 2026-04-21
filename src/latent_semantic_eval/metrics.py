@@ -76,16 +76,36 @@ def compute_bertscore(candidates: Sequence[str], references: Sequence[str]) -> l
     return [float(value) for value in f1]
 
 
+_SIMCSE_LOCAL_PATH = (
+    "/hpc2hdd/home/yuxuanzhao/.cache/huggingface/hub"
+    "/models--princeton-nlp--sup-simcse-roberta-base"
+    "/snapshots/4bf73c6b5df517f74188c5e9ec159b2208c89c08"
+)
+
+
 def compute_simcse_cosine(
     candidates: Sequence[str],
     references: Sequence[str],
-    model_name: str = "princeton-nlp/sup-simcse-roberta-base",
+    model_name: str = _SIMCSE_LOCAL_PATH,
 ) -> list[float]:
-    from sentence_transformers import SentenceTransformer
+    import torch
+    from transformers import RobertaModel, RobertaTokenizer
 
-    model = SentenceTransformer(model_name)
-    candidate_embeddings = model.encode(list(candidates), normalize_embeddings=True)
-    reference_embeddings = model.encode(list(references), normalize_embeddings=True)
+    tokenizer = RobertaTokenizer.from_pretrained(model_name)
+    model = RobertaModel.from_pretrained(model_name)
+    model.eval()
+
+    def _encode(texts: list[str]) -> np.ndarray:
+        inputs = tokenizer(texts, padding=True, truncation=True, max_length=512, return_tensors="pt")
+        with torch.no_grad():
+            outputs = model(**inputs)
+        # SimCSE uses the [CLS] token representation
+        embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()
+        norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+        return embeddings / np.maximum(norms, 1e-9)
+
+    candidate_embeddings = _encode(list(candidates))
+    reference_embeddings = _encode(list(references))
     scores = np.sum(candidate_embeddings * reference_embeddings, axis=1)
     return [float(value) for value in scores]
 

@@ -95,6 +95,14 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+On servers with CUDA 12.4-era NVIDIA drivers, a newer default PyPI Torch wheel may install a CUDA 13 build that cannot see the GPU. If that happens, reinstall Torch with a driver-compatible wheel before running the experiment:
+
+```bash
+pip install --force-reinstall --no-cache-dir \
+	--index-url https://download.pytorch.org/whl/cu124 \
+	"https://download.pytorch.org/whl/cu124/torch-2.5.1%2Bcu124-cp310-cp310-linux_x86_64.whl"
+```
+
 If you want Flash Attention and your GPU/toolchain support it, install it separately after PyTorch is available.
 
 ## Required datasets
@@ -112,6 +120,12 @@ Expected as local JSONL files in data/raw:
 2. data/raw/summeval.jsonl
 
 See data/raw/README.md for the exact JSONL schema expected by the loaders.
+
+If you do not already have these local files, you can generate them from the MTEB mirrors used during development:
+
+```bash
+python scripts/prepare_local_mteb_data.py
+```
 
 ## Model access
 
