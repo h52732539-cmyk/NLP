@@ -1,0 +1,35 @@
+# ==============================================================
+# PyTorch must be installed FIRST, separately, to match CUDA 12.4
+# (NVIDIA driver 12040 supports up to CUDA 12.4)
+#
+# Run this first:
+#   pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 \
+#       --index-url https://download.pytorch.org/whl/cu124
+# ==============================================================
+
+# Core LLM / Inference
+transformers>=4.51.0
+accelerate>=0.34.0
+bitsandbytes>=0.43.3          # 4-bit quantization; requires CUDA 12.x
+
+# Datasets
+datasets>=2.21.0
+
+# Embedding models
+sentence-transformers>=3.1.0
+
+# Evaluation
+scikit-learn>=1.5.0
+scipy>=1.13.0
+bert-score>=0.3.13            # optional BERTScore for long-form eval
+
+# Data & Visualisation
+numpy>=1.26.0
+pandas>=2.2.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# Utilities
+tqdm>=4.66.0
+pyyaml>=6.0.2
+jsonlines>=4.0.0
