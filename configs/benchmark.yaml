@@ -8,7 +8,7 @@
 
 # ── LLM ────────────────────────────────────────────
 llm:
-  model_name: "Qwen/Qwen3-4B"
+  model_name: "/hpc2hdd/home/yuxuanzhao/.cache/modelscope/hub/models/Qwen/Qwen3-4B"
 
   # 4-bit BitsAndBytes config
   bnb_4bit_quant_type: "nf4"

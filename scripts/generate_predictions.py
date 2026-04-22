@@ -38,6 +38,18 @@ import yaml
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from tqdm import tqdm
 
+# torch <2.5 is missing set_submodule, which transformers >=5.x needs for BnB quantisation
+if not hasattr(torch.nn.Module, "set_submodule"):
+    def _set_submodule(self, target: str, module: torch.nn.Module) -> None:
+        if not target:
+            raise ValueError("Cannot set the module itself using set_submodule.")
+        atoms = target.split(".")
+        mod = self
+        for atom in atoms[:-1]:
+            mod = getattr(mod, atom)
+        setattr(mod, atoms[-1], module)
+    torch.nn.Module.set_submodule = _set_submodule
+
 
 # ── Config ──────────────────────────────────────────────────────────────────
 
