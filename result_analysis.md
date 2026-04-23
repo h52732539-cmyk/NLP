@@ -105,3 +105,43 @@ $$\Delta\bar{s} = \bar{s}_{\text{correct}} - \bar{s}_{\text{incorrect}}$$
 失败分析直接支持 Poincaré Ball 的动机：
 1. TruthfulQA 的 FP 均值高达 **0.863**（bge no_thinking），这意味着错误答案与正确答案在欧式嵌入空间几乎无法分离；层次化几何（双曲空间）能更好捕捉答案之间的语义层次关系（如"Fortune cookies originated in China" 与 "... in the U.S." 的矛盾关系）。
 2. 长文本推理失败 100+ 例均集中在 TruthfulQA，提示欧式 cosine 度量在捕捉"事实否定"语义时存在根本局限，这正是 HELM (arXiv:2505.24722) 所解决的问题。
+
+
+## 两种改进方法的完整实验结论
+
+### Method A: Poincaré Ball 双曲嵌入
+**结论：ΔAUC ≈ 0（所有 24 个配置均为机器精度级别）**
+
+这是一个重要的**负面结果**，原因在于：
+- 后验指数映射（post-hoc exp_map）在小 scale（0.05）下几乎是线性变换
+- AUC 是 rank-invariant 的指标——单调变换不改变 AUC
+- 真正的双曲收益需要从头在双曲空间中训练嵌入（HELM 方法），而非后处理已有欧氏嵌入
+
+### Method B: MaxSim 句级最大相似度
+
+| 数据集 | 模式 | ΔAUC (BGE) | ΔAUC (MiniLM) | ΔAUC (E5) |
+|---|---|---|---|---|
+| SciQ | no_thinking | **0.000** | **0.000** | -0.005 |
+| SciQ | thinking | **+0.017** | **+0.016** | **+0.016** |
+| SimpleQA | no_thinking | **≈0** | **≈0** | **≈0** |
+| SimpleQA | thinking | **+0.047** | **+0.039** | **+0.043** |
+| NQ | no_thinking | **-0.023** | **-0.032** | **-0.041** |
+| NQ | thinking | **-0.036** | **-0.046** | **-0.052** |
+| TruthfulQA | no_thinking | **-0.036** | **-0.047** | **-0.082** |
+| TruthfulQA | thinking | **-0.057** | **-0.061** | **-0.087** |
+
+**关键规律：MaxSim 对 thinking 模式下的 SciQ/SimpleQA 有效（+1.6%~+4.7%），对 NQ 和 TruthfulQA 适得其反（-2.3%~-8.7%）**
+
+**根本原因分析：**
+- **有效场景（SciQ/SimpleQA thinking）**：CoT 生成的长预测中有一句明确表达最终答案，MaxSim 精确定位该句子，比整体文档嵌入更具判别力
+- **有害场景（NQ/TruthfulQA）**：预测中的句子可能在错误答案中包含对 GT 实体的上下文提及（如"通常认为是 X，但实际上是 Y"），MaxSim 产生假阳性匹配，导致 AUC 下降
+
+### 生成的文件
+- results/improvement_summary.csv（72行完整对比表）
+- notebooks/improvement_study_executed.ipynb
+- 新增 11 张对比图：`auc_comparison_*.pdf`, `delta_auc_*.pdf`, `roc_overlay_*.pdf`, `dist_comparison_*.pdf`, `delta_auc_boxplot.pdf`
+
+### 报告建议（Part 4）
+1. **Poincaré Ball（负面结果）**：后验投影不改变 AUC 是理论上可预期的，建议报告中指出 true hyperbolic embedding 的方向（如 HELM）
+2. **MaxSim（条件性有效）**：推荐作为面向 CoT 模式的改进策略，并分析其对 GT 长度敏感性的局限
+3. **后续方向**：NQ/TruthfulQA 的核心瓶颈（失败分析中的 `long_form_reasoning`）需要更深层的改进，如 answer span 提取后再比较，而非整句 MaxSim
