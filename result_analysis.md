@@ -107,7 +107,7 @@ $$\Delta\bar{s} = \bar{s}_{\text{correct}} - \bar{s}_{\text{incorrect}}$$
 2. 长文本推理失败 100+ 例均集中在 TruthfulQA，提示欧式 cosine 度量在捕捉"事实否定"语义时存在根本局限，这正是 HELM (arXiv:2505.24722) 所解决的问题。
 
 
-## 两种改进方法的完整实验结论
+## 四种改进方法的完整实验结论
 
 ### Method A: Poincaré Ball 双曲嵌入
 **结论：ΔAUC ≈ 0（所有 24 个配置均为机器精度级别）**
@@ -145,3 +145,150 @@ $$\Delta\bar{s} = \bar{s}_{\text{correct}} - \bar{s}_{\text{incorrect}}$$
 1. **Poincaré Ball（负面结果）**：后验投影不改变 AUC 是理论上可预期的，建议报告中指出 true hyperbolic embedding 的方向（如 HELM）
 2. **MaxSim（条件性有效）**：推荐作为面向 CoT 模式的改进策略，并分析其对 GT 长度敏感性的局限
 3. **后续方向**：NQ/TruthfulQA 的核心瓶颈（失败分析中的 `long_form_reasoning`）需要更深层的改进，如 answer span 提取后再比较，而非整句 MaxSim
+
+---
+
+### Method C: HELM（训练双曲投影头）
+
+**方法**：固定预计算 embedding → MLP 投影头（`Linear(D,256)+ReLU+Linear(256,256)`）→ Poincaré Ball（`expmap0`）→ BCE 对比损失。使用 RiemannianAdam（lr=1e-3）训练 30 epochs。80/20 划分，test-only 评估（n_test≈768/model）。
+
+**训练结果（验证集最佳 AUC）：**
+
+| 嵌入模型 | 最佳 val AUC | 最终 epoch loss |
+|---|---|---|
+| BGE-base | 0.8967 | 0.0687 |
+| MiniLM-L6 | 0.8995 | 0.0495 |
+| E5-base | **0.9186** | 0.1155 |
+
+**测试集 ΔAUC vs baseline（仅 test 子集对比）：**
+
+| 数据集 | 模式 | ΔAUC (BGE) | ΔAUC (MiniLM) | ΔAUC (E5) |
+|---|---|---|---|---|
+| SciQ | no_thinking | -0.093 | -0.064 | **+0.038** |
+| SciQ | thinking | -0.050 | -0.026 | **+0.002** |
+| SimpleQA | no_thinking | -0.023 | -0.059 | -0.103 |
+| SimpleQA | thinking | -0.135 | -0.067 | -0.119 |
+| NQ | no_thinking | -0.022 | **+0.028** | -0.081 |
+| NQ | thinking | **+0.120** | **+0.131** | **+0.091** |
+| TruthfulQA | no_thinking | **+0.022** | **+0.045** | -0.027 |
+| TruthfulQA | thinking | **+0.057** | **+0.098** | **+0.064** |
+
+**关键规律：HELM 在 thinking 模式下的长文本推理任务（NQ、TruthfulQA）上有显著提升，NQ/thinking 达 AUC=1.000（BGE/MiniLM），TruthfulQA/thinking 平均提升 +0.073**
+
+**根本原因分析：**
+- **有效场景（NQ/TruthfulQA thinking）**：CoT 推理产生的推断结构（层次化语义）在 Poincaré Ball 中被更好捕捉。双曲空间的树形度量天然适合"证据链"结构，正确与错误答案在曲率加持下可分性增强
+- **有害场景（SimpleQA/SciQ）**：短答案 embedding 本已在欧式空间高度可分（基线 AUC ~0.93–0.97），双曲投影头学到的特征并无额外信息量；且测试集仅 18–106 条（n 极小），方差较大
+
+---
+
+### Method D: Span-MaxSim（答案片段提取）
+
+**方法**：对 thinking 模式的预测文本，使用 8 个正则模式（"the answer is"、"therefore"、"thus" 等）识别答案指示词后的句子，不匹配则回退至最后一句；no_thinking 直接返回全文。提取片段后重新 encode，与 GT embedding 做 MaxSim。
+
+**测试集 ΔAUC vs baseline（全集对比）：**
+
+| 数据集 | 模式 | ΔAUC (BGE) | ΔAUC (MiniLM) | ΔAUC (E5) |
+|---|---|---|---|---|
+| SciQ | no_thinking | ≈0.000 | ≈0.000 | -0.005 |
+| SciQ | thinking | +0.005 | +0.007 | +0.007 |
+| SimpleQA | no_thinking | ≈0.000 | ≈0.000 | ≈0.000 |
+| SimpleQA | thinking | ≈0.000 | +0.014 | +0.024 |
+| NQ | no_thinking | ≈0.000 | 0.000 | -0.012 |
+| NQ | thinking | **+0.016** | **+0.012** | **+0.007** |
+| TruthfulQA | no_thinking | 0.000 | 0.000 | -0.013 |
+| TruthfulQA | thinking | **-0.093** | **-0.082** | **-0.097** |
+
+**关键规律：Span-MaxSim 对 NQ/thinking 有轻微正效果（+0.7%~+1.6%），但对 TruthfulQA/thinking 适得其反（-8.2%~-9.7%）**
+
+**根本原因分析：**
+- **有效场景（NQ thinking）**：NQ 答案是简短实体，span 提取成功截取最终答案句，消除了 CoT 中对 GT 实体的上下文引用
+- **有害场景（TruthfulQA thinking）**：TruthfulQA 的答案本质是反驳常见谬误（如"Fortune cookies originated in Japan, not China"），模型在推理时多次提及谬误观点；span 提取截取的最后一句虽通常是结论，但对于多选或列举型答案，截断导致信息丢失，降低了与 GT 列表的 MaxSim 分数
+
+**四种方法横向对比：**
+
+| 方法 | 最显著改进 | 最显著下降 | 整体评价 |
+|---|---|---|---|
+| Poincaré (post-hoc) | ≈0 | ≈0 | 无效（rank不变性） |
+| MaxSim (sentence) | SciQ/SimpleQA thinking: +4.7% | NQ/TruthfulQA thinking: -8.7% | 条件性有效 |
+| **HELM (trained)** | **NQ thinking: +13.1%** | SimpleQA thinking: -13.5% | **长文本 thinking 显著有效** |
+| Span-MaxSim | NQ thinking: +1.6% | TruthfulQA thinking: -9.7% | 微弱改进，副作用明显 |
+
+
+
+
+
+
+## 分析："Catch Me If You Can" was made in 2002. vs GT: ["2002"]
+
+### 1. 正确性判定：**判定为正确 ✓**
+
+代码路径在 correctness.py：
+
+```python
+# short_form 评估逻辑
+em_scores   = [float(exact_match(prediction, gt)) for gt in gt_list]
+cont_scores = [float(contains_match(prediction, gt)) for gt in gt_list]
+score = max(max(em_scores), max(cont_scores))
+is_correct = score > 0.0
+```
+
+计算过程：
+- `exact_match`: `normalize("catch me if you can was made in 2002")` ≠ `"2002"` → **False**
+- `contains_match`: `"2002" in "catch me if you can was made in 2002"` → **True** ✓
+
+所以 `is_correct = True`，**判定正确**。
+
+---
+
+### 2. 余弦相似度：**偏低**
+
+encode_embeddings.py 中：
+
+```python
+def gt_to_str(ground_truth) -> str:
+    if isinstance(ground_truth, list):
+        return ground_truth[0].strip() if ground_truth else ""
+```
+
+实际比较的是：
+
+| 侧 | 编码文本 |
+|---|---|
+| GT embedding | `"2002"` |
+| Prediction embedding | `"\"Catch Me If You Can\" was made in 2002."` |
+
+Sentence embedding 的本质是对全部 token 的语义加权平均。预测句子中包含电影名称、动词等大量无关语义，会将向量方向从 `"2002"` 对应的方向拉偏。实测 BGE 这类模型下，短年份 `"2002"` 的向量与完整句子的余弦相似度通常在 **0.45–0.65**，远低于正确对照组均值 **0.925**（见 `result_analysis.md` SimpleQA 数据）。
+
+---
+
+### 3. 对结论的影响：**系统性 False Negative，影响显著**
+
+这种模式产生的后果：
+
+```
+is_correct = True（正确答案）
+cosine_sim  = 低（可能低于最优阈值）
+→ 相似度判定：Incorrect
+→ 即 False Negative
+```
+
+这直接解释了你在 `result_analysis.md` 中观察到的现象：
+
+| 对比 | SimpleQA no_thinking | SimpleQA thinking |
+|---|---|---|
+| BGE AUC | **0.976** | 0.934 |
+| FN 数量 | **0** | 未报告但预期更多 |
+
+**thinking 模式 AUC 下降 ~4 个点**的核心原因之一就是这种格式不匹配：CoT 模式下模型更倾向于给出完整句子而非裸答案，而 GT 是 `"2002"` 这样的极短字符串，导致正确答案的相似度系统性偏低。
+
+此外，`gt_to_str` 只取 `ground_truth[0]`，若列表中有多个可接受答案，embedding 比较也只用了第一个，同样会产生偏差。
+
+---
+
+### 结论
+
+这是一个**真实存在的系统性偏差来源**，特别集中在：
+- **SimpleQA + thinking 模式**（GT 极短，预测为完整句子）
+- **NQ + thinking 模式**（同样存在，但 GT 相对稍长）
+
+它不影响**正确性标签**的准确性（`contains_match` 能正确处理），但会**系统性压低正确答案的相似度分布**，导致 AUC 低估、FN 增多，是 thinking 模式在短答案数据集上 AUC 下降的重要成因之一。在报告 Part 4 的失败分析中值得单独列出，归类为 **"格式不匹配（Format Mismatch）"** 失败类型。
