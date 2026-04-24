@@ -596,7 +596,7 @@ def run_maxsim_span(datasets, modes, emb_keys, batch_size=64):
 
 
 def build_summary(new_records: list):
-    """Merge baseline AUC with new method results."""
+    """Merge baseline AUC with new method results, preserving existing method rows."""
     baseline_path = os.path.join(RESULTS, "summary_auc.csv")
     if os.path.exists(baseline_path):
         base = pd.read_csv(baseline_path)[
@@ -609,7 +609,17 @@ def build_summary(new_records: list):
         base = pd.DataFrame()
 
     new_df = pd.DataFrame(new_records) if new_records else pd.DataFrame()
-    combined = pd.concat([base, new_df], ignore_index=True)
+
+    # Preserve previously computed methods not being recomputed in this run
+    summary_path = os.path.join(RESULTS, "improvement_summary.csv")
+    if os.path.exists(summary_path) and not new_df.empty:
+        existing = pd.read_csv(summary_path)
+        new_methods = set(new_df["method"].unique()) | {"baseline"}
+        existing = existing[~existing["method"].isin(new_methods)]
+        combined = pd.concat([base, existing, new_df], ignore_index=True)
+    else:
+        combined = pd.concat([base, new_df], ignore_index=True)
+
     combined = combined.sort_values(["dataset", "thinking_mode", "emb_model", "method"])
 
     out_path = os.path.join(RESULTS, "improvement_summary.csv")

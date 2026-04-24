@@ -12,6 +12,7 @@ __pycache__/
 build/
 dist/
 
+logs/*
 data/raw/*
 !data/raw/.gitkeep
 !data/raw/README.md
