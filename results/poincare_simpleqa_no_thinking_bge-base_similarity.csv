@@ -1,0 +1,503 @@
+id,question,prediction,ground_truth,dataset,task_type,thinking_mode,is_correct,correctness_score,similarity,poincare_scale
+simpleqa_0,"What year was the municipality of Cómbita, Boyacá, Colombia, founded?",1851,1586,simpleqa,short_form,no_thinking,0,0.0,0.9121166,0.05
+simpleqa_1,What was the number of recorded injuries in the Weesp train disaster of 1918 in the Netherlands?,12,42 injuries.,simpleqa,short_form,no_thinking,0,0.0,0.90596974,0.05
+simpleqa_2,"Which village in Ontario was first settled in 1824 by Mr. A. Hurd, and had the Post Office established in 1836, with Mr. J. Leach being the first Postmaster, according to ""Conner & Coltson's Directory of the County of Ontario for 1869-70""?",Hurd's Corners,Prince Albert.,simpleqa,short_form,no_thinking,0,0.0,0.8996489,0.05
+simpleqa_3,"What month, day, and year did Ciara perform in Tampa for her Jackie Tour?","July 23, 2011.","May 16, 2015",simpleqa,short_form,no_thinking,0,0.0,0.9103713,0.05
+simpleqa_4,"In a 1988 paper, which author defined Mammalia phylogenetically as the crown group of mammals—the clade consisting of the most recent common ancestor of living monotremes and therian mammals?",Wolfgang K. von Koenigsmarck,Timothy Rowe,simpleqa,short_form,no_thinking,0,0.0,0.8921409,0.05
+simpleqa_5,"What day, month, and year was Nathalie Ménigon born?","April 15, 1975",28 February 1957,simpleqa,short_form,no_thinking,0,0.0,0.9035743,0.05
+simpleqa_6,"What was the name of the male victim in the famous 2012 Delhi gang rape and murder, commonly known as the ""Nirbhaya case""?",Rakesh Bihari Lal,Awindra Pratap Pandey,simpleqa,short_form,no_thinking,0,0.0,0.9062216,0.05
+simpleqa_7,"Following the 2016 Orlando nightclub shooting, which county in which state was the only county in the United States to refuse to lower its flags to half-staff?",Hawaii County,Baldwin County in Alabama.,simpleqa,short_form,no_thinking,0,0.0,0.91077375,0.05
+simpleqa_8,How old was Aniol Serrasolses when he kayaked for the first time down the largest glacial waterfall ever recorded in Norway?,23 years old,32,simpleqa,short_form,no_thinking,0,0.0,0.91355395,0.05
+simpleqa_9,"Within plus or minus one minute, when was Müller substituted in the 2014 Champions League semi-final Real Madrid vs. Bayern match?",74th minute,74,simpleqa,short_form,no_thinking,1,1.0,0.93587476,0.05
+simpleqa_10,What did Alison Garrs overdose on in the last episode of Season 2 of Happy Valley?,Painkillers.,Diazepam,simpleqa,short_form,no_thinking,0,0.0,0.91181856,0.05
+simpleqa_11,What was the name of the cricket team Dr. Abu Baker Asvat played for?,South Africa,The Crescents,simpleqa,short_form,no_thinking,0,0.0,0.9010947,0.05
+simpleqa_12,"For how many consecutive terms was the Indian politician Babanrao Shankar Gholap, alias Nana, elected to the Vidhan Sabha?",12 terms,5,simpleqa,short_form,no_thinking,0,0.0,0.90578026,0.05
+simpleqa_13,In which year did Edward Meyrick first describe Cydalima mysteris?,1866,1886,simpleqa,short_form,no_thinking,0,0.0,0.9116983,0.05
+simpleqa_14,"What year was the municipality of Salgar, Antioquia, Colombia, founded?",1851,1880,simpleqa,short_form,no_thinking,0,0.0,0.9178538,0.05
+simpleqa_15,"What was the date, month, and year when the German Defence Minister Peter Struck announced further major changes to the German armed forces? A major part of this announcement was the plan to cut the German fighter fleet from 426 in early 2004 to 265 by 2015.",25 March 2004,"January 13, 2004",simpleqa,short_form,no_thinking,0,0.0,0.9266257,0.05
+simpleqa_16,What was the Word of the Decade (2010–2019) according to the American Dialect Society?,"""Climate""",they,simpleqa,short_form,no_thinking,0,0.0,0.9057046,0.05
+simpleqa_17,"For how many years did John Constable (English landscape painter) work on ""The Opening of Waterloo Bridge""?",18 years,13,simpleqa,short_form,no_thinking,0,0.0,0.9113816,0.05
+simpleqa_18,"In 2017, what case was Natasha Merle involved in, where she was a member of the petitioner team?",Merle v. United States,Buck v. Davis,simpleqa,short_form,no_thinking,0,0.0,0.9156781,0.05
+simpleqa_19,"What is the middle name of Motaz Azaiza, Palestinian journalist?",Azaiza,Hilal,simpleqa,short_form,no_thinking,0,0.0,0.89758426,0.05
+simpleqa_20,What are the three cities where Arvind Kejriwal spent most of his childhood?,"Noida, Delhi, and Nahan.","Sonipat, Ghaziabad, Hisar",simpleqa,short_form,no_thinking,0,0.0,0.9053821,0.05
+simpleqa_21,In what year was Rosario Crocetta appointed Councillor for Culture in the City Council of Gela with the Federation of the Greens?,2001,1998,simpleqa,short_form,no_thinking,0,0.0,0.9125511,0.05
+simpleqa_22,In which month and year did the UN General Assembly unanimously elect Maurice Strong to be the first head of the UN Environment?,September 1972,December 1972,simpleqa,short_form,no_thinking,0,0.0,0.9374036,0.05
+simpleqa_23,In what year did Kristin Otto retire from swimming?,1964,1989,simpleqa,short_form,no_thinking,0,0.0,0.90606403,0.05
+simpleqa_24,Name the mission director of the Rohini Satellite 1 (RS-1) satellite launch in 1980.,R. K. S. K. S.,Dr. Kalam,simpleqa,short_form,no_thinking,0,0.0,0.9084427,0.05
+simpleqa_25,In which year did Clive Derby-Lewis become town councilor for Bedfordview?,1994,1972,simpleqa,short_form,no_thinking,0,0.0,0.9027086,0.05
+simpleqa_26,"What day, month, and year was Louis Armstrong arrested and spent the night at New Orleans Juvenile Court?","January 23, 1947","December 31, 1912",simpleqa,short_form,no_thinking,0,0.0,0.91852134,0.05
+simpleqa_27,Name the enzyme that has an enzyme commission number of 3.1.4.2.,Protein kinase C,Glycerophosphocholine phosphodiesterase,simpleqa,short_form,no_thinking,0,0.0,0.9114312,0.05
+simpleqa_28,"What is the weight of the Phosphorescent Pole weapon in Demon's Souls (2009) using the in-game units of weight, which are called ""units""?",1000 units,4.0 units,simpleqa,short_form,no_thinking,0,0.0,0.9268059,0.05
+simpleqa_29,What year did Shokichi Iyanaga become Dean of the Faculty of Science at Tokyo University?,1953,1965,simpleqa,short_form,no_thinking,0,0.0,0.9202944,0.05
+simpleqa_30,What year did Kathryn Shaw step down as the Artistic Director of Studio 58?,2014,2020,simpleqa,short_form,no_thinking,0,0.0,0.92309797,0.05
+simpleqa_31,"On what day, month, and year did Taiwanese conductor and violinist Felix Chen die?","April 1, 2016","April 9, 2018",simpleqa,short_form,no_thinking,0,0.0,0.9352858,0.05
+simpleqa_32,How many years did Sarah Young serve as a missionary in Japan?,12 years,8,simpleqa,short_form,no_thinking,0,0.0,0.91014004,0.05
+simpleqa_33,What is the name of Track 6 on the Mario Kart 64 Greatest Hits Soundtrack released in 1997?,Wii Fit Adventure,Koopa Castle,simpleqa,short_form,no_thinking,0,0.0,0.9043634,0.05
+simpleqa_34,What's the title of Section 4.3.2 in the paper 'Generating semantic maps through multidimensional scaling: linguistic applications and theory'?,Linguistic Applications and Theory,MDS and formal paradigms,simpleqa,short_form,no_thinking,0,0.0,0.92069083,0.05
+simpleqa_35,"A 2019 genome-wide association study review published by Loukia Vassilopoulou, Michail Matalliotakis, Maria I. Zervou, Charoula Matalliotaki, Konstantinos Krithinakis, Ioannis Matalliotakis, Demetrios A. Spandidos, and George N. Goulielmos enumerated how many genes with mutations associated with endometriosis development?",115 genes,36,simpleqa,short_form,no_thinking,0,0.0,0.9096615,0.05
+simpleqa_36,"What are the dimensions in centimeters of the painting ""Moving House"" by Vasnetsov?",110 × 160,53.5 x 67.2 cm,simpleqa,short_form,no_thinking,0,0.0,0.9259352,0.05
+simpleqa_37,"According to the last population update in 2010, the rural locality of Taz Russky in the Klyapovskoye Rural Settlement of Russia has a population of what?",13555,175,simpleqa,short_form,no_thinking,0,0.0,0.9125109,0.05
+simpleqa_38,What year was Kiyosi Ito appointed to the Cabinet Statistics Bureau?,1929,1939,simpleqa,short_form,no_thinking,0,0.0,0.9223536,0.05
+simpleqa_39,"What were the day, month, and year when the European Court of Human Rights ruled in favor of Carola van Kück, a German trans woman whose insurance company denied her reimbursement for sex reassignment surgery as well as hormone replacement therapy?",21 May 2016,12 June 2003,simpleqa,short_form,no_thinking,0,0.0,0.9173024,0.05
+simpleqa_40,At what event in 2004 did David Hanson present K-Bot?,TED Conference 2004,American Association for the Advancement of Science (AAAS) conference.,simpleqa,short_form,no_thinking,0,0.0,0.9184399,0.05
+simpleqa_41,"As of the 2020 Census, what was the population of Grand Mound, Iowa?","13,663",615,simpleqa,short_form,no_thinking,0,0.0,0.9142116,0.05
+simpleqa_42,"According to the 2021 rules of Battle of the Nations, how many rounds does each longsword duel last?",15 minutes,1,simpleqa,short_form,no_thinking,1,1.0,0.9140365,0.05
+simpleqa_43,"In which year was Mascarin Peak, the active volcano on Marion Island, renamed for the first time?",1959,2003,simpleqa,short_form,no_thinking,0,0.0,0.9025798,0.05
+simpleqa_44,What album did Kinoko Teikoku release in 2014?,"KINOKO TEIKOKU - 2014 ALBUM: ""KINOKO TEIKOKU""",Fake World Wonderland,simpleqa,short_form,no_thinking,0,0.0,0.9008953,0.05
+simpleqa_45,Which of the three Olympic fencing weapons was the last one to transition to using electrical equipment?,Sabre.,Sabre,simpleqa,short_form,no_thinking,1,1.0,0.9600546,0.05
+simpleqa_46,Which ward in Tokyo was the AT-1 phono cartridge created in?,Shinjuku Ward,Shinjuku,simpleqa,short_form,no_thinking,1,1.0,0.95534265,0.05
+simpleqa_47,From which year to which year did the Albanian politician Ibrahim Rugova study at the University of Paris?,1961–1965,From 1976 to 1977,simpleqa,short_form,no_thinking,0,0.0,0.91698945,0.05
+simpleqa_48,What are the first and last names of the designer of 50 francs with the Little Prince images?,Paul van der Aa,Roger Pfund,simpleqa,short_form,no_thinking,0,0.0,0.90070206,0.05
+simpleqa_49,Who performed the theme song for the 1989 Leeds International Film Festival opener *Shirley Valentine*?,Brenda Blethen,Patti Austin,simpleqa,short_form,no_thinking,0,0.0,0.8995093,0.05
+simpleqa_50,Which school did Lyndon B. Johnson briefly teach in Pearsall?,Texas A&M University,Pearsall High School,simpleqa,short_form,no_thinking,0,0.0,0.8981308,0.05
+simpleqa_51,What was the Minute Man sculpture by Daniel Chester French originally intended to be made out of?,Marble,Stone,simpleqa,short_form,no_thinking,0,0.0,0.92917204,0.05
+simpleqa_52,On what date did President Kagame receive an honorary degree in Ethiopia?,"April 20, 2016","JULY 2, 2016",simpleqa,short_form,no_thinking,0,0.0,0.92089885,0.05
+simpleqa_53,Who did the International Photography Awards of 2020 give the Nature Photographer of the Year Award to?,David Yarrow,Ari Rex,simpleqa,short_form,no_thinking,0,0.0,0.89363045,0.05
+simpleqa_54,"What is the KEGG of Allopurinol, a medication used to decrease high blood uric acid levels?",Allopurinol is a xanthine oxidase inhibitor.,D00224,simpleqa,short_form,no_thinking,0,0.0,0.90186584,0.05
+simpleqa_55,"According to the 2010 United States Census, what was the total reported Asian population of Downey, California, in 2010?","15,663","7,804",simpleqa,short_form,no_thinking,0,0.0,0.9204137,0.05
+simpleqa_56,"What were the day, month, and year when Britannica released a Google Chrome extension, ""Britannica Insights,"" which shows snippets of information from Britannica Online whenever the user performs a Google search, in a box to the right of Google's results?","April 20, 2016",7 June 2018,simpleqa,short_form,no_thinking,0,0.0,0.9143312,0.05
+simpleqa_57,Who was the 2018 ACM Eugene L. Lawler Award recipient?,Sergei V. Penev,Meenakshi Balakrishnan,simpleqa,short_form,no_thinking,0,0.0,0.89859015,0.05
+simpleqa_58,In which year was Jamini Roy (an Indian painter) awarded the Padma Bhushan by the Government of India?,1964,1954,simpleqa,short_form,no_thinking,0,0.0,0.9059601,0.05
+simpleqa_59,What were the names of the two presenters of the 16th edition of the Miss World pageant?,Lara Van Deyen and Sarah Jane Smith,"Peter West, Michael Aspel",simpleqa,short_form,no_thinking,0,0.0,0.9018954,0.05
+simpleqa_60,In which year was Monir Shahroudy Farmanfarmaian (an Iranian artist) awarded the Venice Biennale?,1987,1958,simpleqa,short_form,no_thinking,0,0.0,0.9142923,0.05
+simpleqa_61,"What day, month, and year did Lothair I, King of Italy, become King of Middle Francia?",15 April 855,10 August 843,simpleqa,short_form,no_thinking,0,0.0,0.9280866,0.05
+simpleqa_62,"What type of eclipse occurred on August 28, 1802, at 51.3°N, 105.7°E?",Total lunar eclipse.,Annular solar eclipse,simpleqa,short_form,no_thinking,0,0.0,0.9263731,0.05
+simpleqa_63,What advanced reservoir simulation technology did Aramco unveil in 2010?,Eclipse Plus,GigaPOWERS,simpleqa,short_form,no_thinking,0,0.0,0.90332794,0.05
+simpleqa_64,"What month and year was Corrado Gabriele, an Italian politician, born?",April 1943,November 1966,simpleqa,short_form,no_thinking,0,0.0,0.9059998,0.05
+simpleqa_65,What fellowship was Zanele Muholi awarded in 2012?,Suffrage Fellowship,Civitella Ranieri Fellowship,simpleqa,short_form,no_thinking,0,0.0,0.91746897,0.05
+simpleqa_66,"Who won the International Photography Awards' ""International Photographer of the Year"" award in 2003?",Steve McCurry,Chris Frazer Smith,simpleqa,short_form,no_thinking,0,0.0,0.9082068,0.05
+simpleqa_67,In what year did Haile Gebrselassie go undefeated in all of his road races?,2005,2005,simpleqa,short_form,no_thinking,1,1.0,0.9999999,0.05
+simpleqa_68,How long in meters was the glacial waterfall in the Arctic Circle that Aniol Serrasolses kayaked down for the first time as the biggest ever drop recorded?,120 meters,20m-high,simpleqa,short_form,no_thinking,0,0.0,0.9180613,0.05
+simpleqa_69,What was the name of the perpetrator who slashed Park Geun-hye's face?,Yoo Soo-jeong,Ji Chung-ho,simpleqa,short_form,no_thinking,0,0.0,0.9066134,0.05
+simpleqa_70,What's the official motto of the Austrian Decoration for Science and Art?,Wissenschaft und Kunst,Litteris et Artibus,simpleqa,short_form,no_thinking,0,0.0,0.91777194,0.05
+simpleqa_71,What was the first band Robbie Robertson joined that formed in '56?,The Band,Little Caesar and the Consuls,simpleqa,short_form,no_thinking,0,0.0,0.9003179,0.05
+simpleqa_72,What is the surname of the individual who was awarded the Geoffrey Barker Medal in 2020?,Barker,MacPherson,simpleqa,short_form,no_thinking,0,0.0,0.89761317,0.05
+simpleqa_73,"In the late 1950s, Lygia Pape created a new type of performance named what?",Tiradentes,Ballet Neoconcreto,simpleqa,short_form,no_thinking,0,0.0,0.9006404,0.05
+simpleqa_74,What is the first and last name of the sculptor who created the statue of Christopher Codrington at All Souls College?,Christopher Woodville,Sir Henry Cheere,simpleqa,short_form,no_thinking,0,0.0,0.89659697,0.05
+simpleqa_75,In what month and year did Diana Vreeland resign from Harper's Bazaar?,April 1992,"March, 1962.",simpleqa,short_form,no_thinking,0,0.0,0.91518724,0.05
+simpleqa_76,What is the poison resistance value on the Brushwood Helmet from Demon's Souls (2009)?,100%,6,simpleqa,short_form,no_thinking,0,0.0,0.906208,0.05
+simpleqa_77,"What day, month, and year was Osvaldo Fattoruso, the Uruguayan musician, born?",21 de noviembre de 1943,12 May 1948,simpleqa,short_form,no_thinking,0,0.0,0.91016537,0.05
+simpleqa_78,"The book ""Rhine"" by Anselm Kiefer is from what year?",1996,1981.,simpleqa,short_form,no_thinking,0,0.0,0.914069,0.05
+simpleqa_79,What is the weight of the Sputnik 6 spacecraft in kilograms?,175 kilograms,"4,563",simpleqa,short_form,no_thinking,0,0.0,0.90010834,0.05
+simpleqa_80,"Who wrote ""The Nightmarket"" episode of Season 4 in ""What We Do in the Shadows""?",Joss Whedon,William Meny and Paul Simms,simpleqa,short_form,no_thinking,0,0.0,0.89416087,0.05
+simpleqa_81,What player from Aston Villa had the most yellow cards in the 2021-22 Premier League season?,James Maddison,Tyrone Mings,simpleqa,short_form,no_thinking,0,0.0,0.89733857,0.05
+simpleqa_82,What is the name F.R.I.D.A. an acronym for in Critical Role Campaign 3?,Artificially Reactive Intelligent Digital Assistant,Far Ranging Integrated Defense Aeormaton,simpleqa,short_form,no_thinking,0,0.0,0.91225773,0.05
+simpleqa_83,What is the resolution of the Cat B15 Q in pixels?,1600 x 1200,480 x 800,simpleqa,short_form,no_thinking,0,0.0,0.9418386,0.05
+simpleqa_84,Who was the first female Deputy Speaker of the National Assembly of Pakistan?,Amina Jatoi,Ashraf Abbasi,simpleqa,short_form,no_thinking,0,0.0,0.9007021,0.05
+simpleqa_85,What is the name of track 3 on the Mario Kart 64 Greatest Hits soundtrack released in 1997?,"""Retro Row""",Moo Moo Farm,simpleqa,short_form,no_thinking,0,0.0,0.89799803,0.05
+simpleqa_86,Who was the goalkeeper with the most clean sheets in the 2019-2020 Primeira Liga?,Fernando Santos,Agustín Marchesín,simpleqa,short_form,no_thinking,0,0.0,0.8914457,0.05
+simpleqa_87,"Which day, month, and year was the second episode of Season 2 of What We Do in the Shadows originally aired?",21 October 2016,"April 15, 2020",simpleqa,short_form,no_thinking,0,0.0,0.9137516,0.05
+simpleqa_88,"Who sketched the ""Taddei Tondo"" soon after it arrived in England and wrote this to Sir George Beaumont: ""Your important acquisition of the basso-relievo of Michael Angelo is still the chief talk of all our artists""?",Raffaello Sanzio,David Wilkie,simpleqa,short_form,no_thinking,0,0.0,0.89821446,0.05
+simpleqa_89,"On the Japanese special edition CD of Selena Gomez's album ""Rare,"" what is the name of track 16?","""Rarities""","""She""",simpleqa,short_form,no_thinking,0,0.0,0.90842235,0.05
+simpleqa_90,"According to the last population update in 2010, what is the population of the rural locality of Yepishata in the Klyapovskoye Rural Settlement of Russia?",10555,33,simpleqa,short_form,no_thinking,0,0.0,0.91238004,0.05
+simpleqa_91,"In February 2017, what board did Governor Larry Hogan nominate Wes Moore to serve on?",State Board of Elections,University System of Maryland Board of Regents.,simpleqa,short_form,no_thinking,0,0.0,0.9149216,0.05
+simpleqa_92,"What castle overlooked Carmel Glen and its burn and was situated in Knockentiber, East Ayrshire?",Easter Island,Busbie Castle,simpleqa,short_form,no_thinking,0,0.0,0.8926108,0.05
+simpleqa_93,Who was the commencement speaker at Harvard in 2018?,Maya Angelou,John Lewis,simpleqa,short_form,no_thinking,0,0.0,0.8994418,0.05
+simpleqa_94,"What day, month, and year did the head of the Turkish Red Crescent, who was accused of selling tents to earthquake survivors, resign?","May 13, 2023",12 May 2023,simpleqa,short_form,no_thinking,0,0.0,0.9580371,0.05
+simpleqa_95,What two materials are needed to craft the Partisan weapon with Johannes in the original version of the game Bloodstained: Ritual of the Night?,Iron and bone.,1 Oak and 1 Steel,simpleqa,short_form,no_thinking,0,0.0,0.9244093,0.05
+simpleqa_96,Which musician became Louis Armstrong's first teacher and chose him as the bandleader?,Benny Goodman,Peter Davis.,simpleqa,short_form,no_thinking,0,0.0,0.8964167,0.05
+simpleqa_97,"What is the developmental code name for danavorexton, a selective orexin 2 receptor agonist?",Danavorexton - Developmental Code Name: D-1001.,TAK-925,simpleqa,short_form,no_thinking,0,0.0,0.9085836,0.05
+simpleqa_98,"On 30 November 1657, who proclaimed himself emperor at Ahmedabad?",Dara Shikoh,Mirza Muhammad Murad Bakhsh,simpleqa,short_form,no_thinking,0,0.0,0.8963186,0.05
+simpleqa_99,In what year was the praying mantis species Eremiaphila aristidis described by Lucas?,1933,1880,simpleqa,short_form,no_thinking,0,0.0,0.9123719,0.05
+simpleqa_100,"In which month and year was the first public exhibition of Pablo Picasso’s ""Les Demoiselles d'Avignon""?","1907, May",July 1916,simpleqa,short_form,no_thinking,0,0.0,0.9144467,0.05
+simpleqa_101,What is the length in meters of Abdullah Bridge in Srinagar?,150 meters,390 metres,simpleqa,short_form,no_thinking,0,0.0,0.93426585,0.05
+simpleqa_102,"As of 2011, what was the male population of Chitwan District?","155,555","279,087",simpleqa,short_form,no_thinking,0,0.0,0.91296566,0.05
+simpleqa_103,What is the distance (in km) between the city of Udhampur and the Krimchi Temples in Jammu?,150 km,12,simpleqa,short_form,no_thinking,0,0.0,0.90749764,0.05
+simpleqa_104,Who was the first fashion designer to stream a runway show online?,Thom Browne,Helmut Lang,simpleqa,short_form,no_thinking,0,0.0,0.8943713,0.05
+simpleqa_105,Which award did Reza Aslan receive in 2014?,Society of Professional Journalists Award,The Intersections International Award,simpleqa,short_form,no_thinking,0,0.0,0.9124764,0.05
+simpleqa_106,What was the name of Andrew Dickson White's cousin who became an artist of the Luminism style and Hudson River School?,William Henry Powell,Edwin White,simpleqa,short_form,no_thinking,0,0.0,0.8949895,0.05
+simpleqa_107,"On which date, month, and year was the municipality of Miraflores, Boyacá, Colombia, founded?",15 de abril de 1876,29  December 1777,simpleqa,short_form,no_thinking,0,0.0,0.9050005,0.05
+simpleqa_108,"What is the name of the city and state where Václav Hlavatý, a Czech-American mathematician, died?","Cleveland, Ohio","Bloomington, Indiana",simpleqa,short_form,no_thinking,0,0.0,0.9022508,0.05
+simpleqa_109,Who did Richard Neutra design the Elkay Apartments for?,The Elkay Apartments were designed for the Elkay Company.,Louis Kievman,simpleqa,short_form,no_thinking,0,0.0,0.89278615,0.05
+simpleqa_110,In which year was the John Brophy Award first awarded?,1966,1989,simpleqa,short_form,no_thinking,0,0.0,0.9098172,0.05
+simpleqa_111,"In what month and year was Anna Yuryevna Netrebko named ""People's Artist of Russia""?",February 2012,February 2008,simpleqa,short_form,no_thinking,0,0.0,0.94714093,0.05
+simpleqa_112,Who inaugurated the Khyber Hotel in Gulmarg?,Mirza Afzal Khan,Omar Abdullah,simpleqa,short_form,no_thinking,0,0.0,0.89001936,0.05
+simpleqa_113,What was the first name of the Irish-born computer programmer Kathleen Rita McNulty Mauchly Antonelli's father?,John,James,simpleqa,short_form,no_thinking,0,0.0,0.9125491,0.05
+simpleqa_114,The Wandanlage stereo system was originally released in which year?,1963,1965,simpleqa,short_form,no_thinking,0,0.0,0.9176346,0.05
+simpleqa_115,"At what age did Dick Drago, the American relief pitcher, die?",52,78,simpleqa,short_form,no_thinking,0,0.0,0.92049885,0.05
+simpleqa_116,What were the month and year when Telegram announced that the app had 60 million active users and delivered 12 billion daily messages?,February 2017,September 2015.,simpleqa,short_form,no_thinking,0,0.0,0.90511644,0.05
+simpleqa_117,Which architect built the Palace of Justice of the Argentine Nation?,René de Paredes,Norbert Maillart.,simpleqa,short_form,no_thinking,0,0.0,0.90353084,0.05
+simpleqa_118,Sir Isaac Julien's installation piece 'Radioactive' is from what year?,1995,2004,simpleqa,short_form,no_thinking,0,0.0,0.9069107,0.05
+simpleqa_119,In what year was the Sing Sing Correctional Facility accredited for the first time?,1954,1989,simpleqa,short_form,no_thinking,0,0.0,0.8979901,0.05
+simpleqa_120,"On what day, month, and year was Ian Charleson Hedge, a Scottish botanist at the Royal Botanic Gardens in Edinburgh who spent seven months collecting specimens in Turkey in 1957 with Peter Davis, born?",15 April 1910,18 August 1928,simpleqa,short_form,no_thinking,0,0.0,0.91408384,0.05
+simpleqa_121,What was the 2018 Word of the Year according to the American Dialect Society?,Breathe.,tender-age shelter,simpleqa,short_form,no_thinking,0,0.0,0.9043208,0.05
+simpleqa_122,"What year was the municipality of Ciénega, Boyacá, Colombia, founded?",1876,1818,simpleqa,short_form,no_thinking,0,0.0,0.9184346,0.05
+simpleqa_123,"In which year was Edward A. ""Ted"" Irving awarded the Wollaston Medal by the Geological Society of London?",1966,2005,simpleqa,short_form,no_thinking,0,0.0,0.9128306,0.05
+simpleqa_124,Which scientist was the recipient of the Roebling Medal in 1968?,John A. Macdonald,Tei-ichi Ito,simpleqa,short_form,no_thinking,0,0.0,0.8955672,0.05
+simpleqa_125,"What doctrine did Ketanji Brown Jackson use to uphold her decision that ""the suits should be brought in Malaysia, not the U.S.""?",International Extraterritoriality Doctrine,forum non conveniens,simpleqa,short_form,no_thinking,0,0.0,0.90535945,0.05
+simpleqa_126,"Who was the Minister of War as part of Brisson's 1st Ministry, 6 April 1885 – 7 January 1886?",Lord William Cavendish-Bentinck,Jean-Baptiste Campenon,simpleqa,short_form,no_thinking,0,0.0,0.8920972,0.05
+simpleqa_127,In what year did Norman Rockwell donate his painting “The Dover Coach” to the Society of Illustrators?,1964,1939,simpleqa,short_form,no_thinking,0,0.0,0.9123885,0.05
+simpleqa_128,"Provide the day, month, and year Foxtel and Microsoft announced a new way of receiving Foxtel through Xbox 360's online service Xbox LIVE.",21 April 2007,"20 May, 2010",simpleqa,short_form,no_thinking,0,0.0,0.92164725,0.05
+simpleqa_129,"In which year did Julian Bradley, the first Black Republican to serve in the Wisconsin Senate and only the second Black Republican to serve in the Wisconsin Legislature, first move to La Crosse, Wisconsin, with his mother?",1958,1992,simpleqa,short_form,no_thinking,0,0.0,0.9032743,0.05
+simpleqa_130,"In what year was Sher Afgan Niazi, a Pakistani politician, diagnosed with liver cancer?",2010,2012,simpleqa,short_form,no_thinking,0,0.0,0.9265999,0.05
+simpleqa_131,During what year did Julie Mehretu first marry Jessica Rankin?,2006,2008,simpleqa,short_form,no_thinking,0,0.0,0.9270282,0.05
+simpleqa_132,"What is the surname of the individual who won the Faraday Lectureship Prize, previously known as the Faraday Lectureship, in 1970?",Hodges,Herzberg,simpleqa,short_form,no_thinking,0,0.0,0.8979511,0.05
+simpleqa_133,"What is the first and last name of the host who interviewed military pilot Eugene Bullard on NBC’s ""Today Show""?",Bob Keough,Dave Garroway,simpleqa,short_form,no_thinking,0,0.0,0.9040154,0.05
+simpleqa_134,"In Episode 7, Season 2 of the American version of ""The Circle,"" who leaves the players a message on how to play the game Glammequins?",Morgan.,Jonathan Van Ness,simpleqa,short_form,no_thinking,0,0.0,0.9019564,0.05
+simpleqa_135,What year was Jerry Lee Lewis's 13th album released on Mercury Records?,1964,1970,simpleqa,short_form,no_thinking,0,0.0,0.9149927,0.05
+simpleqa_136,As of which year did osteoarthritis globally cause moderate to severe disability in 43.4 million people?,2010,2004,simpleqa,short_form,no_thinking,0,0.0,0.91892296,0.05
+simpleqa_137,In what year did Willis H. Flygare win the Irving Langmuir Award?,1996,1981,simpleqa,short_form,no_thinking,0,0.0,0.91337687,0.05
+simpleqa_138,Who received the IEEE Frank Rosenblatt Award in 2019?,Yoshua Bengio,Erkki Oja,simpleqa,short_form,no_thinking,0,0.0,0.903696,0.05
+simpleqa_139,"What year was the municipality of Sora, Boyacá, Colombia, founded?",1607,1556,simpleqa,short_form,no_thinking,0,0.0,0.91197413,0.05
+simpleqa_140,"How many children did Robert Moog and his first wife, Shirley May Leigh, have?",Two,4,simpleqa,short_form,no_thinking,0,0.0,0.9096685,0.05
+simpleqa_141,"Who played Sarah Robinson in ""Felicity"" Season 4, Episode 4?",Maura Tierney,Monica,simpleqa,short_form,no_thinking,0,0.0,0.8975526,0.05
+simpleqa_142,What is the complete name of the oldest Hindu temple in the Umerkot District?,Sidi Saiyed Mosque,Umarkot Shiv Mandir,simpleqa,short_form,no_thinking,0,0.0,0.90772146,0.05
+simpleqa_143,In what year was the mechanical engineer Lloyd Hamilton Donnell awarded the American Society of Mechanical Engineers Medal?,1985,1969,simpleqa,short_form,no_thinking,0,0.0,0.91158307,0.05
+simpleqa_144,"Until which day, month, and year was Jules Ferry in office as the Prime Minister of France for the second time?",25 May 1881,30 March 1885,simpleqa,short_form,no_thinking,0,0.0,0.9239802,0.05
+simpleqa_145,"What were the month and year when Google's software engineer Gary Kačmarčík wrote that ChromeOS would access remote applications through a technology unofficially called ""Chromoting""?",April 2010,June 2010,simpleqa,short_form,no_thinking,0,0.0,0.9315613,0.05
+simpleqa_146,"What is the judicial title of the person who was appointed as Chairman of the Scottish Law Commission on January 1, 2014, for a period of five years until December 31, 2018?",Lord Advocate,Lord Pentland,simpleqa,short_form,no_thinking,0,0.0,0.91743803,0.05
+simpleqa_147,In what year was Scottish mathematician Walter Douglas Munn appointed Thomas Muir Professor of Mathematics?,1963,1973,simpleqa,short_form,no_thinking,0,0.0,0.9259693,0.05
+simpleqa_148,What was the Christian denomination to which Frank Lloyd Wright's father originally belonged?,Baptists,Baptist,simpleqa,short_form,no_thinking,1,1.0,0.968006,0.05
+simpleqa_149,What was the occupation of the runner-up from Season 2 of The Bachelor?,Cory Monteith,college student,simpleqa,short_form,no_thinking,0,0.0,0.8968196,0.05
+simpleqa_150,What was the name of the pre-2000s band with which the author of *Batman R.I.P.* toured and recorded?,The answer is **The Dandy Warhols**.,The Mixers,simpleqa,short_form,no_thinking,0,0.0,0.90837824,0.05
+simpleqa_151,Between which two latitudes does Ghana lie?,Between 5°N and 12°N.,4° and 12°N,simpleqa,short_form,no_thinking,0,0.0,0.95092416,0.05
+simpleqa_152,"Who accompanied Lilian Ngoyi on an illegal journey to Lausanne, Switzerland, to participate in the World Congress of Mothers held by the Women's International Democratic Federation (WIDF)?",Njoki Mungai,Dora Tamana,simpleqa,short_form,no_thinking,0,0.0,0.89756984,0.05
+simpleqa_153,How much Endurance does the Cleric starting class from Dark Souls II start with?,10,3,simpleqa,short_form,no_thinking,0,0.0,0.91103876,0.05
+simpleqa_154,What year was the first time that William Kentridge was awarded the Honorary Doctorate of Vrije Universiteit Brussel?,2013,2021,simpleqa,short_form,no_thinking,0,0.0,0.93164814,0.05
+simpleqa_155,"After being expelled from BSP due to alleged anti-party activities, the Indian politician Kuldeep Singh Sengar joined the Samajwadi Party and won a seat from which constituency in 2007?",Bijnor,Bangermau,simpleqa,short_form,no_thinking,0,0.0,0.8932713,0.05
+simpleqa_156,In what year was the Penny Crane Award for Distinguished Service established?,1983,2000,simpleqa,short_form,no_thinking,0,0.0,0.9037482,0.05
+simpleqa_157,"How many children did actress Camille Clifford have with her second husband, Captain John Meredyth Jones-Evans?",Two,1,simpleqa,short_form,no_thinking,0,0.0,0.90832984,0.05
+simpleqa_158,"Which community college did Leonard Perry Jr., the American basketball coach, attend from 1986 to 1988?",Cleveland State Community College,McLennan Community College,simpleqa,short_form,no_thinking,0,0.0,0.9137473,0.05
+simpleqa_159,Which foreign merchant was issued the right to transact slaves on Spain's behalf and ordered regulations on trade with Cuba?,Garcia de Orta,Asiento de Negros,simpleqa,short_form,no_thinking,0,0.0,0.90150744,0.05
+simpleqa_160,What is the name of the person who discovered the minor planet named after Viktor Vasnetsov?,Viktor Vasnetsov,Lyudmila Zhuravlyova,simpleqa,short_form,no_thinking,0,0.0,0.8949237,0.05
+simpleqa_161,During which year did Yayoi Kusama have her first exhibition in Spain?,2016,2011,simpleqa,short_form,no_thinking,0,0.0,0.9228026,0.05
+simpleqa_162,"What is the Regional Transport Office (RTO) code for the Seoni location in Madhya Pradesh, India?",071,MP-22,simpleqa,short_form,no_thinking,0,0.0,0.89796436,0.05
+simpleqa_163,What was the 2016 Word of the Year according to the American Dialect Society?,Rise.,dumpster fire,simpleqa,short_form,no_thinking,0,0.0,0.90244806,0.05
+simpleqa_164,Who was the first Western artist whose biography was published while he was alive?,Gustave Flaubert,Michelangelo Buonarroti,simpleqa,short_form,no_thinking,0,0.0,0.9040939,0.05
+simpleqa_165,What is the name of Communist politician Georgi Dimitrov's second wife?,Georgi Dimitrov's second wife was Maria Dimitrova.,Roza Yulievna Fleishmann,simpleqa,short_form,no_thinking,0,0.0,0.89585716,0.05
+simpleqa_166,What were the two great masterpieces completed by Carl Friedrich Gauss as a private scholar?,Disquisitiones Arithmeticae and Gauss's work on the construction of regular polygons.,Disquisitiones Arithmeticae and Theoria motus corporum coelestium,simpleqa,short_form,no_thinking,0,0.0,0.92937076,0.05
+simpleqa_167,"What was the name of the first schoolhouse in Newbliss, Ontario, built around 1830?",Newbliss Schoolhouse,S.S. #5 Newbliss School.,simpleqa,short_form,no_thinking,0,0.0,0.9321972,0.05
+simpleqa_168,"Which city is called the ""Temple City"" in Karnataka?",Hubballi,Udupi,simpleqa,short_form,no_thinking,0,0.0,0.9099415,0.05
+simpleqa_169,Who won the 2016 Wisden-MCC (Melbourne Cricket Council) Cricket Photograph of the Year?,Alistair Cook,Saqib Majeed,simpleqa,short_form,no_thinking,0,0.0,0.89589816,0.05
+simpleqa_170,"On what day, month, and year did the Winnipeg Free Press cease publishing its regular Sunday edition?","January 1, 2012","November 1, 2009",simpleqa,short_form,no_thinking,0,0.0,0.9325738,0.05
+simpleqa_171,Who was the first Chief Minister of the State of Jammu and Kashmir?,Srinivasan,Ghulam Mohammed Sadiq,simpleqa,short_form,no_thinking,0,0.0,0.8974714,0.05
+simpleqa_172,What is the forest cover area of Uttarakhand in square kilometers according to the interpretation of IRS Resourcesat-2 LISS III satellite data from 2017-2018?,"10,543 km²","24,303.04",simpleqa,short_form,no_thinking,0,0.0,0.9120291,0.05
+simpleqa_173,"On what date, month, and year did Barbara Marty Kälin die?","April 2, 2020",27 November 2022,simpleqa,short_form,no_thinking,0,0.0,0.92927384,0.05
+simpleqa_174,"What day, month, and year did the singer and actress Vanessa Hudgens marry Cole Tucker?","July 16, 2011",2 December 2023,simpleqa,short_form,no_thinking,0,0.0,0.909774,0.05
+simpleqa_175,Who was the 2nd chairman of the Senate of Pakistan?,Muhammad Ali Bogra,Ghulam Ishaq Khan,simpleqa,short_form,no_thinking,0,0.0,0.9031951,0.05
+simpleqa_176,What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?,Sally Comrie,Akiko Kumahira,simpleqa,short_form,no_thinking,0,0.0,0.9056989,0.05
+simpleqa_177,"What number is the painting ""The Meeting at Křížky"" in The Slav Epic?",11,9,simpleqa,short_form,no_thinking,0,0.0,0.91815645,0.05
+simpleqa_178,What are the names of the two mathematicians who received the Salem Prize in 1988?,Sergei V. Kerov and Anatoliy A. Klyueva,"Alexander Volberg, Jean-Christophe Yoccoz",simpleqa,short_form,no_thinking,0,0.0,0.9056196,0.05
+simpleqa_179,What is the number and name of the second asteroid discovered by astronomer Édouard Jean-Marie Stephan?,1901 Ceres,91 Aegina,simpleqa,short_form,no_thinking,0,0.0,0.909854,0.05
+simpleqa_180,"As of the 2020 census, what was the population of Weston, Ohio?","10,564","1,455",simpleqa,short_form,no_thinking,0,0.0,0.9250526,0.05
+simpleqa_181,"At what time to the nearest second did Tijmen Eising end the race, ranking in the first position, in the 2009 UCI Cyclo-cross World Championships – Men's junior race?",02:13.32,40:06,simpleqa,short_form,no_thinking,0,0.0,0.927322,0.05
+simpleqa_182,What is Frida Kahlo's largest painting called in English?,The Two Fridas,The Two Fridas.,simpleqa,short_form,no_thinking,1,1.0,0.9766537,0.05
+simpleqa_183,"What day, month, and year was the album ""The Weight of These Wings"" by Miranda Lambert certified platinum in the U.S.?","July 20, 2012.","July 10, 2017",simpleqa,short_form,no_thinking,0,0.0,0.9237472,0.05
+simpleqa_184,What was the Word of the Decade (2000–2009) according to the American Dialect Society?,"""Globalization""",Google,simpleqa,short_form,no_thinking,0,0.0,0.9074211,0.05
+simpleqa_185,"On what date, month, and year did the Indian politician and former Member of Parliament Surajbhan Singh murder Rami Singh, a resident of Mathurpur Village?",25 April 1998,16 January 1992.,simpleqa,short_form,no_thinking,0,0.0,0.9121013,0.05
+simpleqa_186,"In inning 4 of Game 1 of the '07 World Series, who hit a double that scored two runs?",A.J. Pierzynski,Jason Varitek,simpleqa,short_form,no_thinking,0,0.0,0.9054659,0.05
+simpleqa_187,"On which day, month, and year was the first race of the Two Oceans Marathon in Cape Town?",17 April 1990,2 May 1970,simpleqa,short_form,no_thinking,0,0.0,0.9197716,0.05
+simpleqa_188,"From which date, month, and year to which date, month, and year did the Indian politician Anant Geete serve as the Minister of Power in the Indian government?",1996–2001,"August 26, 2002 – May 22, 2004",simpleqa,short_form,no_thinking,0,0.0,0.9185473,0.05
+simpleqa_189,"How much money, in euros, was the surgeon held responsible for Stella Obasanjo's death ordered to pay her son?",1.5 million euros,"120,000",simpleqa,short_form,no_thinking,0,0.0,0.9163845,0.05
+simpleqa_190,In what year was the club formerly known as Pishchevik Kaliningrad renamed Baltika?,2009,1958,simpleqa,short_form,no_thinking,0,0.0,0.9131348,0.05
+simpleqa_191,What words were on Tara Calico's shirt the day she disappeared?,"Tara Calico's shirt had the words ""I love you"" on it.",1st National Bank of Belen,simpleqa,short_form,no_thinking,0,0.0,0.8883673,0.05
+simpleqa_192,In what position did Claudine Vita rank in the women's discus throw final event of the 2019 World Athletics Championships?,Third place,9,simpleqa,short_form,no_thinking,0,0.0,0.90506685,0.05
+simpleqa_193,What is the surname of the person who first discovered the blood-sucking bug Triatoma carrioni?,Carrioni,Larrousse,simpleqa,short_form,no_thinking,0,0.0,0.8964706,0.05
+simpleqa_194,"On what day, month, and year was the 435 Ella asteroid discovered?",1949 April 16,"September 11, 1898",simpleqa,short_form,no_thinking,0,0.0,0.91055834,0.05
+simpleqa_195,In what year was Leonora Neuffer Bilger awarded the Francis P. Garvan–John M. Olin Medal?,1984,1953,simpleqa,short_form,no_thinking,0,0.0,0.91311914,0.05
+simpleqa_196,At which international show jumping event did Susie Hutchison and Samsung Woodstock get blocked mid-round by the ring crew?,Horseware International Show,Volvo FEI World Cup Final,simpleqa,short_form,no_thinking,0,0.0,0.91568255,0.05
+simpleqa_197,"Name the father and mother of Mukul Chandra Dey, a Bengali artist.",Rajib Dey and Kanchan Dey,Purnashashi Devi and Kula Chandra Dey,simpleqa,short_form,no_thinking,0,0.0,0.91678536,0.05
+simpleqa_198,At what school was Leo Strauss working when he died?,University of Chicago,"St. John's College, Annapolis",simpleqa,short_form,no_thinking,0,0.0,0.90378696,0.05
+simpleqa_199,What was the name of the director who took over from Barbara Gelpi in 2004 as the director of the Clayman Institute for Gender Research?,John H. Johnson,Londa Schiebinger,simpleqa,short_form,no_thinking,0,0.0,0.8938057,0.05
+simpleqa_200,In what year did Pope Francis decline to be appointed President of the Argentine Bishops’ Conference?,2013,2002,simpleqa,short_form,no_thinking,0,0.0,0.91186845,0.05
+simpleqa_201,What is the name of the university where Alma S. Woolley became a nursing instructor and earned her M.S. in medical-surgical nursing?,University of Michigan,University of Pennsylvania,simpleqa,short_form,no_thinking,0,0.0,0.9310113,0.05
+simpleqa_202,"In which month and year did Naughty Dog's technology head, Christian Gyrling, depart the company after 17 years and was replaced by Travis McIntosh?",August 2021,10 Nov 2023,simpleqa,short_form,no_thinking,0,0.0,0.92490304,0.05
+simpleqa_203,"In which month and year did Khusro Bakhtiar (former Federal Minister for Planning, Development, and Reforms, Pakistan) announce that the government was considering establishing a Pak-China business council to promote the private sector's role in the China-Pakistan Economic Corridor (CPEC)?",March 2015,June 2019,simpleqa,short_form,no_thinking,0,0.0,0.90982145,0.05
+simpleqa_204,In what year did Nikolai Andreev win the Leelavati Award?,2016,2022,simpleqa,short_form,no_thinking,0,0.0,0.9149558,0.05
+simpleqa_205,"What position did Ghulam Ishaq Khan, former Governor of the State Bank of Pakistan, hold until 1955 at the Provincial Secretariat of the North-West Frontier Province (now Khyber Pakhtunkhwa)?",Minister of Finance,secretary of the irrigation department,simpleqa,short_form,no_thinking,0,0.0,0.90756416,0.05
+simpleqa_206,"When Donjuan Triumphant began his career as a breeding stallion in 2020, his stud fee was set at how many Euros?","150,000 Euros","€4,000",simpleqa,short_form,no_thinking,0,0.0,0.9314208,0.05
+simpleqa_207,How many biological children did Isadora Duncan have?,One,3,simpleqa,short_form,no_thinking,0,0.0,0.9100948,0.05
+simpleqa_208,Who won the Mathematical Association of America David P. Robbins Prize in 2008?,John H. Conway,Neil Sloane,simpleqa,short_form,no_thinking,0,0.0,0.8975129,0.05
+simpleqa_209,What season of RPDR did Leslie Jones first appear in?,Season 3.,12,simpleqa,short_form,no_thinking,0,0.0,0.90562165,0.05
+simpleqa_210,What is the name of the ship named after Habba Khatoon?,HMS Khatoon,CGS Habba Khatoon,simpleqa,short_form,no_thinking,0,0.0,0.9297975,0.05
+simpleqa_211,What were the year and month the US Food and Drug Administration (FDA) approved the first RSV vaccines?,2023 April,May 2023.,simpleqa,short_form,no_thinking,0,0.0,0.9432805,0.05
+simpleqa_212,"In an advertisement on 17 June 1834 in the Halifax Times, Joseph Toler (Canadian artist/gold and silversmith) stated he had moved to what hotel to begin offering ""likenesses""?",Trafalgar Hotel,Mrs Grover's Hotel.,simpleqa,short_form,no_thinking,0,0.0,0.91699773,0.05
+simpleqa_213,What was the original scientific name given to *Calytrix acutifolia* by John Lindley in 1839?,Calytrix acutifolia,Lhotskya acutifolia,simpleqa,short_form,no_thinking,0,0.0,0.9317711,0.05
+simpleqa_214,What are the names of the two scientists who received the Salem Prize after the year Akshay Venkatesh received his?,Sarnak and Clozel,Bo'az Klartag and Assaf Naor,simpleqa,short_form,no_thinking,0,0.0,0.9132177,0.05
+simpleqa_215,What company was Natasha Merle a civil rights fellow at from 2013 to 2015 in New York City?,Adobe Systems,"Fried, Frank, Harris, Shriver & Jacobson",simpleqa,short_form,no_thinking,0,0.0,0.9025207,0.05
+simpleqa_216,"In which year was the municipality of Santa Bárbara, Antioquia, Colombia, founded?",1874,1774,simpleqa,short_form,no_thinking,0,0.0,0.9007178,0.05
+simpleqa_217,In which year was the International Centre for Genetic Engineering and Biotechnology (ICGEB) established?,1983,1983,simpleqa,short_form,no_thinking,1,1.0,0.99999994,0.05
+simpleqa_218,"In 1999, who presented Susan Lucci with an Emmy?",Candice Bergen,Shemar Moore,simpleqa,short_form,no_thinking,0,0.0,0.89271045,0.05
+simpleqa_219,"According to the 2012 municipal census, how many people live in Shawnee Slopes?","1,667","1,565",simpleqa,short_form,no_thinking,0,0.0,0.92367876,0.05
+simpleqa_220,"In 1989, how many kilometers long was the Cape Town Cycle Tour, formerly known as the Cape Argus Cycle Tour?",160 kilometres,105 km,simpleqa,short_form,no_thinking,0,0.0,0.931269,0.05
+simpleqa_221,"What type of work did the character Sabrina Costelana Newman's father from ""The Young and the Restless"" series do?",Actor.,Diplomat,simpleqa,short_form,no_thinking,0,0.0,0.90687704,0.05
+simpleqa_222,"On Feb. 12, 2018, in what city was Dua Lipa performing when she raised a rainbow flag?",London,Los Angeles,simpleqa,short_form,no_thinking,0,0.0,0.91583097,0.05
+simpleqa_223,What year is 2024 in the Discordian calendar?,Year of the Cat.,3190 YOLD,simpleqa,short_form,no_thinking,0,0.0,0.90740824,0.05
+simpleqa_224,"Provide the day, month, and year Gazprom became the official Global Energy Partner of the UEFA Champions League 2012 winners, Chelsea.","2012, 12, 12",17th July 2012,simpleqa,short_form,no_thinking,0,0.0,0.92507535,0.05
+simpleqa_225,"What day, month, and year did Koloman Bedeković become Minister of Croatian Affairs of Hungary for the first time?","April 1, 1919.",8 December 1868,simpleqa,short_form,no_thinking,0,0.0,0.90879536,0.05
+simpleqa_226,"For how many English guineas did the Victoria and Albert Museum purchase the ""Bust of Thomas Baker"" by Gian Lorenzo Bernini in 1921?","£15,000",1480 English guineas,simpleqa,short_form,no_thinking,0,0.0,0.9120635,0.05
+simpleqa_227,"What is the name of the multituberculate mammal of early Paleocene (Puercan 3) age from the Western Interior of North America, discovered in 2021 in Denver Basin, Colorado?",Pseudotubulips,Taeniolabis taoensis,simpleqa,short_form,no_thinking,0,0.0,0.9003285,0.05
+simpleqa_228,"Which YouTuber hosted the 12th Streamy Awards on December 4, 2022, at the Beverly Hilton in Los Angeles?",Haria & Alex,Airrack,simpleqa,short_form,no_thinking,0,0.0,0.89746124,0.05
+simpleqa_229,What was the name of the first elephant born in Valencia Bioparc?,Ama,Makena,simpleqa,short_form,no_thinking,0,0.0,0.90111804,0.05
+simpleqa_230,Who is the web and administrative assistant for the UNESCO Science Report: The Race Against Time for Smarter Development (2021)?,Sara L. Smith,Ali Barbash,simpleqa,short_form,no_thinking,0,0.0,0.8996865,0.05
+simpleqa_231,"How many balls did Dwayne Bravo play in the Indian Premier League 2019 final match between CSK and MI on May 12, 2019?",15,15,simpleqa,short_form,no_thinking,1,1.0,1.0,0.05
+simpleqa_232,What is the other name for Oont Kadal in Kashmir?,Kailas Mountain,Camel Bridge,simpleqa,short_form,no_thinking,0,0.0,0.89889914,0.05
+simpleqa_233,"How long, in minutes and seconds, is the song ""Empty"" by Bebe Rexha from the ""Better Mistakes"" album?",3:30,2:28,simpleqa,short_form,no_thinking,0,0.0,0.926266,0.05
+simpleqa_234,Which 2016 IGN award did the TV series Hannibal not win?,Best in Horror Film,Best TV Series,simpleqa,short_form,no_thinking,0,0.0,0.9121522,0.05
+simpleqa_235,Who is known to be the first Indian musician to perform at the United Nations General Assembly in 1966?,Ravi Shankar,Madurai Shanmukhavadivu Subbulakshmi,simpleqa,short_form,no_thinking,0,0.0,0.8988607,0.05
+simpleqa_236,Which architect built the Palace of Running Water in Buenos Aires?,René de Paredes,Carlos Nyströmer,simpleqa,short_form,no_thinking,0,0.0,0.9008968,0.05
+simpleqa_237,Who was the director of the Lebedev Physical Institute of the Russian Academy of Sciences between 1951 and 1972?,Vladimir V. Vernadsky,Dmitri Skobeltsyn,simpleqa,short_form,no_thinking,0,0.0,0.9020097,0.05
+simpleqa_238,Which religion is the third largest among Singaporean residents based on the 2020 census?,Buddhism,Islam,simpleqa,short_form,no_thinking,0,0.0,0.91499335,0.05
+simpleqa_239,What year was Giulio Carlo Argan elected as a Foreign Honorary Member of the American Academy of Arts and Sciences?,1956,1992,simpleqa,short_form,no_thinking,0,0.0,0.91237855,0.05
+simpleqa_240,What year did Heisuke Hironaka establish a philanthropic foundation called the Japan Association for Mathematical Sciences?,1985,1984,simpleqa,short_form,no_thinking,0,0.0,0.9251802,0.05
+simpleqa_241,"In the primary setting of the Starfinder tabletop RPG, what is the title given to the planet Triaxus due to its extreme orbit?",Triaxial Planet,The Wanderer,simpleqa,short_form,no_thinking,0,0.0,0.9006596,0.05
+simpleqa_242,In what year did German instrument maker Ernst Abbe invent the apochromatic lens system for the microscope?,1846,1868,simpleqa,short_form,no_thinking,0,0.0,0.90541154,0.05
+simpleqa_243,What was the affiliated institute of the winner of the Turing Award in 1968?,Bell Labs,Bell Labs,simpleqa,short_form,no_thinking,1,1.0,1.0,0.05
+simpleqa_244,Which power project in Jammu and Kashmir is located on the Suru River?,Jammu and Kashmir Power Project.,Chutak Hydroelectric Plant,simpleqa,short_form,no_thinking,0,0.0,0.9122329,0.05
+simpleqa_245,"What were the day, month, and year when Google introduced the native dark theme for Chrome on Windows 10?","October 20, 2021",2 of January of 2019,simpleqa,short_form,no_thinking,0,0.0,0.91877204,0.05
+simpleqa_246,What were the month and year when WhatsApp had about 200 million active users and 50 staff members?,January 2014,February 2013.,simpleqa,short_form,no_thinking,0,0.0,0.9238036,0.05
+simpleqa_247,Which scientists received the American Chemical Society Award in Pure Chemistry in 1937?,H. J. M. Boerhaave,E. Bright Wilson,simpleqa,short_form,no_thinking,0,0.0,0.89527273,0.05
+simpleqa_248,Which country is the species Acanthops bidens native to?,South Africa,Mexico,simpleqa,short_form,no_thinking,0,0.0,0.8985829,0.05
+simpleqa_249,"On what day, month, and year did Filip Hašek, the footballer, make his professional debut?",15 August 2016,22 July 2018,simpleqa,short_form,no_thinking,0,0.0,0.9238864,0.05
+simpleqa_250,"What is the MD5 checksum of the file named ""ffrelay-debian-4.30.ggi.zip,"" with the product name ""FinFisher Relay v4.30"" and a file size of 224K, which was released by WikiLeaks?",53333333333333333333333333333333,180caf23dd71383921e368128fb6db52,simpleqa,short_form,no_thinking,0,0.0,0.9171656,0.05
+simpleqa_251,Which Indian cricketer has been appointed UNICEF and Cricket for Good Ambassador for the ICC Women’s World Cup 2017?,Mithali Raj,Sachin Tendulkar,simpleqa,short_form,no_thinking,0,0.0,0.9085443,0.05
+simpleqa_252,In what city did Anselm Kiefer present his first exhibition?,Düsseldorf,Karlsruhe,simpleqa,short_form,no_thinking,0,0.0,0.9230801,0.05
+simpleqa_253,In what year was Virgil K. Smith's (Michigan politician) driver's license revoked after being charged with operating a vehicle while impaired in February 2004 and operating a vehicle while intoxicated in August 2004?,2005,2004,simpleqa,short_form,no_thinking,0,0.0,0.92220443,0.05
+simpleqa_254,Who was the recipient of the Simion Stoilow Prize in 2006?,Vladimir Arnold.,Radu Pantilie,simpleqa,short_form,no_thinking,0,0.0,0.90301377,0.05
+simpleqa_255,Which sculptor designed the Order of the Liberator General San Martín?,Fernando de los Ríos,Ángel Eusebio Ibarra García,simpleqa,short_form,no_thinking,0,0.0,0.9089916,0.05
+simpleqa_256,"In 2002, what zoo confirmed it had three female lynxes and was developing a plan for a captive breeding program?",San Diego Zoo,Jerez Zoo,simpleqa,short_form,no_thinking,0,0.0,0.91993856,0.05
+simpleqa_257,"What month and year was Kristof's album ""The Talkshow"" released?",August 2001,May 2020,simpleqa,short_form,no_thinking,0,0.0,0.90550387,0.05
+simpleqa_258,"What are the day, month, and year of release for the Spyro: Enter the Dragonfly Official Soundtrack?","April 2, 2003",5 Nov 2002,simpleqa,short_form,no_thinking,0,0.0,0.910743,0.05
+simpleqa_259,At what age did Natalia Dmitriyevna Shpiller pass away?,82,85,simpleqa,short_form,no_thinking,0,0.0,0.92749083,0.05
+simpleqa_260,What governor decided that Juneteenth should only be recognized for one year in 2020?,Texas Governor Greg Abbott.,Kristi Noem,simpleqa,short_form,no_thinking,0,0.0,0.89555025,0.05
+simpleqa_261,"In the research paper titled ""Detecting Driver Mental Fatigue Based on EEG Alpha Power Changes During Simulated Driving"" by Faramarz Gharagozlou et al., what is the name of the university where the overnight study took place?","University of California, San Francisco",Khaje Nasir Toosi University of Technology,simpleqa,short_form,no_thinking,0,0.0,0.90624344,0.05
+simpleqa_262,What year did Luigi Berlinguer obtain a law degree from the University of Sassari?,1953,1955,simpleqa,short_form,no_thinking,0,0.0,0.9144871,0.05
+simpleqa_263,"What were the day, month, and year when Pakistan International Airlines Fokker 27 was hijacked en route to Karachi from Sukkur?","September 12, 1977.","20 January, 1978",simpleqa,short_form,no_thinking,0,0.0,0.923671,0.05
+simpleqa_264,Who won the Benjamin Franklin Medal for Computer and Cognitive Science in 2012?,"A. M. Turing Award winner, but the Benjamin Franklin Medal for Computer and Cognitive Science in 2012 was awarded to **Seymour Papert**.",Vladimir Vapnik,simpleqa,short_form,no_thinking,0,0.0,0.89638406,0.05
+simpleqa_265,Who won the Eddington Medal in 1962?,Subrahmanyan Chandrasekhar,André Lallemand,simpleqa,short_form,no_thinking,0,0.0,0.89633197,0.05
+simpleqa_266,"How many girls are in ""Girls on the Bridge,"" Munch's painting from 1900 (in the version where some of them are looking at the river)?",3,Three,simpleqa,short_form,no_thinking,0,0.0,0.95970464,0.05
+simpleqa_267,How much money in euros was awarded to the first-time winner of the Hutter Prize in 2006?,1 million euros,3416,simpleqa,short_form,no_thinking,0,0.0,0.90458274,0.05
+simpleqa_268,"What day, month, and year was Ludovico Corrao, an Italian Independent Left politician and lawyer, born?",15 April 1923,26 June 1927,simpleqa,short_form,no_thinking,0,0.0,0.91626304,0.05
+simpleqa_269,"What were the day, month, and year of the Terraria desktop patch that added sawmills to the game?","April 1, 2014","August 17th, 2011",simpleqa,short_form,no_thinking,0,0.0,0.91193736,0.05
+simpleqa_270,"What day, month, and year did Jovian become a Roman emperor?","April 26, 407 AD.",27 June 363,simpleqa,short_form,no_thinking,0,0.0,0.91677123,0.05
+simpleqa_271,"On which day, month, and year were Alison Mori and Christian Gyrling promoted to vice presidents of Naughty Dog?","July 20, 2021",4 Dec 2020,simpleqa,short_form,no_thinking,0,0.0,0.9253095,0.05
+simpleqa_272,What is the name of the ballet Valery Matveevich Panov created for the Istanbul Devlet Ballet in 1988?,The Nutcracker,Cléopâtre,simpleqa,short_form,no_thinking,0,0.0,0.89634776,0.05
+simpleqa_273,"What was the name of the composer of the opening theme song for the radio program ""The American Album of Familiar Music""?",Ralph Vaughan Williams,"Walter Gustave ""Gus"" Haenschen",simpleqa,short_form,no_thinking,0,0.0,0.89889336,0.05
+simpleqa_274,How many years did Sidney Abbott attend Smith College?,1893–1895,3 years.,simpleqa,short_form,no_thinking,0,0.0,0.91083723,0.05
+simpleqa_275,"Who was the father of the Russian stage actress and singer ""Baroness Olga Vadimovna von Root?""",Vladimir Root,Baron Vadim Nikolayevich von Root,simpleqa,short_form,no_thinking,0,0.0,0.9362709,0.05
+simpleqa_276,What is the name of the town in England where Clifford Cunnel was born?,Bromley.,Ipswich,simpleqa,short_form,no_thinking,0,0.0,0.9055442,0.05
+simpleqa_277,What is the initial name of the political party that Emmanuel Macron founded?,Republican Rally for the People,En Marche!,simpleqa,short_form,no_thinking,0,0.0,0.91329753,0.05
+simpleqa_278,What high school did pitcher Christopher Deane Haney attend?,Haney High School,Orange County High School,simpleqa,short_form,no_thinking,0,0.0,0.9128014,0.05
+simpleqa_279,In what year was Alma S. Woolley awarded a doctorate in Nursing Education by the University of Pennsylvania?,1969,1980,simpleqa,short_form,no_thinking,0,0.0,0.9101906,0.05
+simpleqa_280,"What day, month, and year was the ""Playlist: The Very Best of Heather Headley"" released?","July 19, 1995","May 29, 2012",simpleqa,short_form,no_thinking,0,0.0,0.9188107,0.05
+simpleqa_281,"What was Miriam ""Ma"" Ferguson's age when she first got married?",23,24 years,simpleqa,short_form,no_thinking,0,0.0,0.9213352,0.05
+simpleqa_282,"What year was the municipality of Turbo, Antioquia, Colombia, founded?",1876,1840,simpleqa,short_form,no_thinking,0,0.0,0.90692,0.05
+simpleqa_283,What were the population counts for the two municipalities of Mitrovica according to the 2011 census?,"15,565 and 10,643","97,686",simpleqa,short_form,no_thinking,0,0.0,0.91313833,0.05
+simpleqa_284,"As of the latest official population estimate in 2015 for the town of Szentes in southeastern Hungary, what is the population density in square kilometers?",123 people per square kilometer,79/km2,simpleqa,short_form,no_thinking,0,0.0,0.9190819,0.05
+simpleqa_285,In which year was Whig politician James Vernon the Younger appointed Serjeant of the Chandlery?,1833,1691,simpleqa,short_form,no_thinking,0,0.0,0.90474355,0.05
+simpleqa_286,In what year was the Logic Theorist computer program written?,1956,1956.,simpleqa,short_form,no_thinking,1,1.0,0.96679735,0.05
+simpleqa_287,What is the surname of the individual who won the Sir George Stokes Award (colloquially the Stokes Medal) in 2001?,Hawking,Norris,simpleqa,short_form,no_thinking,0,0.0,0.902002,0.05
+simpleqa_288,"What was Hank Green's character, The Fix, a manifestation of on Dimension 20's Mentopolis?","The Fix is a manifestation of Hank Green's character as a ""fixer"" in Dimension 20's Mentopolis.",hyperfixation,simpleqa,short_form,no_thinking,0,0.0,0.89992476,0.05
+simpleqa_289,"What day, month, and year was the first Sazae-san strip run by the Asahi Shimbun published?","January 1, 1961","November 30, 1949",simpleqa,short_form,no_thinking,0,0.0,0.9138814,0.05
+simpleqa_290,In what year was American music producer George Avakian appointed the first director of the popular LP department at Columbia Records?,1948,1952.,simpleqa,short_form,no_thinking,0,0.0,0.9245686,0.05
+simpleqa_291,"What is the surname of the individual who won the Faraday Lectureship Prize, previously known simply as the Faraday Lectureship, in 1953?",Hodges,Hinshelwood,simpleqa,short_form,no_thinking,0,0.0,0.89976746,0.05
+simpleqa_292,"In her 2017 election affidavit, how much did the politician Umlesh Yadav mention her assets and liabilities were worth in crores?",1.5,₹55.10 crores and liabilities are worth ₹7.95 crores.,simpleqa,short_form,no_thinking,0,0.0,0.9077759,0.05
+simpleqa_293,At what university was Lois Griffiths appointed as an instructor in mathematics immediately following the award of her doctorate?,MIT,Northwestern.,simpleqa,short_form,no_thinking,0,0.0,0.91478556,0.05
+simpleqa_294,"Which famous drummer opened a Wahoo's Fish Taco restaurant in Norco, California, in 2004?",Dave Grohl,Travis Barker,simpleqa,short_form,no_thinking,0,0.0,0.9072487,0.05
+simpleqa_295,"In which year did the Royal Society of Arts launch the Adelphi Charter, aimed at creating an international policy statement to frame how governments should make balanced intellectual property law?",1848,2005,simpleqa,short_form,no_thinking,0,0.0,0.90062386,0.05
+simpleqa_296,What is the population of Port Huron as per the 2020 Census?,"33,645","28,983",simpleqa,short_form,no_thinking,0,0.0,0.93028545,0.05
+simpleqa_297,What is the name of the man who succeeded Gösta Mittag-Leffler as a professor of mathematics at Stockholm University in July 1911?,Rudolf Lipschitz,Niels Fabian Helge von Koch,simpleqa,short_form,no_thinking,0,0.0,0.8989918,0.05
+simpleqa_298,"In which year was the municipality of Samacá, Boyacá, Colombia, founded?",1851,1556,simpleqa,short_form,no_thinking,0,0.0,0.9080003,0.05
+simpleqa_299,"In which month and year did Harnaam Kaur first feature in the Teen Vogue article ""Instagrammers Challenge Body and Facial Hair Stigma""?",April 2017,March 2017,simpleqa,short_form,no_thinking,0,0.0,0.93399066,0.05
+simpleqa_300,In what year was Valery Matveevich Panov awarded the Lenin Prize?,1988,1969,simpleqa,short_form,no_thinking,0,0.0,0.91889286,0.05
+simpleqa_301,In what major painting exhibition did artist J.C. Leyendecker earn a spot in 1897?,Artists' Annual Exhibition,The Salon Champs de Mars,simpleqa,short_form,no_thinking,0,0.0,0.9092825,0.05
+simpleqa_302,"What is the name of the eighth track on the album ""These Two Windows"" by Alec Benjamin?","""Rise and Fall""",Alamo,simpleqa,short_form,no_thinking,0,0.0,0.90120053,0.05
+simpleqa_303,"What are the four classifications of techniques and methodologies for mental fatigue measurement mentioned in Faramarz Gharagozlou et al.'s 2015 research paper, ""Detecting Driver Mental Fatigue Based on EEG Alpha Power Changes During Simulated Driving""?","Subjective, Objective, Physiological, and Behavioral.","subjective,  psychological,  performance and physiological  methods",simpleqa,short_form,no_thinking,0,0.0,0.94949156,0.05
+simpleqa_304,Who was the Deputy Speaker of the Tamil Nadu Legislative Assembly when Munu Adhi was the Speaker of the Tamil Nadu Legislative Assembly from 1977 to 1980?,S. S. Arunachalam,Su. Thirunavukkarasar,simpleqa,short_form,no_thinking,0,0.0,0.91500354,0.05
+simpleqa_305,"In which Community episode is Evil Abed's first appearance? Please give the season, episode number, and title.","S2E10, ""The Conformity of the Others""","Season 3 Episode 4 ""Remedial Chaos Theory""",simpleqa,short_form,no_thinking,0,0.0,0.92240655,0.05
+simpleqa_306,What was the first and last name of the curator who was publicly criticized in 1906 by the director of the Albright Art Gallery in Buffalo for his cleaning of a Rubens painting?,John G. H. Harington,Roger Fry.,simpleqa,short_form,no_thinking,0,0.0,0.90213245,0.05
+simpleqa_307,What length in millimeters did the NS 4000 in the Netherlands have?,1200 mm,"20,775",simpleqa,short_form,no_thinking,0,0.0,0.90706027,0.05
+simpleqa_308,What was the first name of Swiss painter Benjamin Samuel Bolomey's mother?,Eleanor,Pernette,simpleqa,short_form,no_thinking,0,0.0,0.90525466,0.05
+simpleqa_309,"How many minutes and seconds is Karan Aujla's song ""It Ain't Legal""?",3:30,3:34,simpleqa,short_form,no_thinking,0,0.0,0.93744427,0.05
+simpleqa_310,"What month and year did the New Brighton Pier in Christchurch, New Zealand, reopen following earthquake repairs in 2017?",April 2017,May 2018,simpleqa,short_form,no_thinking,0,0.0,0.92047644,0.05
+simpleqa_311,What year was Albert-László Barabási awarded the FEBS Anniversary Prize for Systems Biology?,2007,2005,simpleqa,short_form,no_thinking,0,0.0,0.9231423,0.05
+simpleqa_312,What was the first and last name of the President of the Society of Illustrators from 1921-1922?,Franklin P. Adams,Edward Penﬁeld,simpleqa,short_form,no_thinking,0,0.0,0.897281,0.05
+simpleqa_313,Who kills Daryl Garrs in Happy Valley?,Graham.,Alison Garrs,simpleqa,short_form,no_thinking,0,0.0,0.89687365,0.05
+simpleqa_314,"In September 2022, biologists reported what number of Devils Hole Pupfish in Devils Hole, the most they'd observed in 19 years?","1,128",263.,simpleqa,short_form,no_thinking,0,0.0,0.9269004,0.05
+simpleqa_315,"What year did Church of the Highlands open ""The Lodge at Grants Mill"" on its main campus in Irondale, Alabama?",2006,2023,simpleqa,short_form,no_thinking,0,0.0,0.91375095,0.05
+simpleqa_316,"In which year did Dina Nath Walli (an Indian watercolor artist and poet from Srinagar city) return to Srinagar, where he concentrated on landscape painting in watercolors?",1947,1936,simpleqa,short_form,no_thinking,0,0.0,0.9233377,0.05
+simpleqa_317,"As of the latest official population estimate in 2015 for the town of Szentes in southeastern Hungary, what is the total population?","12,565","27,898",simpleqa,short_form,no_thinking,0,0.0,0.9143606,0.05
+simpleqa_318,From what university did John P. Sall receive an honorary doctorate in 2003?,University of Texas at Austin,North Carolina State University,simpleqa,short_form,no_thinking,0,0.0,0.9086703,0.05
+simpleqa_319,What is the full name of the Indian politician who is quoted comparing Kashmir's Martyrs' Day with the Jallianwala Bagh Massacre?,Mamta Banerjee,Sheikh Mohammad Abdullah,simpleqa,short_form,no_thinking,0,0.0,0.8966085,0.05
+simpleqa_320,In what year did William John Youden publish his first paper on statistical methods?,1925,1931,simpleqa,short_form,no_thinking,0,0.0,0.9106855,0.05
+simpleqa_321,"What were the first, middle, and last names of the second son of Amadeus Mozart?","Wolfgang Amadeus Mozart's second son was **Wolfgang**. However, the question asks for the first, middle, and last names of the second son. The second son of Mozart was **Wolfgang** (first name), **Amadeus** (middle name), and **Mozart** (last name). But since the question is about the second son, the answer is **Wolfgang Amadeus Mozart**.",Karl Thomas Mozart.,simpleqa,short_form,no_thinking,0,0.0,0.9170165,0.05
+simpleqa_322,Who replaced Don Santos in the band group Immature?,Randy Rhoads,"Kelton ""LDB"" Kessee",simpleqa,short_form,no_thinking,0,0.0,0.89840657,0.05
+simpleqa_323,On which month and day was the 1985 St. Louis mayoral election held?,April 23,April 2,simpleqa,short_form,no_thinking,1,1.0,0.9383711,0.05
+simpleqa_324,"What was the song for the lip sync in Episode 5, Season 1 of RPDR?","""Shake It Off""","""Stronger"" by Britney Spears",simpleqa,short_form,no_thinking,0,0.0,0.91618985,0.05
+simpleqa_325,"What is the surname of the individual who won the Robert Boyle Prize for Analytical Science, formerly called the Boyle Medal, in 2012?",Hodgson,Dovichi,simpleqa,short_form,no_thinking,0,0.0,0.8974103,0.05
+simpleqa_326,Who was awarded the John J. Carty Award for the Advancement of Science in 1994?,Robert A. Fraley,Marina Ratner,simpleqa,short_form,no_thinking,0,0.0,0.89805645,0.05
+simpleqa_327,What was the true vertical depth in meters at which hydrocarbons were encountered in the Eban-1X well?,1500 meters,3949m,simpleqa,short_form,no_thinking,0,0.0,0.9177773,0.05
+simpleqa_328,In what month and year did Wangchuk start a project called the Ice Stupa?,April 2009,January 2014.,simpleqa,short_form,no_thinking,0,0.0,0.9023025,0.05
+simpleqa_329,"What were the month, day, and year Peder Munk of Estvadgård was born?","April 1, 1585","April 22, 1534",simpleqa,short_form,no_thinking,0,0.0,0.93269837,0.05
+simpleqa_330,"What was the strike rate of Manish Pandey in the 2019 IPL match between KKR and SRH on March 24, 2019?",87.5%,160.00,simpleqa,short_form,no_thinking,0,0.0,0.91323674,0.05
+simpleqa_331,What signature piece of the MOBA did Scott Wilson discover on the curb between two trash cans?,Rift Herald,Lucy in the Field with Flowers,simpleqa,short_form,no_thinking,0,0.0,0.8963543,0.05
+simpleqa_332,"In which year did Ranuccio Bianchi Bandinelli, an Italian archaeologist and art historian, found the Dialoghi di archeologia with his students?",1953,1967,simpleqa,short_form,no_thinking,0,0.0,0.9135072,0.05
+simpleqa_333,What quote did Dr. Richard Trager say to Miles Upshur while opening the elevator door right before he died in the 2013 video game Outlast?,"""Good luck, Miles.""",I'm not giving up on you,simpleqa,short_form,no_thinking,0,0.0,0.9108006,0.05
+simpleqa_334,"In what year was the Ajah campus of Pan-Atlantic University (Lagos, Nigeria) completed?",2003,2003,simpleqa,short_form,no_thinking,1,1.0,1.0,0.05
+simpleqa_335,"On which day, month, and year did Indu Malhotra retire as a judge of the Supreme Court of India?","2013, April 15",13 March 2021,simpleqa,short_form,no_thinking,0,0.0,0.91728944,0.05
+simpleqa_336,Which team won the 2013–14 CEV Challenge Cup?,Panathinaikos,Fenerbahçe Grundig,simpleqa,short_form,no_thinking,0,0.0,0.90197045,0.05
+simpleqa_337,What is the square footage of the gallery space of the State Hermitage Museum?,"12,000 square meters","719,480 square feet",simpleqa,short_form,no_thinking,0,0.0,0.9264581,0.05
+simpleqa_338,"In the British drama series Happy Valley, in which season and episode is Kirsten McAskill murdered by Royce?","Season 3, Episode 5.",Season 1 episode 3,simpleqa,short_form,no_thinking,0,0.0,0.9385464,0.05
+simpleqa_339,"Despite the Warden of the Kingston Penitentiary claiming the treatments were humane, according to the 1856 report, how many bed deprivations with concurrent bread and water diets were given that year?",120,"1,600",simpleqa,short_form,no_thinking,0,0.0,0.9238148,0.05
+simpleqa_340,"In what year did Dennis Ichiyama become the designer-in-residence at the Hamilton Wood Type and Printing Museum in Two Rivers, Wisconsin, working with historic wood type?",1996,1999,simpleqa,short_form,no_thinking,0,0.0,0.9056787,0.05
+simpleqa_341,"In which country was Robert “Bob” Guy Walls, a painter born in 1927, born?",Canada,New Zealand,simpleqa,short_form,no_thinking,0,0.0,0.9212635,0.05
+simpleqa_342,"What day, month, and year did William II of Holland become King of Germany?",10 November 1022,3 October 1247,simpleqa,short_form,no_thinking,0,0.0,0.90967417,0.05
+simpleqa_343,"What is the first name and surname of the actress who was the guest star that played the bride named Risa in Ally McBeal Season 3, Episode 1?","Rita
+
+**Answer:** Rita",Tracy Middendorf,simpleqa,short_form,no_thinking,0,0.0,0.9008864,0.05
+simpleqa_344,Who won the Gerard P. Kuiper Prize in 2001?,S. James Stoker,Bruce W. Hapke,simpleqa,short_form,no_thinking,0,0.0,0.8938558,0.05
+simpleqa_345,"What episode of the TV show ""Sister, Sister"" did Chip Fields-Hurd direct?","Sister, Sister: ""The Day the Music Died""","Season 6 Episode 21 ""The Road Less Traveled""",simpleqa,short_form,no_thinking,0,0.0,0.9006006,0.05
+simpleqa_346,"What day, month, and year did the patch from The Burning Crusade expansion of World of Warcraft reduce the cooldown of Crusader Strike from 10 to 6 seconds?","April 1, 2007",13 Nov 2007,simpleqa,short_form,no_thinking,0,0.0,0.9245022,0.05
+simpleqa_347,Which fraternity did John Gilbert Layton become a part of while at McGill University?,Kappa Delta Psi,Sigma Chi,simpleqa,short_form,no_thinking,0,0.0,0.91599953,0.05
+simpleqa_348,"What is the height (in meters) of the light multipurpose aircraft T-101 named Grach, based on the AN-2 biplane that was designed by Evgeny Grunin, which took its first flight on December 7, 1994?",10.5 meters,4.86 m,simpleqa,short_form,no_thinking,0,0.0,0.92703897,0.05
+simpleqa_349,In what year was the talking head of Madame Leota updated to float around the Séance Room at Disneyland?,1994,2004,simpleqa,short_form,no_thinking,0,0.0,0.90736645,0.05
+simpleqa_350,"In what year was Celia Hoyles appointed Professor of Mathematical Education at the Institute of Education, University of London?",1994,1984.,simpleqa,short_form,no_thinking,0,0.0,0.91532403,0.05
+simpleqa_351,"What is the name of the team that Filip Hašek, the footballer, played against during his professional debut on July 22, 2018?",Brentford FC,Slovácko,simpleqa,short_form,no_thinking,0,0.0,0.88742435,0.05
+simpleqa_352,"What reward did Mishary Alafasy receive on October 25, 2008?",National Order of Merit,Arab Creativity Oscar.,simpleqa,short_form,no_thinking,0,0.0,0.90010893,0.05
+simpleqa_353,Off of what coast of Morrowind does the DLC Dragonborn take place?,Dragonborn Coast,North,simpleqa,short_form,no_thinking,0,0.0,0.90906554,0.05
+simpleqa_354,"What trophy was won on October 12, 2019, by Kaizer Chiefs Football Club?",Café Cup,The Shell Ultra Helix Cup.,simpleqa,short_form,no_thinking,0,0.0,0.921882,0.05
+simpleqa_355,What was the name of India's first-ever cricket team?,India National Team,Oriental Cricket Club,simpleqa,short_form,no_thinking,0,0.0,0.9140248,0.05
+simpleqa_356,In which year did John B. Goodenough receive the Welch Award in Chemistry?,2019,2017,simpleqa,short_form,no_thinking,0,0.0,0.9323734,0.05
+simpleqa_357,Who created the scarf that Isadora Duncan was wearing when she died in a car accident?,Sergei Diaghilev,Roman Chatov.,simpleqa,short_form,no_thinking,0,0.0,0.90557253,0.05
+simpleqa_358,Who won the Benjamin Franklin Medal for Computer and Cognitive Science in 2003?,Alan Kay,John McCarthy,simpleqa,short_form,no_thinking,0,0.0,0.8961646,0.05
+simpleqa_359,In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?,2016,1975,simpleqa,short_form,no_thinking,0,0.0,0.905949,0.05
+simpleqa_360,Who wrote the music for the Romanian anthem?,Gheorghe Popescu,Anton Pann,simpleqa,short_form,no_thinking,0,0.0,0.9018288,0.05
+simpleqa_361,For which work was Richard F. Fenno Jr. awarded the D.B. Hardeman Prize?,The Rise of the American Republic,Home Style: House Members in Their Districts,simpleqa,short_form,no_thinking,0,0.0,0.9062139,0.05
+simpleqa_362,What role did Darsheel Safary play in the series Yeh Hai Aashiqui in 2016?,Music Director,Abhay,simpleqa,short_form,no_thinking,0,0.0,0.89763993,0.05
+simpleqa_363,"What was the original name of the station ""Carlos Gardel"" on the Buenos Aires Subway?",Casa de la Cultura,Agüero,simpleqa,short_form,no_thinking,0,0.0,0.89348245,0.05
+simpleqa_364,From which Louisiana university did former Belizean Prime Minister Manuel Esquivel earn his B.S. degree in physics?,University of Louisiana at Lafayette,"Loyola University, New Orleans",simpleqa,short_form,no_thinking,0,0.0,0.92345494,0.05
+simpleqa_365,"In which year, month, and day was the Nokia 8110 announced?",April 2003,9 September 1996,simpleqa,short_form,no_thinking,0,0.0,0.90425766,0.05
+simpleqa_366,What type of gun did Kaitlin Armstrong use to kill Moriah Wilson?,Ruger 1100.,SIG Sauer P365,simpleqa,short_form,no_thinking,0,0.0,0.91656315,0.05
+simpleqa_367,"What was the complete name of the college in Delhi in which Ashraf Abbasi, the first Deputy Speaker of the National Assembly of Pakistan, studied?",University of Delhi,Lady Hardinge Medical College,simpleqa,short_form,no_thinking,0,0.0,0.90340453,0.05
+simpleqa_368,"On which date (month, day, year) was Josep Clarà i Ayats' sculpture *Serenity*, located in Washington, D.C., dedicated?","April 15, 1999","March 12, 1924",simpleqa,short_form,no_thinking,0,0.0,0.910988,0.05
+simpleqa_369,What did Vergil say to Dante in DMC 3 after stabbing him with the Yamato in their first fight?,"""Let the blood be on your hands.""","""Foolishness, Dante. Foolishness. Might controls everything. And without strength you can not protect anything. Let alone yourself.""",simpleqa,short_form,no_thinking,0,0.0,0.9074041,0.05
+simpleqa_370,"Conservation work on Lord Limerick’s Follies at Tollymore Park, Newcastle, Co. Down, began in May 2010, in memory of which conservation architect who died in 2008?",Sir Robert McCulloch,Dick Oram,simpleqa,short_form,no_thinking,0,0.0,0.8989403,0.05
+simpleqa_371,What were the names of the two sons of the Karnofsky family that Louis Armstrong helped?,Jack and Joe,Morris and Alex,simpleqa,short_form,no_thinking,0,0.0,0.9118429,0.05
+simpleqa_372,"As of the 2020 census, what was the population of the city of Fort Oglethorpe, which is in the U.S. state of Georgia?","1,667","10,423",simpleqa,short_form,no_thinking,0,0.0,0.9236436,0.05
+simpleqa_373,"On what day, month, and year did Camarillo Plaza in California unveil a 13-foot (4.0 m) in diameter floral clock for the first time?","April 15, 1994",19 May 2016,simpleqa,short_form,no_thinking,0,0.0,0.9115924,0.05
+simpleqa_374,Which Google Sheets function is specifically designed to convert a Unix epoch timestamp to a regular datetime in the UTC timezone?,UNIXTOGMTIME,EPOCHTODATE,simpleqa,short_form,no_thinking,0,0.0,0.93009186,0.05
+simpleqa_375,"What were the day, month, and year when Dr. Walensky said the Centers for Disease Control and Prevention (CDC) would make drastic changes in the wake of mistakes during the COVID-19 pandemic and outlined an overhaul of how the Centers for Disease Control and Prevention would analyze and share data and how they would communicate information to the general public?","April 12, 2021",17 August 2022,simpleqa,short_form,no_thinking,0,0.0,0.9233675,0.05
+simpleqa_376,What is the name of Zanele Muholi's first solo exhibition?,"""Black is Beautiful""","""Visual Sexuality: Only Half the Picture""",simpleqa,short_form,no_thinking,0,0.0,0.90597284,0.05
+simpleqa_377,In which season and episode of Peaky Blinders do Tommy and Alfie discuss crossing the line?,"Season 4, Episode 10.","Season 3, Episode 6",simpleqa,short_form,no_thinking,0,0.0,0.9260845,0.05
+simpleqa_378,Which football team won the first and only ELFA Challenge Cup competition in 1922?,Belfast Celtic F.C.,Stoke Ladies,simpleqa,short_form,no_thinking,0,0.0,0.9002537,0.05
+simpleqa_379,What was the name of the elementary school where World Changers Ministries Christian Center held their first worship service?,Cedar Ridge Elementary School,Kathleen Mitchell Elementary School,simpleqa,short_form,no_thinking,0,0.0,0.91668266,0.05
+simpleqa_380,"On what day, month, and year was Joeri Verlinden born?",25 April 1986,22 January 1988,simpleqa,short_form,no_thinking,0,0.0,0.9232389,0.05
+simpleqa_381,What year did Doris Salcedo get the Rolf Schock Prize in Visual Arts for the first time?,2014,2017,simpleqa,short_form,no_thinking,0,0.0,0.9223314,0.05
+simpleqa_382,"On what month, day, and year did Google run its first live-action video doodle?","July 29, 2009","April 15, 2011",simpleqa,short_form,no_thinking,0,0.0,0.9137619,0.05
+simpleqa_383,Who was the director responsible for the core web search algorithms from 2002 to 2005 at Google Inc.?,Sergey Brin,Peter Norvig,simpleqa,short_form,no_thinking,0,0.0,0.8993928,0.05
+simpleqa_384,"Haddo House, designed by William Adam, contains a collection of 85 paintings by which artist?",Gainsborough,James Giles,simpleqa,short_form,no_thinking,0,0.0,0.896658,0.05
+simpleqa_385,In which year did Maryam Mirzakhani (an Iranian mathematician) become a professor at Stanford University?,2013,2009,simpleqa,short_form,no_thinking,0,0.0,0.92398906,0.05
+simpleqa_386,To whom was Ida Adamoff married?,Eliot Ness,Claude Bourdet,simpleqa,short_form,no_thinking,0,0.0,0.89890367,0.05
+simpleqa_387,What is the name of track 8 on the album The Awesome Album that appeared on the Parks and Recreation TV series?,"""Rise Up""",Menace Ball,simpleqa,short_form,no_thinking,0,0.0,0.9043366,0.05
+simpleqa_388,Who won the International Photography Awards' Discovery of the Year award in 2015?,Alessandra Sambataro,Ville Kansanen,simpleqa,short_form,no_thinking,0,0.0,0.9020486,0.05
+simpleqa_389,"How many stolen vehicles were recovered in Nigeria by the Nigerian Police Force between 2002 and 2004, when Mustafa Adebayo Balogun was Nigeria's Inspector General of Police?","1,234 vehicles","2,148",simpleqa,short_form,no_thinking,0,0.0,0.9249337,0.05
+simpleqa_390,How many total lunar eclipses were there in 1982?,1,3,simpleqa,short_form,no_thinking,0,0.0,0.9126531,0.05
+simpleqa_391,"What were the day, month, and year when Instagram introduced comment liking?","July 20, 2016","December 6, 2016",simpleqa,short_form,no_thinking,0,0.0,0.9288857,0.05
+simpleqa_392,"Who wrote the lyrics to ""Dream Serenade,"" the opening theme song for the radio program ""The American Album of Familiar Music""?",Bryan Adams,Alfred Bryan,simpleqa,short_form,no_thinking,0,0.0,0.91560936,0.05
+simpleqa_393,What year was the LEGO part with ID 33085 first released?,2016,1998,simpleqa,short_form,no_thinking,0,0.0,0.9080322,0.05
+simpleqa_394,"On what day, month, and year was Algerian artist Mohammed Racim born?","February 21, 1933","June 24th, 1896.",simpleqa,short_form,no_thinking,0,0.0,0.9161416,0.05
+simpleqa_395,"When was the exact day, month, and year the FPT University was founded?","March 1, 2006","September 8, 2006",simpleqa,short_form,no_thinking,0,0.0,0.9282614,0.05
+simpleqa_396,"What is the dry weight, in pounds, of the Honda RC143 (1960)?",1200 pounds,205,simpleqa,short_form,no_thinking,0,0.0,0.91521496,0.05
+simpleqa_397,"What university did Mustafa Adebayo Balogun, former Inspector General of Police (Nigeria), obtain a law degree from?",University of Ibadan,University of Ibadan,simpleqa,short_form,no_thinking,1,1.0,1.0,0.05
+simpleqa_398,Who received the IEEE Frank Rosenblatt Award in 2013?,Yoshua Bengio,Terrence Sejnowski,simpleqa,short_form,no_thinking,0,0.0,0.9025642,0.05
+simpleqa_399,"In which month and year did Apple add the ability for users to speak ""Hey Siri"" to enable the assistant without the requirement of physically handling the device?",October 2012,September 2014.,simpleqa,short_form,no_thinking,0,0.0,0.9132423,0.05
+simpleqa_400,In which year was Srinagar declared a UNESCO Creative City?,2010,2021,simpleqa,short_form,no_thinking,0,0.0,0.92160475,0.05
+simpleqa_401,"Who won the 2015 Maine State Pumpkin and Squash Weigh-Off, held at the Cumberland Fair?",Cumberland Fairgrounds,Edwin Pierpont,simpleqa,short_form,no_thinking,0,0.0,0.89418405,0.05
+simpleqa_402,"What position did Kelly Clarkson's album, ""Meaning of Life,"" receive on the 2018 year-end US Top Album Sales charts on Billboard?",Number 1,89,simpleqa,short_form,no_thinking,0,0.0,0.9132391,0.05
+simpleqa_403,"When NASA's communication director reported in 2020 that NASA planned to land astronauts on the Moon as part of the U.S. Artemis program, what was the total number of female candidates in the program?",12,Nine,simpleqa,short_form,no_thinking,0,0.0,0.91042024,0.05
+simpleqa_404,How many times has the Pakistan People's Party emerged as the leading opposition party in Pakistan on a national level until 2022?,10 times,four,simpleqa,short_form,no_thinking,0,0.0,0.91810817,0.05
+simpleqa_405,Who choreographed Issey Miyake's produced “Aomori University Men’s Rhythmic Gymnastics Team” performance?,Takako Sato,Daniel Ezralow,simpleqa,short_form,no_thinking,0,0.0,0.89774126,0.05
+simpleqa_406,"Who composed the music for the song ""We Rollin"" by Punjabi singer Shubh?",Rahul S. Bhatia,Anabolic Beatz.,simpleqa,short_form,no_thinking,0,0.0,0.8961513,0.05
+simpleqa_407,Whose painting was purchased by Peter Arrell Browne Widener in 1911 for just over half a million USD?,Edgar Degas,Rembrandt,simpleqa,short_form,no_thinking,0,0.0,0.9081989,0.05
+simpleqa_408,"On what day, month, and year did Frank Schreider, an American explorer, die?","April 14, 1943","January 21, 1994",simpleqa,short_form,no_thinking,0,0.0,0.91507864,0.05
+simpleqa_409,"Which day, month, and year marked the beginning of Moncef Bey's reign?","April 23, 1956","19 June, 1942",simpleqa,short_form,no_thinking,0,0.0,0.91127217,0.05
+simpleqa_410,"What is the title of the tenth track on the album ""Now is the Time"" by South African singer Brenda Fassie, which was released in August 1996?","""Kamikaze""",No Yana,simpleqa,short_form,no_thinking,0,0.0,0.9026278,0.05
+simpleqa_411,"What year was the municipality of Sativasur, Boyacá, Colombia, founded?",1872,1720,simpleqa,short_form,no_thinking,0,0.0,0.8949509,0.05
+simpleqa_412,"Who was the first principal of Brihaspati Vidyasadan, a school in Kathmandu, Nepal, established in 1985?",Rajendra Bahadur Sharma,Maurice Banerjee,simpleqa,short_form,no_thinking,0,0.0,0.9088575,0.05
+simpleqa_413,"The sportsperson who suffered from cardiac arrest on January 3, 2021, was from which sports background in India?",Football,Cricket,simpleqa,short_form,no_thinking,0,0.0,0.91509366,0.05
+simpleqa_414,"At the time of his birth, what was the name of the town in which the former Prime Minister of Poland Kazimierz Władysław Bartel was born?",Włocławek,Lemberg.,simpleqa,short_form,no_thinking,0,0.0,0.8971443,0.05
+simpleqa_415,"What was the first and last name of the first female who won all four major performing arts awards: Emmy, Grammy, Oscar, and Tony (EGOT)?",Meryl Streep,Helen Hayes,simpleqa,short_form,no_thinking,0,0.0,0.9041779,0.05
+simpleqa_416,Why did Alex Trebek drop out of military college in Quebec?,He was diagnosed with cancer.,He was asked to cut his hair,simpleqa,short_form,no_thinking,0,0.0,0.91962415,0.05
+simpleqa_417,Which year was the drug Metformin introduced as a medication in France?,1958,1957,simpleqa,short_form,no_thinking,0,0.0,0.9258222,0.05
+simpleqa_418,"What was the total number of homeless individuals counted in Downey, California, by the Los Angeles Homeless Services Authority's Greater Los Angeles Homeless Count in 2022?","1,663",218,simpleqa,short_form,no_thinking,0,0.0,0.91010576,0.05
+simpleqa_419,In which month and year was Durga Prasad Dhar (an Indian politician) appointed as the Union Minister for Planning?,July 2009,"July, 1972",simpleqa,short_form,no_thinking,0,0.0,0.92636824,0.05
+simpleqa_420,Who was the Friday night headliner of ArcTanGent 2013 on the Arc stage?,Mumford & Sons,65daysofstatic,simpleqa,short_form,no_thinking,0,0.0,0.8953182,0.05
+simpleqa_421,Who won the Anonymous Was A Woman award with a pure drawing in 2019?,Miki Tanaka,Marsha Cottrell,simpleqa,short_form,no_thinking,0,0.0,0.9010408,0.05
+simpleqa_422,"On what day, month, and year did the Brazilian mathematician Leopoldo Luis Cabo Penna Franca marry Ana Cristina Leonardos?","July 1, 1943","July 28, 1983",simpleqa,short_form,no_thinking,0,0.0,0.9199092,0.05
+simpleqa_423,"After relinquishing his office as Governor of the State Bank of Pakistan, which position was Aftab Ghulam Nabi Kazi appointed to in the Government of Pakistan?",Minister of Finance,Deputy Chairman Planning Commission,simpleqa,short_form,no_thinking,0,0.0,0.9105448,0.05
+simpleqa_424,What item was found in a damaged wooden coffin in July 2018 by Ramadan Badry Hussein?,Sphinx stone.,Mask,simpleqa,short_form,no_thinking,0,0.0,0.90401345,0.05
+simpleqa_425,"What famous line does Prince Aemond say to his mother, Alicent, when he loses his eye in House of the Dragon?","""May the gods forgive you.""","""Do not mourn me, Mother. It was a fair exchange. I may have lost an eye, but I gained a dragon.""",simpleqa,short_form,no_thinking,0,0.0,0.91208935,0.05
+simpleqa_426,"On what day, month, and year did the Czech mathematician Miroslav Fiedler die?","April 2, 1949",20 November 2015,simpleqa,short_form,no_thinking,0,0.0,0.9029551,0.05
+simpleqa_427,Who is the credited producer for the Silent Hill 2 Original Soundtrack released in 2001?,Klaus Badelt,Takaharu Ikeda,simpleqa,short_form,no_thinking,0,0.0,0.8962803,0.05
+simpleqa_428,How many new subclasses were introduced in Tasha's Cauldron of Everything (not including reprints from previous books)?,12,22,simpleqa,short_form,no_thinking,0,0.0,0.9061102,0.05
+simpleqa_429,"In which year was the municipality of Heliconia, Antioquia, Colombia, founded?",1872,1814,simpleqa,short_form,no_thinking,0,0.0,0.8962511,0.05
+simpleqa_430,In whose honor was the Leipzig 1877 tournament organized?,Barnett.,Adolf Anderssen,simpleqa,short_form,no_thinking,0,0.0,0.8949069,0.05
+simpleqa_431,What is the chemical name of the drug previously known to treat bacterial infections that Dr. William Schwartz discovered also acts as a diuretic in people with congestive heart failure?,Furosemide,Sulfanilamide.,simpleqa,short_form,no_thinking,0,0.0,0.925417,0.05
+simpleqa_432,"In what year did Washington, D.C.'s Gay Pride Day first name a person of color as the Grand Marshal of its parade?",2008,1983.,simpleqa,short_form,no_thinking,0,0.0,0.9051912,0.05
+simpleqa_433,What is the name of the documentary Ellen Kuzwayo was involved in with Betty Wolpert in 1982?,"""Black and White""",Awake from Mourning,simpleqa,short_form,no_thinking,0,0.0,0.9052985,0.05
+simpleqa_434,What is the name of Vivienne Westwood's Spring-Summer 1983 collection?,"Vivienne Westwood's Spring-Summer 1983 collection was named ""The New Wave.""",Punkature,simpleqa,short_form,no_thinking,0,0.0,0.8980337,0.05
+simpleqa_435,"What year was the municipality of Girardota, Antioquia, Colombia, founded?",1872,1620,simpleqa,short_form,no_thinking,0,0.0,0.9031216,0.05
+simpleqa_436,Who won the silver medal in men's individual foil fencing in the Tokyo 2020 Olympics?,Goran Ivanisevic,Daniele Garozzo,simpleqa,short_form,no_thinking,0,0.0,0.90041125,0.05
+simpleqa_437,In what year was Sir Syed Ahmed Khan appointed as the Munsif of Fatehpur Sikri?,1876,1841,simpleqa,short_form,no_thinking,0,0.0,0.9108899,0.05
+simpleqa_438,Who was the commencement speaker at the Massachusetts Institute of Technology (MIT) in 1994?,Steve Jobs,His Highness Karim Aga Khan IV,simpleqa,short_form,no_thinking,0,0.0,0.8946776,0.05
+simpleqa_439,In what month and year was the Flitzer on Surfside Pier retired?,July 2023,September 2018,simpleqa,short_form,no_thinking,0,0.0,0.91835576,0.05
+simpleqa_440,What was the nationality of the scientists who used lasers to measure Usain Bolt’s performance in the different stages of a 100-meter race held in September 2011?,Australian,Belgian,simpleqa,short_form,no_thinking,0,0.0,0.91765213,0.05
+simpleqa_441,"Who did Kiyosi Ito collaborate with to publish ""On the Probability Distribution on a Compact Group""?",Sergei Bernstein,Yukiyosi Kawada,simpleqa,short_form,no_thinking,0,0.0,0.8951481,0.05
+simpleqa_442,What year was LEGO part ID 3778 initially released?,2001,1979,simpleqa,short_form,no_thinking,0,0.0,0.9032696,0.05
+simpleqa_443,Which scientist was awarded the Gregori Aminoff Prize in 1996?,Robert A. H. van der Waals,Philip Coppens,simpleqa,short_form,no_thinking,0,0.0,0.9001482,0.05
+simpleqa_444,Which school did Carl Van Vechten graduate from in 1898?,University of Michigan,Washington High School.,simpleqa,short_form,no_thinking,0,0.0,0.89909166,0.05
+simpleqa_445,"Which interstate is located near Ramby Avenue, where the KTCZ-FM transmitter on the KMSP Tower is located?",I-495,Interstate 694,simpleqa,short_form,no_thinking,0,0.0,0.9147898,0.05
+simpleqa_446,"What year was the municipality of Hispania, Antioquia, Colombia, founded?",1876,1925,simpleqa,short_form,no_thinking,0,0.0,0.91442996,0.05
+simpleqa_447,"What were the month and year when Google hosted a hacking contest aimed at computer security experts called ""Pwnium""?",October 2016,March 2014,simpleqa,short_form,no_thinking,0,0.0,0.91627043,0.05
+simpleqa_448,"What year was the municipality of Soatá, Boyacá, Colombia, founded?",1851,1545,simpleqa,short_form,no_thinking,0,0.0,0.910902,0.05
+simpleqa_449,In which season of Happy Valley does Claire run into Neil?,Season 3.,Season 2,simpleqa,short_form,no_thinking,0,0.0,0.9295623,0.05
+simpleqa_450,Which team won the 2016–17 Championnat LNA season (86th season of the top-tier basketball league in Switzerland)?,Genève-Saint-Sulpice,Monthey,simpleqa,short_form,no_thinking,0,0.0,0.8901252,0.05
+simpleqa_451,What is the total number of passengers that died when KLM Flight 4805 and Pan Am Flight 1736 collided?,0,583,simpleqa,short_form,no_thinking,0,0.0,0.90231836,0.05
+simpleqa_452,"In which year did Fayaz A. Malik (an Indian pharmacologist, cancer biologist, and scientist) receive the Young Scientist of the Year from the Council of Scientific and Industrial Research?",1986,2009,simpleqa,short_form,no_thinking,0,0.0,0.9027609,0.05
+simpleqa_453,Which high school did the architect Eleanor Manning O'Connor attend?,O'Connell High School,Lynn Classical High School,simpleqa,short_form,no_thinking,0,0.0,0.9098808,0.05
+simpleqa_454,How many weeks did Letecia Stauch's trial last?,12 weeks,5,simpleqa,short_form,no_thinking,0,0.0,0.90305203,0.05
+simpleqa_455,Which scientist received the Penrose Medal after the year Hollis Dow Hedberg received his?,Richard Feynman,John Rodgers,simpleqa,short_form,no_thinking,0,0.0,0.8957891,0.05
+simpleqa_456,What month and year did inmate Porfirio Duarte-Herrera escape from a medium-security Nevada prison without anyone noticing for four days?,April 2014,September 2022,simpleqa,short_form,no_thinking,0,0.0,0.90775937,0.05
+simpleqa_457,"What is the name of the man who purchased Belmont on St. Saviour's Hill, Jersey, UK, in 1822?",William Morris,Sir Colin Halkett,simpleqa,short_form,no_thinking,0,0.0,0.9006514,0.05
+simpleqa_458,On what date did the last total lunar eclipse for three years occur?,"February 12, 2024","November 8, 2022",simpleqa,short_form,no_thinking,0,0.0,0.933162,0.05
+simpleqa_459,In which year was the Kangri cancer effect first studied?,1973,1866,simpleqa,short_form,no_thinking,0,0.0,0.8957678,0.05
+simpleqa_460,What was P. V. Sanjay Kumar's position just before being appointed as a judge of the Supreme Court of India?,Advocate General of Kerala,chief justice of the Manipur High Court,simpleqa,short_form,no_thinking,0,0.0,0.90920097,0.05
+simpleqa_461,"What was the first and last name of the Swiss painter who murdered his landlady, Anne King?",Frida Kahlo,Théodore Gardelle,simpleqa,short_form,no_thinking,0,0.0,0.890014,0.05
+simpleqa_462,In which genus was the orange-spotted bulbul originally described in 1821?,Hypolycaon,Turdus,simpleqa,short_form,no_thinking,0,0.0,0.90094125,0.05
+simpleqa_463,What patch number was the Space Creature set added to in Terraria?,Patch 1.2,1.2.1,simpleqa,short_form,no_thinking,0,0.0,0.9315094,0.05
+simpleqa_464,Who is Gabby Arteta married to in Season 1 of Severance?,Arteta is married to Hana in Season 1 of *Severance*.,Senator Angelo Arteta,simpleqa,short_form,no_thinking,0,0.0,0.906823,0.05
+simpleqa_465,What is the name of the recipient of the Dickson Prize in Medicine in 1996?,David H. Freedman,Philippa Marrack,simpleqa,short_form,no_thinking,0,0.0,0.8957339,0.05
+simpleqa_466,Which hospital was Harry Belafonte born in?,St. Joseph's Hospital,Lying-in Hospital,simpleqa,short_form,no_thinking,0,0.0,0.91895205,0.05
+simpleqa_467,In which episode and season of South Park does Aunt Jemima first appear? Give me the number and title.,"Season 5, ""The Secret to Success""","Episode 2: Gluten Free Ebola, Season eighteen",simpleqa,short_form,no_thinking,0,0.0,0.90052044,0.05
+simpleqa_468,On what date (day/month/year) was Makhdum Khusro Bakhtyar (Pakistani politician) inducted into the Federal Cabinet of Prime Minister Shaukat Aziz?,15 April 1989,4 September 2004,simpleqa,short_form,no_thinking,0,0.0,0.9116606,0.05
+simpleqa_469,Who succeeded Stefano Moshi as presiding bishop of the Evangelical Lutheran Church in Tanzania?,Ambrosius Mwanga Mwanga,Sebastian Kolowa,simpleqa,short_form,no_thinking,0,0.0,0.90133864,0.05
+simpleqa_470,Which U.S. president was the last one to be born in the 18th century?,James Madison,James Buchanan,simpleqa,short_form,no_thinking,0,0.0,0.92743325,0.05
+simpleqa_471,Which mathematician received the Chern Medal in 2022?,Maryam Mirzakhani,Barry Mazur,simpleqa,short_form,no_thinking,0,0.0,0.9018033,0.05
+simpleqa_472,"What was the first and last name of the person who designed the historic Emil J. Oberhoffer House in Lakeville, Minnesota, United States?",Frank Lloyd Wright,Paul Haugen,simpleqa,short_form,no_thinking,0,0.0,0.8963765,0.05
+simpleqa_473,"In which day, month, and year was the song written by Pedro Medina Avendaño declared the national anthem of Bogotá?",15 de abril de 1998,31 July 1974,simpleqa,short_form,no_thinking,0,0.0,0.9118766,0.05
+simpleqa_474,"What day, month, and year was the album ""Beauty Marks"" by Ciara released on CD in Japan?","February 12, 2008","June 5, 2019",simpleqa,short_form,no_thinking,0,0.0,0.9085384,0.05
+simpleqa_475,"On what day, month, and year was the case of United States of America v. Francis Raia filed in the United States Court of Appeals?","April 24, 1997",2 April 2020,simpleqa,short_form,no_thinking,0,0.0,0.92338955,0.05
+simpleqa_476,"What were the month, day, and year Anne Morgan was first styled Baroness Hunsdon?","April 1, 1913",January 13 1559,simpleqa,short_form,no_thinking,0,0.0,0.9103259,0.05
+simpleqa_477,"On what day, month, and year did Florence Farmer, a pioneer of women in politics in Stoke-on-Trent, Staffordshire, England, die?",19 April 1963,"June 26, 1958",simpleqa,short_form,no_thinking,0,0.0,0.9148792,0.05
+simpleqa_478,"What was the name of the first principal of Tyndale Biscoe School in Srinagar, Kashmir?",A. K. N. R. S.,Reverend J.H.Knowles,simpleqa,short_form,no_thinking,0,0.0,0.89456964,0.05
+simpleqa_479,In what year was the Krieger–Nelson Prize awarded to Penny Haxell?,2013,2006,simpleqa,short_form,no_thinking,0,0.0,0.922784,0.05
+simpleqa_480,"Who created the cover artwork for Heavatar's ""All My Kingdoms""?",Kerry James Washington,Kerem Beyit,simpleqa,short_form,no_thinking,0,0.0,0.8981873,0.05
+simpleqa_481,Who is the head of security on Lumon's severed floor in Season 1 of Severance?,Dustin.,Doug Garner,simpleqa,short_form,no_thinking,0,0.0,0.8983352,0.05
+simpleqa_482,Which senator introduced the Act Prohibiting Importation of Slaves into the Senate?,John C. Calhoun,James Turner,simpleqa,short_form,no_thinking,0,0.0,0.90088874,0.05
+simpleqa_483,What were the year and month when the Contract Law of the People's Republic of China was abolished?,2020 December,January 2021,simpleqa,short_form,no_thinking,0,0.0,0.9369705,0.05
+simpleqa_484,What style are the roofs of the ten buildings at the Wasyl Negrych Homestead?,Sloped.,long-shingled Carpathian roof,simpleqa,short_form,no_thinking,0,0.0,0.91067904,0.05
+simpleqa_485,"How many Long-Evans rats were used in the scientific paper, ""A role for anterior thalamic nuclei in affective cognition: interaction with environmental conditions,"" published in Hippocampus in May 2013?",12 rats,102,simpleqa,short_form,no_thinking,0,0.0,0.9025738,0.05
+simpleqa_486,"What is the accession number for Gerhard Emmoser's ""Celestial Globe with Clockwork"" at The Metropolitan Museum of Art?",1996.11.11,17.190.636,simpleqa,short_form,no_thinking,0,0.0,0.9013875,0.05
+simpleqa_487,What is the name of the Japanese scientist who received the Shaw Prize in 2008?,Yoshinori Ohsumi,Shinya Yamanaka,simpleqa,short_form,no_thinking,0,0.0,0.9073638,0.05
+simpleqa_488,How many half-siblings did Louis Moreau Gottschalk have?,Three.,5,simpleqa,short_form,no_thinking,0,0.0,0.91089123,0.05
+simpleqa_489,"On what date, month, and year was the Indian politician Prabhunath Singh born?",15 April 1925,20 November 1953,simpleqa,short_form,no_thinking,0,0.0,0.9102109,0.05
+simpleqa_490,"What city was Richard Serra in when he created his work ""To Lift""?",New York City,New York,simpleqa,short_form,no_thinking,1,1.0,0.9684621,0.05
+simpleqa_491,"On what day, month, and year did the National Institute of Technology Srinagar (NIT Srinagar) become an Institute of National Importance under the NIT Bill passed by the Parliament of India?","April 20, 2019",15 August 2007,simpleqa,short_form,no_thinking,0,0.0,0.9065537,0.05
+simpleqa_492,Which scientist received the Penrose Medal before the year Preston Ercelle Cloud Jr. received his?,Paul Dirac,Francis J. Pettijohn,simpleqa,short_form,no_thinking,0,0.0,0.89634156,0.05
+simpleqa_493,"What is the name and surname of the former President of South Africa who received a state funeral when he died on January 4, 2007?",Nelson Mandela,Viljoen,simpleqa,short_form,no_thinking,0,0.0,0.8992572,0.05
+simpleqa_494,"What is the rate of climb, in feet per minute, of the Agusta A.106 rotorcraft?",1200,"1,220 ft/min",simpleqa,short_form,no_thinking,0,0.0,0.91287833,0.05
+simpleqa_495,Who created Ida Mntwana's bronze statue?,Seymour Chantler,Sarah Lovejoy,simpleqa,short_form,no_thinking,0,0.0,0.8920497,0.05
+simpleqa_496,How many CDs did the original Seiken Densetsu 3 soundtrack include?,2,3,simpleqa,short_form,no_thinking,0,0.0,0.9110523,0.05
+simpleqa_497,"What is the name of the university from which Thabo Cecil Makgoba, Chancellor of the University of the Western Cape in South Africa since 2012, first graduated with a PhD degree in 2009?",University of Cape Town,University of Cape Town,simpleqa,short_form,no_thinking,1,1.0,1.0,0.05
+simpleqa_498,"On what day, month, and year was Richard Evelyn Byrd Jr. promoted to the rank of Lieutenant (Junior Grade)?","April 2, 1923.","June 8, 1915",simpleqa,short_form,no_thinking,0,0.0,0.91661346,0.05
+simpleqa_499,"What town in Gunma Prefecture, Japan, was Kenjiro Shoda born in?",Shirakawa,Tatebayashi,simpleqa,short_form,no_thinking,0,0.0,0.91064805,0.05
