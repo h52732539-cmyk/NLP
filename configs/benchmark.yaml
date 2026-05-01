@@ -1,66 +1,102 @@
-experiment_name: qwen3_4b_latent_similarity
-seed: 42
-output_dir: results/qwen3_4b_latent_similarity
-cache_dir: data/cache
+# ==================================================
+# Benchmark Configuration
+# Project: Semantic Similarity in Latent Space
+#          for LLM Prediction Evaluation
+# Model:   Qwen3-4B  (4-bit quantised)
+# CUDA:    12.4  (NVIDIA driver 12040)
+# ==================================================
 
-model:
-  model_name_or_path: Qwen/Qwen3-4B
-  torch_dtype: bfloat16
-  device_map: auto
-  attn_implementation: flash_attention_2
-  max_input_length: 4096
-  max_new_tokens: 256
-  temperature: 0.0
-  top_p: 1.0
-  enable_thinking: false
-  trust_remote_code: true
+# ── LLM ────────────────────────────────────────────
+llm:
+  model_name: "/hpc2hdd/home/yuxuanzhao/.cache/modelscope/hub/models/Qwen/Qwen3-4B"
 
-representation:
-  layers: [-1, -4, -8, -16]
-  poolings: [mean, last_token]
-  use_prompt_residual: [false, true]
+  # 4-bit BitsAndBytes config
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_compute_dtype: "float16"   # float16 safe for all Ampere+ GPUs
+  bnb_use_double_quant: true
 
-metrics:
-  lexical: [exact_match, token_f1, rouge_l]
-  semantic: [bertscore_f1, simcse_cosine]
-  latent: [cosine]
-  compute_dataset_level_cka: true
+  device_map: "auto"
 
+  # Generation
+  max_new_tokens: 256          # for no_thinking mode
+  thinking_max_new_tokens: 2048  # thinking mode needs more room for <think> block
+  do_sample: false             # greedy decoding → reproducible
+
+  # Option B: ablation – run both modes for every dataset
+  thinking_modes:
+    - "no_thinking"
+    - "thinking"
+
+# ── Embedding models ────────────────────────────────
+embedding_models:
+  - name: "bge-base"
+    hf_id: "BAAI/bge-base-en-v1.5"
+    prefix_passage: ""          # symmetric search: no prefix needed
+    normalize: true
+
+  - name: "minilm"
+    hf_id: "sentence-transformers/all-MiniLM-L6-v2"
+    prefix_passage: ""
+    normalize: true
+
+  - name: "e5-base"
+    hf_id: "intfloat/e5-base-v2"
+    prefix_passage: "passage: " # e5 symmetric: use passage prefix for both sides
+    normalize: true
+
+# ── Datasets ────────────────────────────────────────
 datasets:
-  - name: stsb_validation
-    source: hf
-    path: glue
-    config_name: stsb
-    split: validation
-    candidate_field: sentence1
-    reference_field: sentence2
-    human_score_field: label
-    task_type: regression
+  sciq:
+    hf_id: "allenai/sciq"
+    hf_config: null
+    split: "test"
+    sample_size: 500
+    task_type: "short_form"
+    question_field: "question"
+    answer_field: "correct_answer"
 
-  - name: paws_validation
-    source: hf
-    path: paws
-    config_name: labeled_final
-    split: validation
-    candidate_field: sentence1
-    reference_field: sentence2
-    binary_label_field: label
-    task_type: binary
+  simpleqa:
+    hf_id: "basicv8vc/SimpleQA"
+    hf_config: null
+    split: "test"
+    sample_size: 500
+    task_type: "short_form"
+    question_field: "problem"
+    answer_field: "answer"
 
-  - name: sickr_local
-    source: jsonl
-    path: data/raw/sickr_test.jsonl
-    candidate_field: sentence1
-    reference_field: sentence2
-    human_score_field: relatedness_score
-    task_type: regression
+  natural_questions:
+    # Uses nq_open – the simplified version of NQ (question + list of answers)
+    hf_id: "nq_open"
+    hf_config: null
+    split: "validation"
+    sample_size: 300
+    task_type: "long_form"
+    question_field: "question"
+    answer_field: "answer"         # list[str]
 
-  - name: summeval_local
-    source: jsonl
-    path: data/raw/summeval.jsonl
-    prompt_field: prompt
-    candidate_field: candidate
-    reference_field: reference
-    human_score_field: consistency_score
-    task_type: generation
-    generate_candidate: false
+  truthfulqa:
+    hf_id: "truthful_qa"
+    hf_config: "generation"
+    split: "validation"
+    sample_size: -1                # use all (~817 samples)
+    task_type: "long_form"
+    question_field: "question"
+    answer_field: "best_answer"
+    additional_answers_field: "correct_answers"
+
+# ── Paths ───────────────────────────────────────────
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  results: "results"
+
+# ── Correctness thresholds ──────────────────────────
+correctness:
+  # short_form  → exact match (normalised) + substring fallback
+  # long_form   → token-level F1; sample is "correct" if F1 >= threshold
+  long_form_f1_threshold: 0.3
+
+# ── Similarity analysis ─────────────────────────────
+similarity:
+  metric: "cosine"
+  threshold_n_steps: 200          # grid steps for Youden-J threshold search

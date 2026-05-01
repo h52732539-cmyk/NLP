@@ -5,11 +5,14 @@ __pycache__/
 .ruff_cache/
 *.pyc
 *.pyo
+*.pt
 *.pyd
 *.egg-info/
+*.csv
 build/
 dist/
 
+logs/*
 data/raw/*
 !data/raw/.gitkeep
 !data/raw/README.md
@@ -17,7 +20,7 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 
-results/*
+
 !results/.gitkeep
 
 .cache/

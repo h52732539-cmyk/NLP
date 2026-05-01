@@ -1,257 +1,205 @@
 # Semantic Similarity Measurement in Latent Space for LLM Prediction Evaluation
 
-This repository contains a reproducible research scaffold for studying whether latent-space similarity derived from Qwen3-4B can evaluate model predictions more faithfully than lexical overlap metrics. The implementation is designed for a course research project and focuses on English benchmarks first.
+**Course:** AIAA 4051 — Final Research Project  
+**Model:** Qwen3-4B (4-bit NF4, CUDA 12.4 / NVIDIA driver 12040)
 
-The codebase supports three layers of evaluation:
+---
 
-1. Semantic calibration on sentence-pair benchmarks such as STS-B and SICK-R.
-2. Robustness checks on high lexical overlap data such as PAWS.
-3. Prediction evaluation on generation datasets such as SummEval, with optional self-generated candidates from Qwen3-4B.
+## Research Overview
 
-The main research question is: which hidden layers, pooling strategies, and prompt-conditioned representations from Qwen3-4B best reflect semantic correctness?
+This project investigates whether cosine similarity in embedding space can serve
+as a reliable proxy for factual correctness of LLM-generated answers.
+Two QA task types are compared:
 
-## Research scope
+| Type | Datasets |
+|---|---|
+| Short-form | SciQ · SimpleQA |
+| Long-form | Natural Questions (nq_open) · TruthfulQA |
 
-The default implementation follows these design choices:
+**Ablation (Option B):** every dataset is evaluated under both
+`no_thinking` (concise answers) and `thinking` (chain-of-thought) generation modes.
 
-1. Qwen3-4B is used as the main latent representation extractor.
-2. The primary latent metric is cosine similarity between pooled hidden-state vectors.
-3. Dataset-level linear CKA is reported as an auxiliary representational similarity signal.
-4. Prompt-conditioned residual representations are supported by subtracting a prompt-only encoding from the prompt-plus-answer encoding.
-5. The main comparison baselines are Exact Match, token F1, ROUGE-L, BERTScore, and SimCSE cosine.
+**Embedding models compared:** BGE-base-en-v1.5 · all-MiniLM-L6-v2 · e5-base-v2
 
-## Repository layout
+---
 
-```text
-.
-|- configs/
-|  |- benchmark.yaml
-|- data/
-|  |- raw/
-|  |- processed/
-|- results/
-|- scripts/
-|  |- prepare_data.py
-|  |- run_experiment.py
-|- src/
-|  |- latent_semantic_eval/
-|     |- analysis.py
-|     |- cli.py
-|     |- config.py
-|     |- datasets.py
-|     |- generation.py
-|     |- io_utils.py
-|     |- metrics.py
-|     |- modeling.py
-|     |- pipeline.py
-|     |- representations.py
-|     |- schemas.py
-|- pyproject.toml
-|- requirements.txt
+## Directory Structure
+
+```
+NLP/
+├── configs/
+│   └── benchmark.yaml          # all hyperparameters & paths
+├── data/
+│   ├── raw/                    # manually downloaded / cached files
+│   └── processed/              # auto-generated JSONL + .npy files
+├── scripts/
+│   ├── prepare_data.py         # Step 1: download & unify datasets
+│   ├── generate_predictions.py # Step 2: Qwen3-4B inference (both modes)
+│   ├── encode_embeddings.py    # Step 3: embed predictions & ground truths
+│   ├── similarity_analysis.py  # Step 4: cosine sim → AUC / threshold
+│   └── failure_analysis.py     # Step 5: FP/FN case extraction
+├── src/
+│   └── evaluation/
+│       └── correctness.py      # EM / token-F1 correctness functions
+├── notebooks/
+│   └── empirical_study.ipynb   # visualisations & summary tables
+├── results/                    # CSVs + figures (auto-created)
+├── requirements.txt
+└── README.md
 ```
 
-## Environment requirements
-
-The code was written to be run on a Linux server or workstation with a real Python environment. It was only checked for syntax in the current workspace and has not been executed end to end locally.
-
-Minimum software requirements:
-
-1. Python 3.10 or 3.11.
-2. CUDA 12.x with a PyTorch build compatible with your driver.
-3. pip 23.0 or newer.
-4. git if you plan to clone and version results.
-
-Recommended hardware for Qwen3-4B latent extraction:
-
-1. One GPU with at least 48 GB VRAM.
-2. 16 CPU cores or more for dataset preparation and result aggregation.
-3. 64 GB system RAM or more.
-4. 100 GB or more free disk space for model weights, caches, processed data, and results.
-
-Optional but recommended:
-
-1. flash-attn for faster attention on supported GPUs.
-2. A Hugging Face access token if the server requires authenticated model downloads.
+---
 
 ## Installation
 
-Use one of the following installation paths on the server.
-
-Option A: create and activate a fresh environment.
+### 1. Install PyTorch with CUDA 12.4
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 \
+    --index-url https://download.pytorch.org/whl/cu124
+```
+
+### 2. Install remaining dependencies
+
+```bash
 pip install -r requirements.txt
-pip install -e .
 ```
 
-Option B: reuse an existing conda or system Python environment and skip environment creation.
+### 3. (Optional) Verify GPU
 
 ```bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-pip install -e .
+python -c "import torch; print(torch.cuda.get_device_name(0))"
 ```
 
-If you want Flash Attention and your GPU/toolchain support it, install it separately after PyTorch is available.
+---
 
-## Required datasets
+## Step-by-step Usage
 
-The benchmark config mixes Hugging Face datasets and local JSONL files.
+Run all commands from the project root directory (`NLP/`).
 
-Included as Hugging Face sources in the default config:
-
-1. STS-B validation split via glue/stsb.
-2. PAWS validation split via paws/labeled_final.
-
-Expected as local JSONL files in data/raw:
-
-1. data/raw/sickr_test.jsonl
-2. data/raw/summeval.jsonl
-
-See data/raw/README.md for the exact JSONL schema expected by the loaders.
-
-## Model access
-
-The default model is Qwen/Qwen3-4B.
-
-Before running on a server, verify the following:
-
-1. The server can download the model from Hugging Face.
-2. Your Hugging Face account has permission if gated access applies.
-3. The installed transformers version supports Qwen3 hidden-state extraction and chat templating.
-
-If authentication is required:
+### Step 1 — Download & pre-process datasets
 
 ```bash
-huggingface-cli login
+python scripts/prepare_data.py
 ```
+
+Downloads SciQ, SimpleQA, NQ (nq_open), TruthfulQA from HuggingFace.  
+Outputs `data/processed/{dataset}_data.jsonl` files.
+
+To process specific datasets only:
+```bash
+python scripts/prepare_data.py --datasets sciq simpleqa
+```
+
+---
+
+### Step 2 — Generate predictions (≈ 10–15 GPU hours)
+
+```bash
+python scripts/generate_predictions.py
+```
+
+Runs Qwen3-4B with 4-bit quantisation in both `no_thinking` and `thinking` modes.  
+Outputs `data/processed/{dataset}_{mode}_predictions.jsonl`.
+
+To run one mode only:
+```bash
+python scripts/generate_predictions.py --thinking_modes no_thinking
+```
+
+---
+
+### Step 3 — Encode embeddings
+
+```bash
+python scripts/encode_embeddings.py
+```
+
+Encodes all prediction / ground-truth pairs with three embedding models.  
+Outputs `data/processed/{dataset}_{mode}_{emb}_pred.npy` and `_gt.npy`.
+
+Increase batch size on large-memory GPUs:
+```bash
+python scripts/encode_embeddings.py --batch_size 128
+```
+
+---
+
+### Step 4 — Similarity analysis
+
+```bash
+python scripts/similarity_analysis.py
+```
+
+Computes cosine similarities, runs ROC / AUC analysis, and finds the optimal
+correctness threshold via Youden's J statistic.  
+Outputs `results/summary_auc.csv` and per-sample CSVs.
+
+---
+
+### Step 5 — Failure case analysis
+
+```bash
+python scripts/failure_analysis.py
+```
+
+Extracts False Positive / False Negative examples and categorises failure causes.  
+Outputs `results/failure_cases_{dataset}_{mode}.csv` and `results/failure_summary.csv`.
+
+---
+
+### Step 6 — Visualisations
+
+Open `notebooks/empirical_study.ipynb` in Jupyter and run all cells.  
+Figures are saved to `results/figures/` as PDF.
+
+---
 
 ## Configuration
 
-The main experiment configuration is stored in configs/benchmark.yaml.
+All settings are controlled by `configs/benchmark.yaml`.
 
-Important fields to review before running:
+Key parameters:
 
-1. model.model_name_or_path
-2. model.torch_dtype
-3. model.max_input_length
-4. representation.layers
-5. representation.poolings
-6. representation.use_prompt_residual
-7. dataset paths for SICK-R and SummEval
+| Parameter | Default | Description |
+|---|---|---|
+| `llm.model_name` | `Qwen/Qwen3-4B` | HuggingFace model ID |
+| `llm.bnb_4bit_quant_type` | `nf4` | BitsAndBytes quant type |
+| `llm.max_new_tokens` | `256` | Max tokens for no_thinking |
+| `llm.thinking_max_new_tokens` | `2048` | Max tokens for thinking mode |
+| `llm.thinking_modes` | `[no_thinking, thinking]` | Ablation modes |
+| `correctness.long_form_f1_threshold` | `0.3` | Token-F1 threshold for long-form |
+| `similarity.threshold_n_steps` | `200` | Grid steps for Youden-J search |
 
-The local dataset format is intentionally explicit so that you can replace it with your own annotated data later without changing core code.
+---
 
-## Reproduction workflow
+## Correctness Evaluation
 
-### Step 1: Prepare datasets
+| Task type | Method |
+|---|---|
+| Short-form (SciQ, SimpleQA) | Normalised Exact Match + substring containment |
+| Long-form (NQ) | Token-level F1 ≥ 0.3 |
+| Long-form (TruthfulQA) | Match against any correct answer in `correct_answers` list |
 
-Standardize all configured datasets into a shared JSONL format:
+---
 
-```bash
-python scripts/prepare_data.py --config configs/benchmark.yaml
-```
+## Expected GPU Budget
 
-This writes standardized files into data/processed.
+| Step | Estimated time |
+|---|---|
+| Qwen3-4B inference (×2 modes, ~2,300 samples) | 10–15 h |
+| Embedding encoding (3 models) | 2–5 h |
+| Total | **< 20 h** (well within 50 h budget) |
 
-### Step 2: Run the full evaluation pipeline
+---
 
-```bash
-python scripts/run_experiment.py --config configs/benchmark.yaml
-```
+## Part 4 — Improvement Direction
 
-The pipeline will:
+Failure analysis (Step 5) provides motivation for a hyperbolic-geometry
+embedding approach. The proposed improvement — mapping Euclidean embeddings to
+a **Poincaré Ball** and computing hyperbolic distance — is aligned with:
 
-1. Load or standardize the configured datasets.
-2. Optionally generate missing candidates with Qwen3-4B.
-3. Extract hidden-state representations for candidates and references.
-4. Compute lexical, semantic, and latent-space metrics.
-5. Save row-level results and dataset summaries to results.
+- He et al. *HELM: Hyperbolic Large Language Models via Mixture-of-Curvature Experts* (arXiv:2505.24722, 2025)  
+- Patil et al. *Hierarchical Mamba Meets Hyperbolic Geometry* (arXiv:2505.18973, 2025)
 
-### Step 3: Inspect outputs
-
-Expected outputs include:
-
-1. Per-dataset row-level scores in CSV and JSONL form.
-2. Per-dataset metric summaries with correlations and binary classification statistics.
-3. A combined summary file aggregating all datasets.
-4. A copy of the resolved experiment config in the result directory.
-
-### Optional syntax-only validation
-
-Before launching GPU jobs on the server, you can run a syntax-only verification pass:
-
-```bash
-python -m compileall src scripts
-```
-
-This checks Python syntax without downloading models or executing the full pipeline.
-
-## Local JSONL schema
-
-Each JSONL line should contain one evaluation record. The loader accepts any superset of the following keys.
-
-Example for SICK-R style data:
-
-```json
-{"id": "sickr-0001", "sentence1": "A dog is running.", "sentence2": "An animal runs outdoors.", "relatedness_score": 4.3}
-```
-
-Example for SummEval style data:
-
-```json
-{"id": "summeval-0001", "prompt": "Summarize the following article: ...", "candidate": "System summary text.", "reference": "Reference summary text.", "consistency_score": 4.5}
-```
-
-If you want the pipeline to let Qwen3-4B generate candidates automatically, leave the configured candidate field empty in your local file and set generate_candidate: true for that dataset in the config.
-
-## Main outputs and how to read them
-
-For each dataset, the project saves:
-
-1. record_scores.csv: one row per example with all metric values.
-2. record_scores.jsonl: the same information in JSONL form.
-3. metric_summary.csv: per-metric aggregate statistics.
-4. metric_summary.json: the same summary in JSON form.
-
-Key columns in metric_summary.csv:
-
-1. spearman and pearson for human-scored datasets.
-2. pairwise_accuracy for ranking consistency.
-3. auc and best_f1 for binary datasets such as PAWS.
-4. dataset_level_cka for latent representation families.
-5. spearman_ci_low and spearman_ci_high for bootstrap intervals.
-
-## Suggested first experiment
-
-To keep the first run manageable, use the default benchmark config and focus interpretation on:
-
-1. Which Qwen3-4B layers perform best on STS-B.
-2. Whether latent cosine is more robust than lexical overlap on PAWS.
-3. Whether prompt residual representations help on generation-style evaluation.
-4. Whether BERTScore remains a stronger baseline than latent similarity on your first pass.
-
-## Implementation notes
-
-1. Hidden states are extracted with output_hidden_states=True.
-2. Latent cosine is computed example by example.
-3. Linear CKA is computed at the dataset level over the matrix of candidate and reference embeddings.
-4. Prompt-conditioned residuals are computed by subtracting a prompt-only pooled vector from a prompt-plus-answer pooled vector.
-5. The project is designed to be readable and editable for research, not to be a fully optimized production system.
-
-## Known limitations
-
-1. The current implementation prioritizes clarity and reproducibility over maximal throughput.
-2. SummEval and SICK-R are assumed to be prepared locally in the expected JSONL format.
-3. The pipeline does not include notebook visualizations yet; it focuses on reproducible batch runs.
-4. The code has only been checked for syntax in this workspace, not executed end to end on GPU hardware.
-
-## Recommended next extensions
-
-1. Add layer-wise heatmap plotting scripts.
-2. Add thinking vs no-thinking ablation using Qwen3 generation outputs.
-3. Add an NLI-based semantic consistency baseline.
-4. Add a lightweight learned combiner on top of latent and baseline features.
+Implementation decision pending current experiment results.
