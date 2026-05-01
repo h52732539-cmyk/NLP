@@ -1,0 +1,70 @@
+id,question,prediction,ground_truth,dataset,task_type,thinking_mode,is_correct,correctness_score,similarity,sim_predicted_correct,failure_type,failure_cause
+sciq_270,"If the dna from all 46 chromosomes in a human cell nucleus was laid out end to end, it would measure approximately how long?",2 meters,two meters,sciq,short_form,no_thinking,0,0.0,0.9786840677261353,1,false_positive,other
+sciq_427,What do charged particles in motion generate?,Magnetic field,magnetic fields,sciq,short_form,no_thinking,0,0.0,0.962541162967682,1,false_positive,other
+sciq_27,About what percentage of the earth's water is fresh water?,3%,three percent,sciq,short_form,no_thinking,0,0.0,0.9480853080749512,1,false_positive,lexical_variation
+sciq_318,What are the smallest structural and functional unit of all living organisms?,Cell,cells,sciq,short_form,no_thinking,0,0.0,0.9459065794944764,1,false_positive,lexical_variation
+sciq_451,What do you call the basic units of the structure and function of living things?,Cell,cells,sciq,short_form,no_thinking,0,0.0,0.9459065794944764,1,false_positive,lexical_variation
+sciq_335,What is the purpose of a bird using flashy displays?,Attracting mates.,to attract mates,sciq,short_form,no_thinking,0,0.0,0.9450986981391908,1,false_positive,other
+sciq_131,What type of cells detect stimuli?,Sensory cells.,sensory nerve cells,sciq,short_form,no_thinking,0,0.0,0.91855788230896,1,false_positive,semantic_ambiguity
+sciq_295,The behavior of ideal gases is explained by what theory of gases?,Kinetic Theory of Gases,kinetic molecular theory,sciq,short_form,no_thinking,0,0.0,0.914029598236084,1,false_positive,other
+sciq_53,What unit do astronomers use to describe distances in space?,Light-year,light years,sciq,short_form,no_thinking,0,0.0,0.9113391041755676,1,false_positive,lexical_variation
+sciq_260,What is the name of the first stage of photosynthesis?,Light-dependent reactions,light reactions,sciq,short_form,no_thinking,0,0.0,0.9076051115989684,1,false_positive,other
+sciq_358,"The lens focuses light on the retina , which covers the back of the inside of the eye. the retina has light-sensing photoreceptor cells called?",Rod and cone cells.,rods and cones,sciq,short_form,no_thinking,0,0.0,0.8983529806137085,1,false_positive,semantic_ambiguity
+sciq_64,What is produced by the end of meiosis?,Haploid cells.,four haploid cells,sciq,short_form,no_thinking,0,0.0,0.8981736898422241,1,false_positive,other
+sciq_389,Where in the target cells are intracellular receptor proteins found?,Cytoplasm.,cytoplasm or nucleus,sciq,short_form,no_thinking,0,0.0,0.8944542407989502,1,false_positive,other
+sciq_125,What regulates the time of flowering in many species?,Photoperiod.,photoperiodism,sciq,short_form,no_thinking,0,0.0,0.893474817276001,1,false_positive,lexical_variation
+sciq_271,"Matrix is the term for the fluid-filled interior of what structure, where most of the cell’s atp is made?",Mitochondrion,mitochondria,sciq,short_form,no_thinking,0,0.0,0.880894124507904,1,false_positive,lexical_variation
+sciq_465,What are different types of tissues organized into functional units called?,Organ systems.,organs,sciq,short_form,no_thinking,0,0.0,0.878429651260376,1,false_positive,lexical_variation
+sciq_405,Myofibrils are long cylindrical structures that lie parallel to and run the entire length of what fibers?,Muscle fibers.,skeletal muscle fibers,sciq,short_form,no_thinking,0,0.0,0.8784021139144897,1,false_positive,other
+sciq_205,What are classified by climatic factors and types of primary producers?,Biomes,terrestrial biomes,sciq,short_form,no_thinking,0,0.0,0.8738709092140198,1,false_positive,other
+sciq_111,What type of lens is thicker at the edges than it is in the middle?,Convex lens.,concave lens,sciq,short_form,no_thinking,0,0.0,0.8725628852844238,1,false_positive,semantic_ambiguity
+sciq_24,What is the cause of common mold allergies?,Mold spores.,airborne mold spores,sciq,short_form,no_thinking,0,0.0,0.8722809553146362,1,false_positive,other
+sciq_436,"What process, which is in many ways the opposite of photosynthesis, shows the interdependence of producers and consumers?",Respiration,cellular respiration,sciq,short_form,no_thinking,0,0.0,0.8717406988143921,1,false_positive,semantic_ambiguity
+sciq_61,What does a continuous string of earthquakes indicate about a volcano?,Volcano is about to erupt.,eruption is close,sciq,short_form,no_thinking,0,0.0,0.8680800199508667,1,false_positive,other
+sciq_19,How many types of molecular orbitals can form from the overlap of two atomic s orbitals on adjacent atoms?,2,two,sciq,short_form,no_thinking,0,0.0,0.8677992820739746,1,false_positive,lexical_variation
+sciq_338,"When a stream or river slows down, it starts dropping its what?",Sediment.,sediments,sciq,short_form,no_thinking,0,0.0,0.8617203235626221,1,false_positive,lexical_variation
+sciq_369,Excessive exposure to what is the main cause of skin cancer?,Ultraviolet radiation.,uv light,sciq,short_form,no_thinking,0,0.0,0.8615025877952576,1,false_positive,lexical_variation
+sciq_225,How often should women perform a breast self-exam?,Every month.,monthly,sciq,short_form,no_thinking,0,0.0,0.8595113754272461,1,false_positive,lexical_variation
+sciq_410,Matter undergoing chemical reactions and physical changes can release or absorb heat. a change that releases heat is called what?,Exothermic reaction.,exothermic process,sciq,short_form,no_thinking,0,0.0,0.8588459491729736,1,false_positive,other
+sciq_243,"Bees, wasps, ants, butterflies, moths, flies and beetles belong to what animal phylum?",Arthropoda,arthropods,sciq,short_form,no_thinking,0,0.0,0.8586481213569641,1,false_positive,lexical_variation
+sciq_331,"What is the study of water movement, including waves and ocean currents?",Oceanography.,physical oceanography,sciq,short_form,no_thinking,0,0.0,0.8579312562942505,1,false_positive,other
+sciq_302,What is the most important source of electromagnetic radiation on earth?,Sun.,the sun,sciq,short_form,no_thinking,1,1.0,0.6455803513526917,0,false_negative,other
+sciq_258,What is the most important source of electromagnetic waves on earth?,Sun.,the sun,sciq,short_form,no_thinking,1,1.0,0.6455803513526917,0,false_negative,other
+sciq_240,The main shaft of the penis is covered by relatively thick what?,Foreskin.,skin,sciq,short_form,no_thinking,1,1.0,0.6638277769088745,0,false_negative,lexical_variation
+sciq_185,The muscular layer is much thicker in which ventricle of the heart?,Left ventricle,left,sciq,short_form,no_thinking,1,1.0,0.6755843758583069,0,false_negative,semantic_ambiguity
+sciq_444,"All of the populations that live in the same area make up what type of group, which includes populations of different organisms?",Ecological community.,community,sciq,short_form,no_thinking,1,1.0,0.7322929501533508,0,false_negative,semantic_ambiguity
+sciq_210,"In the case of the moose, predation is an additional factor that regulates what?",Population dynamics,population,sciq,short_form,no_thinking,1,1.0,0.733176589012146,0,false_negative,other
+sciq_198,Dynamite is an example of what type of potential energy?,Chemical potential energy.,chemical,sciq,short_form,no_thinking,1,1.0,0.7360340356826782,0,false_negative,semantic_ambiguity
+sciq_478,Heating ice to its melting point (0°c) gives its molecules enough energy to do what?,vibrate and move apart,move,sciq,short_form,no_thinking,1,1.0,0.7423402070999146,0,false_negative,other
+sciq_110,"In a correctly balanced equation, all coefficients must be what kind of numbers?",Whole numbers.,whole,sciq,short_form,no_thinking,1,1.0,0.7524209022521973,0,false_negative,semantic_ambiguity
+sciq_91,What type of eclipse happens when a full moon moves through earth's shadow?,Total lunar eclipse.,lunar,sciq,short_form,no_thinking,1,1.0,0.7536468505859375,0,false_negative,semantic_ambiguity
+sciq_353,How many families are known quarks divided into?,Three families.,three,sciq,short_form,no_thinking,1,1.0,0.7605394124984741,0,false_negative,other
+sciq_163,How many calories of energy does one gram of protein provide?,4 calories,4,sciq,short_form,no_thinking,1,1.0,0.7618675231933594,0,false_negative,other
+sciq_345,Silk and cotton are examples of what kind of fiber?,Natural fibers.,natural,sciq,short_form,no_thinking,1,1.0,0.7638000845909119,0,false_negative,semantic_ambiguity
+sciq_259,What happens to the pressure when more gas is added to a rigid container?,Pressure increases.,increases,sciq,short_form,no_thinking,1,1.0,0.7654796242713928,0,false_negative,other
+sciq_187,What separates one river system's basin from another river system's basin?,Divide line.,a divide,sciq,short_form,no_thinking,1,1.0,0.7860620021820068,0,false_negative,other
+sciq_47,What artery takes blood to the brain?,Internal Carotid Artery,carotid,sciq,short_form,no_thinking,1,1.0,0.7877660393714905,0,false_negative,other
+sciq_480,What can we learn about a wave by finding the product of the wavelength and frequency?,Wave speed.,speed,sciq,short_form,no_thinking,1,1.0,0.7917553186416626,0,false_negative,other
+sciq_38,A bee will sometimes do a dance to tell other bees in the hive where to find what?,Food sources,food,sciq,short_form,no_thinking,1,1.0,0.7967520952224731,0,false_negative,other
+sciq_59,Who wrote the book on the origin of species?,Charles Darwin,darwin,sciq,short_form,no_thinking,1,1.0,0.7998865842819214,0,false_negative,semantic_ambiguity
+sciq_347,"Newton’s second law of what is more than a definition; it is a relationship among acceleration, force, and mass?",Law of Motion,motion,sciq,short_form,no_thinking,1,1.0,0.8008525967597961,0,false_negative,other
+sciq_381,The lithosphere is divided into a dozen major and several minor what?,Tectonic plates.,plates,sciq,short_form,no_thinking,1,1.0,0.8032365441322327,0,false_negative,other
+sciq_3,What type of crust is made of basalt lavas that flow onto the seafloor?,Oceanic crust.,oceanic,sciq,short_form,no_thinking,1,1.0,0.8071999549865723,0,false_negative,semantic_ambiguity
+sciq_65,Earth's axis is an imaginary line passing through which poles?,North and South Poles,north and south,sciq,short_form,no_thinking,1,1.0,0.8126684427261353,0,false_negative,semantic_ambiguity
+sciq_261,Proto-oncogenes can change into oncogenes that cause what?,Cancer.,cancer,sciq,short_form,no_thinking,1,1.0,0.8214472532272339,0,false_negative,other
+sciq_382,What disease occurs when the cell cycle is no longer regulated?,Cancer.,cancer,sciq,short_form,no_thinking,1,1.0,0.8214472532272339,0,false_negative,other
+sciq_107,What disease is the result of unchecked cell division caused by a breakdown of the mechanisms regulating the cell cycle?,Cancer.,cancer,sciq,short_form,no_thinking,1,1.0,0.8214472532272339,0,false_negative,other
+sciq_467,What type of mirror is shaped like the outside of a bowl?,Convex mirror,convex,sciq,short_form,no_thinking,1,1.0,0.8226802349090576,0,false_negative,semantic_ambiguity
+sciq_221,"Ants, termites, bees, and wasps live in what type of social structure that may include millions of individual insects?",Insect colony,colony,sciq,short_form,no_thinking,1,1.0,0.8277022242546082,0,false_negative,semantic_ambiguity
+sciq_135,The pressure inside a container is dependent on the amount of what inside the container?,Amount of gas,gas,sciq,short_form,no_thinking,1,1.0,0.831822395324707,0,false_negative,other
+sciq_486,What type of fluid cushions the fetus and helps protect it from injury?,Amniotic fluid.,amniotic,sciq,short_form,no_thinking,1,1.0,0.8335177898406982,0,false_negative,semantic_ambiguity
+sciq_349,All types of cells are enclosed by what?,Cell membrane,membrane,sciq,short_form,no_thinking,1,1.0,0.8336234092712402,0,false_negative,other
+sciq_253,"If the water vapor condenses in liquid droplets as clouds form, what is released in the atmosphere?",Heat energy,heat,sciq,short_form,no_thinking,1,1.0,0.8365515470504761,0,false_negative,other
+sciq_434,What are tiny hairs that line the bronchi called?,Ciliated cells,cilia,sciq,short_form,no_thinking,1,1.0,0.8403247594833374,0,false_negative,lexical_variation
+sciq_489,"Expansion of a gas into a vacuum is irreversible because the external pressure is measurably less than the internal pressure of the gas, and no states of what exist?",Equilibrium states,equilibrium,sciq,short_form,no_thinking,1,1.0,0.8425083160400391,0,false_negative,other
+sciq_170,Malonate plays what negative role on the enzyme succinate dehydrogenase?,Competitive inhibitor,inhibitor,sciq,short_form,no_thinking,1,1.0,0.8431588411331177,0,false_negative,other
+sciq_124,What symbol is used to indicate directionality in chemical reactions?,Arrow (→),arrow,sciq,short_form,no_thinking,1,1.0,0.8434205055236816,0,false_negative,other
+sciq_60,"The tissue that will become the scrotum in a male becomes the labia in a female, thus, they are regarded as having what relationship?",Homologous tissues.,homologous,sciq,short_form,no_thinking,1,1.0,0.8447785973548889,0,false_negative,other
+sciq_188,"Illustrating how form follows function, long, slender protein strands that make up what tissue are essential for contracting and relaxing?",Muscle tissue.,muscle,sciq,short_form,no_thinking,1,1.0,0.8456608057022095,0,false_negative,other
+sciq_457,"Skeletal, cardiac, and smooth are all types of what?",Muscle tissue.,muscle,sciq,short_form,no_thinking,1,1.0,0.8456608057022095,0,false_negative,other
+sciq_292,"Twenty-four hours before fertilization, the egg has finished meiosis and becomes a mature what?",Mature oocyte.,oocyte,sciq,short_form,no_thinking,1,1.0,0.8468877673149109,0,false_negative,other

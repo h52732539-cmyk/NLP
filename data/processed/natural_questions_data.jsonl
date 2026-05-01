@@ -1,0 +1,300 @@
+{"id": "nq_0", "question": "who sold out jesus for 30 pieces of silver", "ground_truth": ["Judas Iscariot"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_1", "question": "who does the voice of cruz on cars 3", "ground_truth": ["Cristela Alonzo"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_2", "question": "who won the academy award for best original musical score", "ground_truth": ["Alexandre Desplat", "The Shape of Water"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_3", "question": "when did avatar the last airbender first air", "ground_truth": ["February 2005", "February 21, 2005", "February 21, 2005"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_4", "question": "who is hosting e live from the red carpet", "ground_truth": ["Ryan Seacrest", "Giuliana Rancic"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_5", "question": "what does g stand for in ncis los angeles", "ground_truth": ["Grisha"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_6", "question": "who sings too much time on my hands lyrics", "ground_truth": ["Tommy Shaw"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_7", "question": "what type of reaction occurs to form a dipeptide", "ground_truth": ["peptide bond"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_8", "question": "when did the first marvel vs capcom come out", "ground_truth": ["1998", "in 1996", "1996"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_9", "question": "what is the big gold dome in jerusalem", "ground_truth": ["Dome of the Rock"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_10", "question": "all the motor neurons that control the skeletal muscles are", "ground_truth": ["efferent nerves", "Somatic motor neurons", "Somatic"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_11", "question": "the region that stretches between the black and caspian seas", "ground_truth": ["The Caucasus Mountains", "Caucasus Mountains"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_12", "question": "what does the m number mean on a pint glass", "ground_truth": ["imperial fluid ounces", "the manufacturing company or site"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_13", "question": "when did the dallas cowboys win their last playoff game", "ground_truth": ["2014", "2016"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_14", "question": "who sang the theme song for laverne and shirley", "ground_truth": ["Cyndi Grecco"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_15", "question": "who plays the judge in drop dead diva", "ground_truth": ["Lex Medlin"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_16", "question": "the art and science of making objects from clay is called", "ground_truth": ["Ceramic art", "Ceramic"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_17", "question": "what was the united states foreign policy after ww1 started", "ground_truth": ["neutrality"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_18", "question": "what is the largest magnitude earthquake that has occurred in the pacific northwest", "ground_truth": ["The 1700 Cascadia earthquake"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_19", "question": "where was 2017 beauty and the beast filmed", "ground_truth": ["Surrey, United Kingdom"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_20", "question": "who is the actor that plays ducky on ncis", "ground_truth": ["David McCallum"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_21", "question": "when was catch me if you can made", "ground_truth": ["2002"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_22", "question": "who played the female lead in the 1942 film casablanca", "ground_truth": ["romantic drama", "Ingrid Bergman"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_23", "question": "when did i ain't mad at cha come out", "ground_truth": ["September 15, 1996"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_24", "question": "who becomes chief resident on grey's anatomy season 7", "ground_truth": ["April Kepner M.D.", "Kepner"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_25", "question": "when did the usa join world war one", "ground_truth": ["April 1917", "April 6, 1917", "in April 1917"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_26", "question": "who has the most big ten championships in football", "ground_truth": ["Michigan"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_27", "question": "when was the design period known as art deco", "ground_truth": ["1910–1939"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_28", "question": "when were the first general elections held in independent india", "ground_truth": ["1951–52"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_29", "question": "one piece episode 534 english dubbed release date", "ground_truth": ["February 5, 2012"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_30", "question": "a request to the supreme court that it review a case that was already decided is made via a(n)", "ground_truth": ["a writ of certiorari", "writ of certiorari"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_31", "question": "when did the first ice age come out", "ground_truth": ["2002", "March 15, 2002"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_32", "question": "when did the golden state warriors win the finals", "ground_truth": ["1947", "1975", "1956", "2015", "2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_33", "question": "how many episodes are in season 7 of pretty little liars", "ground_truth": ["20"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_34", "question": "who plays dr. sloan on kevin saves the world", "ground_truth": ["Richard Masur"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_35", "question": "what is the 180 degree line of longitude called", "ground_truth": ["180th meridian or antimeridian", "180th meridian", "antimeridian"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_36", "question": "who wrote the music phantom of the opera", "ground_truth": ["Andrew Lloyd Webber"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_37", "question": "what is the name of the skin between your nostrils", "ground_truth": ["the nasal septum", "septum"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_38", "question": "which site of an enzyme is called allosteric site", "ground_truth": ["regulatory site"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_39", "question": "batman and robin episode only fools and horses", "ground_truth": ["\"Heroes and Villains\""], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_40", "question": "where do kidneys for kidney transplant come from", "ground_truth": ["living-donor"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_41", "question": "when did the movie peter pan come out", "ground_truth": ["2003", "25 December 2003"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_42", "question": "when was the last time michigan basketball won the championship", "ground_truth": ["1989"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_43", "question": "if there is a line that lies parallel to the horizon it is said to be", "ground_truth": ["A vanishing point"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_44", "question": "who sang the american anthem at the super bowl", "ground_truth": ["Pink"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_45", "question": "what has been the origin of most classical dances of india", "ground_truth": ["the Sanskrit text Natya Shastra", "Natya Shastra", "The Natya Shastra"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_46", "question": "who sings i can't take my eyes off of you", "ground_truth": ["Frankie Valli"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_47", "question": "who was the first to say i'm going to disney world", "ground_truth": ["Jeana Yeager", "Phil Simms", "Dick Rutan"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_48", "question": "where is the new football stadium in atlanta", "ground_truth": ["Mercedes-Benz Stadium"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_49", "question": "georgia out of angus thongs and perfect snogging", "ground_truth": ["Georgia Groome as Georgia Nicolson", "Georgia Groome"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_50", "question": "when does shadowhunters season 2 episode 17 come out", "ground_truth": ["February 13, 2017", "January 23, 2017", "July 24, 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_51", "question": "who sang the song you got a friend in me", "ground_truth": ["Lyle Lovett", "Randy Newman"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_52", "question": "when did the botswana currency first come into circulation", "ground_truth": ["1976"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_53", "question": "total goals scored by ronaldo in la liga", "ground_truth": ["309"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_54", "question": "star wars the clone wars season 3 episode 1", "ground_truth": ["Clone Cadets"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_55", "question": "nodding your head no is an example of", "ground_truth": ["a gesture"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_56", "question": "what type of planet is neptune known as", "ground_truth": ["giant", "ice giants"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_57", "question": "what age do you need to be to buy a bb gun", "ground_truth": ["18"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_58", "question": "what is the meaning of auv in cars", "ground_truth": ["action utility vehicles"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_59", "question": "when is the last time wisconsin missed the ncaa tournament", "ground_truth": ["1997–98"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_60", "question": "kings and queens of england in the 1900s", "ground_truth": ["George V", "George VI", "Edward VIII", "Elizabeth II", "Edward VII"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_61", "question": "who used to present i'm a celebrity now", "ground_truth": ["Ant & Dec"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_62", "question": "where did the french immigrants settle in texas", "ground_truth": ["1685", "Arenosa Creek", "present-day southeastern Texas", "Matagorda Bay"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_63", "question": "where does the synthesis of new dna from existing dna occurs", "ground_truth": ["origins of replication"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_64", "question": "when did cybermen first appear in doctor who", "ground_truth": ["in 1966", "1966"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_65", "question": "when does elena turn into a vampire in the tv series", "ground_truth": ["season four", "fourth season"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_66", "question": "who sings oh what a night late december back in 63", "ground_truth": ["the Four Seasons"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_67", "question": "which is the first private medical college in kerala", "ground_truth": ["Government Medical College, Thiruvananthapuram", "1998"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_68", "question": "ethiopia flight 961 crashes in to the sea", "ground_truth": ["23 November 1996"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_69", "question": "who produced the movie i can only imagine", "ground_truth": ["Pete Shilaimon", "Raymond Harris", "Daryl Lefever", "Kevin Downes", "Cindy Bond", "Joe Knopp", "Mickey Liddell"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_70", "question": "only player to play for manchester united manchester city liverpool and everton", "ground_truth": ["Peter Andrew Beardsley", "Peter Andrew Beardsley MBE"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_71", "question": "who is singing in something just like this", "ground_truth": ["Will Champion", "Coldplay", "The Chainsmokers", "Chris Martin"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_72", "question": "when did clifford the big red dog first air on tv", "ground_truth": ["September 4, 2000"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_73", "question": "who plays janie in the search for santa paws", "ground_truth": ["G. Hannelius"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_74", "question": "what is the legal age for marriage in australia", "ground_truth": ["18"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_75", "question": "who won season 5 of hell's kitchen", "ground_truth": ["Executive Chef Danny Veltri", "Danny Veltri"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_76", "question": "who explored waters of cuba the bahamas and hispaniola", "ground_truth": ["Christopher Columbus"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_77", "question": "where in the constitution is the executive branch referenced", "ground_truth": ["Article Two"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_78", "question": "who sings the theme song for living single", "ground_truth": ["Queen Latifah"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_79", "question": "who played in the stanley cup finals last year", "ground_truth": ["Nashville Predators", "Pittsburgh Penguins"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_80", "question": "who is the largest supermarket chain in the uk", "ground_truth": ["Aldi", "Tesco"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_81", "question": "when did lionel messi play his first game for barcelona", "ground_truth": ["2002", "2001", "October 2004"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_82", "question": "who wins america's next top model cycle 20", "ground_truth": ["Jourdan Miller"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_83", "question": "actress who plays penelope garcia on criminal minds", "ground_truth": ["Kirsten Simone Vangsness"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_84", "question": "when was i can only imagine the song released", "ground_truth": ["1999", "2001"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_85", "question": "when does season 18 of law and order svu start", "ground_truth": ["September 21, 2016"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_86", "question": "name the four major layers of the earth in order", "ground_truth": ["a liquid outer core", "an outer silicate solid crust", "a highly viscous mantle", "a solid inner core"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_87", "question": "how many episodes in adventure time season 1", "ground_truth": ["26"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_88", "question": "who is the girl in green day 21 guns", "ground_truth": ["Lisa Stelly"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_89", "question": "what episode does lori die on the walking dead", "ground_truth": ["\"Killer Within\"", "Killer Within"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_90", "question": "is greenland part of europe or north america", "ground_truth": ["North America"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_91", "question": "where is wake forest located in north carolina", "ground_truth": ["78.51889°W", "in Franklin and Wake counties", "35.97333°N"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_92", "question": "is aluminium a ferrous or non ferrous metal", "ground_truth": ["non-ferrous"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_93", "question": "where did the dewey decimal system come from", "ground_truth": ["Melvil Dewey"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_94", "question": "who is the leader of the ontario pc party", "ground_truth": ["Patrick Brown", "Patrick Walter Brown MPP", "Patrick Walter Brown"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_95", "question": "when did the eagles win the super bowl", "ground_truth": ["2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_96", "question": "who used the word physiology for the first time", "ground_truth": ["Jean Fernel"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_97", "question": "what season does bart bass die in gossip girl", "ground_truth": [")"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_98", "question": "where is the oldest house in america located", "ground_truth": ["Taos Pueblo"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_99", "question": "the general term for software that is designed to damage disable or steal data is", "ground_truth": ["Malware"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_100", "question": "the first political society started under british rule in india was", "ground_truth": ["The British Indian Association"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_101", "question": "when was the last time anyone was on the moon", "ground_truth": ["14 December 1972 UTC", "December 1972"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_102", "question": "another name for the torso is the blank region of the body", "ground_truth": ["trunk"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_103", "question": "when did the soviet union first gain control of parts of poland and the baltic republics", "ground_truth": ["14 June 1940"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_104", "question": "who was in charge of the revolutionary war", "ground_truth": ["General George Washington", "the king"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_105", "question": "dogs name in the grinch who stole christmas", "ground_truth": ["Max"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_106", "question": "where is iodine found in the periodic table", "ground_truth": ["heaviest of the stable halogens"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_107", "question": "which organelle is the site of atp production and storage", "ground_truth": ["mitochondrion"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_108", "question": "where is the deepest lake in the us located", "ground_truth": ["Oregon"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_109", "question": "when does i'm a celebrity get me out of here start in the uk", "ground_truth": ["2018"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_110", "question": "when will miraculous season 2 episode 11 be released", "ground_truth": ["30 March 2018", "27 October 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_111", "question": "where does the name de la rosa come from", "ground_truth": ["Spanish"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_112", "question": "who sings stop listen what's that sound", "ground_truth": ["Buffalo Springfield"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_113", "question": "when was the last time clemson won the national championship", "ground_truth": ["2016"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_114", "question": "what disney cartoon character's middle name is fauntleroy", "ground_truth": ["Donald Duck", "Donald Fauntleroy Duck"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_115", "question": "china in chinese is called zhongguo which means", "ground_truth": ["Central States"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_116", "question": "who is playing halftime show super bowl 2018", "ground_truth": ["Justin Timberlake"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_117", "question": "who played buffy the vampire slayer in the movie", "ground_truth": ["Kristy Swanson"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_118", "question": "who is the actress that plays penny on the big bang theory", "ground_truth": ["Kaley Christine Cuoco"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_119", "question": "who gets the golden boot if its a tie", "ground_truth": ["shared"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_120", "question": "when was the us department of homeland security created", "ground_truth": ["November 25, 2002", "November 25, 2002"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_121", "question": "when did tim hortons open in the usa", "ground_truth": ["1981"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_122", "question": "when did canada sign the un declaration of indigenous rights", "ground_truth": ["May 2016", "12 November 2010"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_123", "question": "who had won the first grammy award for the best new artist", "ground_truth": ["Chance the Rapper", "Bobby Darin"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_124", "question": "most polluted city in the world according to world health organization", "ground_truth": ["Zabol"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_125", "question": "for complaints of sudden chest pain patients should take a", "ground_truth": ["Aspirin"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_126", "question": "where does saying bob's your uncle come from", "ground_truth": ["unknown origin"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_127", "question": "when was the last year the eagles went to the superbowl", "ground_truth": ["following the 2017 season", "2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_128", "question": "when did the movie napoleon dynamite come out", "ground_truth": ["June 11, 2004", "2004"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_129", "question": "when did the song holiday road come out", "ground_truth": ["1983", "June 24, 1983"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_130", "question": "who sings blame it on the bossa nova", "ground_truth": ["Eydie Gormé"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_131", "question": "when does the black panther movie soundtrack come out", "ground_truth": ["February 9, 2018", "February 16, 2018"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_132", "question": "what culture region is germany a part of", "ground_truth": ["Central Germany"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_133", "question": "the most common form of megalithic architecture in europe is", "ground_truth": ["the portal tomb", "portal tomb"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_134", "question": "when did the tradition of self government began in america", "ground_truth": ["1783"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_135", "question": "where was the louisiana purchase signed in 1803", "ground_truth": ["Paris"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_136", "question": "how many countries are a part of opec", "ground_truth": ["14"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_137", "question": "when did the prr first begin its passenger service between pittsburgh and philadelphia", "ground_truth": ["by 1854", "1854"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_138", "question": "who shot first in the shot heard around the world", "ground_truth": ["Americans acting under orders"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_139", "question": "who won nfl football coach of the year", "ground_truth": ["Sean McVay"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_140", "question": "who is the founder of el pollo loco", "ground_truth": ["Juan Francisco Ochoa"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_141", "question": "lilo and stitch the series season 1 episode 1", "ground_truth": ["Richter"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_142", "question": "where is the majority of phosphorous stored in the environment", "ground_truth": ["minerals", "rocks", "in rocks and minerals"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_143", "question": "what is the minimum number of parties required to enter into a deed", "ground_truth": ["two parties"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_144", "question": "what is the name of india 29 state", "ground_truth": ["Rajasthan"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_145", "question": "where did they film the game of thrones", "ground_truth": ["Croatia", "Iceland", "Canada", "Spain", "Morocco", "Malta", "Scotland", "United States", "Northern Ireland"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_146", "question": "how many customers does edf have in the uk", "ground_truth": ["5.7 million customer accounts", "5.7 million"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_147", "question": "the first element on the periodic table is", "ground_truth": ["Hydro­gen", "hydrogen"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_148", "question": "when was the first book made into a movie", "ground_truth": ["1924"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_149", "question": "who is the real killer in basic instinct 2", "ground_truth": ["Catherine Tramell"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_150", "question": "who scored the most points in a game nba history", "ground_truth": ["Wilt Chamberlain"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_151", "question": "when did the movie the post begin filming", "ground_truth": ["May 2017", "May 30, 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_152", "question": "batman the enemy with episode 5 release date", "ground_truth": ["March 27, 2018"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_153", "question": "how many jimmy johns are there in the us", "ground_truth": ["more than 2,500", "almost 3,000 stores", "2,630", "2,630 (December 2016)", "more than 2,500 locations"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_154", "question": "which city is called the manchester of north india", "ground_truth": ["Ahmedabad"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_155", "question": "nobel laureate who began career as accountant in calcutta", "ground_truth": ["Amartya Sen"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_156", "question": "who owns the golden nugget casino in atlantic city", "ground_truth": ["Landry's, Inc."], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_157", "question": "blood alcohol concentration means the parts of alcohol in the blood in relation to what", "ground_truth": ["volume of blood", "ethanol"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_158", "question": "who is the minister of youth in namibia", "ground_truth": ["Erastus Utoni"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_159", "question": "where was gunsmoke to the last man filmed", "ground_truth": ["Tucson, Arizona"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_160", "question": "when will the 2018 oscar nominations be announced", "ground_truth": ["January 23, 2018"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_161", "question": "when will the flash season 4 be released", "ground_truth": ["October 10, 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_162", "question": "what does the air gap do on a dishwasher", "ground_truth": ["backflow prevention"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_163", "question": "who played the elephant man in the film", "ground_truth": ["John Hurt"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_164", "question": "where does the un security council get troops for military actions", "ground_truth": ["member states of the UN", "member states"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_165", "question": "coldplay song i will try to fix you", "ground_truth": ["\"Fix You\""], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_166", "question": "what class of ship is the carnival glory", "ground_truth": ["Conquest", "Conquest-class cruise ship"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_167", "question": "who presides over the highest criminal court in a district", "ground_truth": ["District Judge"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_168", "question": "when was the last time arsenal win premier league", "ground_truth": ["2003–04"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_169", "question": "where is cinque terre italy on a map", "ground_truth": ["Liguria, Italy"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_170", "question": "where was the capital of the habsburg empire located", "ground_truth": ["Prague", "Vienna"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_171", "question": "what is the area code for phoenix arizona", "ground_truth": ["602", "623", "480"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_172", "question": "how old is the actress who plays phyllis on y&r", "ground_truth": ["Gina Tognoni", "age 44"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_173", "question": "who does the vocals for feel it still", "ground_truth": ["Portugal. The Man"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_174", "question": "where are trigger points located in the body", "ground_truth": ["muscles"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_175", "question": "who does demetrius love in a midsummer night dream", "ground_truth": ["Helena", "Hermia"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_176", "question": "when does the world cup of hockey start", "ground_truth": ["2020"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_177", "question": "when was the last time america hosted the summer olympics", "ground_truth": ["Salt Lake City", "1996"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_178", "question": "when do you pray the chaplet of divine mercy", "ground_truth": ["Good Friday"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_179", "question": "where does the optic nerve cross the midline ​", "ground_truth": ["optic chiasm"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_180", "question": "islamic term for the community of the faithful", "ground_truth": ["ummat al-Islamiyah", "Ummah"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_181", "question": "when did response to state of the union start", "ground_truth": ["in 1966", "1966"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_182", "question": "where are the winter olympic games being held this year", "ground_truth": ["Pyeongchang County, South Korea"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_183", "question": "who does the voice of the beast in the new movie", "ground_truth": ["Dan Stevens"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_184", "question": "when did the smoking ban in public places start", "ground_truth": ["August 2, 1990", "1995"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_185", "question": "who is given credit for inventing the aqua lung", "ground_truth": ["Jacques Cousteau", "engineer Émile Gagnan", "Émile Gagnan"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_186", "question": "when was the last time iran had an earthquake", "ground_truth": ["2017-12-20"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_187", "question": "when did season 4 of glee come out", "ground_truth": ["September 13, 2012"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_188", "question": "who is the ceo of crate and barrel", "ground_truth": ["Neela Montgomery"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_189", "question": "what theater number was the aurora shooting in", "ground_truth": ["9", "Theater 9"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_190", "question": "who killed barry allen's mom tv show", "ground_truth": ["the Reverse-Flash", "Professor Eobard Thawne"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_191", "question": "do you need a permit or license to own a gun in florida", "ground_truth": ["No"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_192", "question": "who had the most governmental power under the articles of confederation", "ground_truth": ["the states"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_193", "question": "where can the mona lisa be found today", "ground_truth": ["Musée du Louvre, Paris", "Louvre Museum in Paris"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_194", "question": "where did the indian myna bird come from", "ground_truth": ["native to Asia", "Asia"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_195", "question": "when does the cannes film festival take place", "ground_truth": ["Cannes, France", "usually in May"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_196", "question": "what was the outcome of the battle of san juan hill", "ground_truth": ["Cuban-American victory"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_197", "question": "who was the guy who died in glee", "ground_truth": ["Cory Allan Michael Monteith"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_198", "question": "who was the ruler of england in 1616", "ground_truth": ["James I"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_199", "question": "who won the champions league final in 2016", "ground_truth": ["Real Madrid"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_200", "question": "where was percy jackson and the olympians filmed", "ground_truth": ["Vancouver", "Mission, British Columbia"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_201", "question": "when does the new episodes of supernatural start", "ground_truth": ["October 12, 2017", "May 3, 2018", "October 12, 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_202", "question": "when does the miz and maryse show start", "ground_truth": ["2018"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_203", "question": "where was the italian episode of everybody loves raymond filmed", "ground_truth": ["Anguillara Sabazia outside of Rome"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_204", "question": "who won women's singles us open 2017", "ground_truth": ["Sloane Stephens"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_205", "question": "when was christmas first celebrated as a holiday", "ground_truth": ["336"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_206", "question": "what is billy last name in where the red fern grows", "ground_truth": ["Colman", "Billy Colman"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_207", "question": "who sang the song i wanna be sedated", "ground_truth": ["the Ramones"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_208", "question": "where is the hero golf challenge being played", "ground_truth": ["The Bahamas", "Albany development in the Bahamas"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_209", "question": "who wrote catch 22 (both names)", "ground_truth": ["Joseph Heller.", "American author Joseph Heller", "Joseph Heller"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_210", "question": "who issued gold coins for the first time in india", "ground_truth": ["Gupta Empire"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_211", "question": "bruce springsteen we shall overcome the seeger sessions songs", "ground_truth": ["\"Old Dan Tucker\"", "\"Erie Canal\"", "\"Jacob's Ladder\"", "\"Shenandoah\"", "\"Mrs. McGrath\"", "\"We Shall Overcome\"", "\"My Oklahoma Home\"", "\"Jesse James\""], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_212", "question": "when was the last time mount ruapehu erupted", "ground_truth": ["25 September 2007"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_213", "question": "when does planet of the apes come out 2017", "ground_truth": ["July 14, 2017", "July 14, 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_214", "question": "where was the movie silver linings playbook filmed", "ground_truth": ["Ridley Park", "Lansdowne", "just outside Philadelphia, Pennsylvania", "Upper Darby"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_215", "question": "who hit the first home run in the houston astrodome", "ground_truth": ["Mickey Mantle"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_216", "question": "how many students does monarch high school have", "ground_truth": ["2,406"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_217", "question": "what is the female lion called in lion king", "ground_truth": ["Nala"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_218", "question": "who plays carrie's boss on king of queens", "ground_truth": ["Doug Pruzan", "Alex Skuby"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_219", "question": "what is the minimum wage in france per hour", "ground_truth": ["11.16", "€9.88 per hour."], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_220", "question": "who laid the foundation of school of possibilism", "ground_truth": ["Strabo", "Marshall Sahlins"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_221", "question": "right to property according to the constitution of india is a", "ground_truth": ["constitutional right"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_222", "question": "who wrote the song always be humble and kind", "ground_truth": ["Lori McKenna"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_223", "question": "who penned the famous indian epic the ramayana", "ground_truth": ["Valmiki", "the Hindu sage Valmiki"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_224", "question": "who has become the new chairman of sebi", "ground_truth": ["Ajay Tyagi"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_225", "question": "the radiographic term used to describe the dense bone of the socket and septal crest is", "ground_truth": ["lamina dura", "alveolar process", "the lamina dura"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_226", "question": "who has scored more goals in the premier league", "ground_truth": ["Alan Shearer"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_227", "question": "who sings the theme song for the tv show cops", "ground_truth": ["Inner Circle", "Jamaican reggae band Inner Circle"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_228", "question": "where can you find convergent boundaries on earth", "ground_truth": ["Mariana Trench"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_229", "question": "what nba player has scored the most 3 pointers", "ground_truth": ["Ray Allen"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_230", "question": "where is nuclear energy used most in the world", "ground_truth": ["United States", "France"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_231", "question": "when is the last time the vikings were in the nfc championship", "ground_truth": ["1976", "2017/18"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_232", "question": "who played ice queen in chronicles of narnia", "ground_truth": ["Tilda Swinton", "Laura Brent"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_233", "question": "who was the pinkerton detective agency's first female detective", "ground_truth": ["Kate Warne"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_234", "question": "who has the most goals in soccer 2018", "ground_truth": ["Ali Daei"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_235", "question": "how many hospitals are there in the united states", "ground_truth": ["5,534 registered hospitals", "5,534"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_236", "question": "who has won the cma entertainer of the year the most", "ground_truth": ["Garth Brooks"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_237", "question": "who carried the usa flag in opening ceremony", "ground_truth": ["Erin Hamlin"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_238", "question": "when did the first pair of yeezys come out", "ground_truth": ["February 14, 2015"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_239", "question": "what is the meaning of the name comanche", "ground_truth": ["enemy"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_240", "question": "who sang i dreamed a dream in les miserables", "ground_truth": ["Rose Laurens", "Fantine", "the character Fantine"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_241", "question": "who did the dominican republic gain its independence from", "ground_truth": ["Haiti"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_242", "question": "what was the real name of saudi arabia", "ground_truth": ["the Saudi Arab kingdom"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_243", "question": "when does the shape of water book come out", "ground_truth": ["March 6, 2018"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_244", "question": "who wrote ain't living long like this", "ground_truth": ["Rodney Crowell"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_245", "question": "when did they stop putting lead in paint", "ground_truth": ["1992"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_246", "question": "where does no game no life anime end", "ground_truth": ["the Elkia Federation", "the sixth volume"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_247", "question": "what does the msc in msc cruises stand for", "ground_truth": ["Mediterranean Shipping Company S.A.", "Mediterranean Shipping Company"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_248", "question": "who starred in the film walk the line", "ground_truth": ["Ginnifer Goodwin", "Reese Witherspoon", "Dallas Roberts", "Joaquin Phoenix", "Robert Patrick"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_249", "question": "when were the beatles inducted into the rock and roll hall of fame", "ground_truth": ["1988"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_250", "question": "what is the job of the whip in congress", "ground_truth": ["to ensure party discipline"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_251", "question": "who is the director of nightmare before christmas", "ground_truth": ["Henry Selick"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_252", "question": "what is australia's location in the world and region", "ground_truth": ["Oceania"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_253", "question": "how many pennsylvania house of representatives are there", "ground_truth": ["203", "203 members"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_254", "question": "how long is a whale shark in meters", "ground_truth": ["12.65 m", "estimated at 9.7 m", "9.7 m"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_255", "question": "what is the meaning of the name mandy", "ground_truth": ["Lovable"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_256", "question": "who made the first to record with the electric guitar", "ground_truth": ["George Warren Barnes"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_257", "question": "what is the common name for gravitational force", "ground_truth": ["Gravity", "Gravity, or gravitation"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_258", "question": "when did the royal proclamation of 1763 end", "ground_truth": ["the American Revolutionary War", "with the American Revolutionary War", "1783"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_259", "question": "all the gases in the earth's atmosphere", "ground_truth": ["Water vapor", "small amounts of other gases", "nitrogen", "oxygen", "Methane", "Helium", "Oxygen", "Carbon dioxide", "Nitrogen", "Neon", "Argon", "argon", "carbon dioxide"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_260", "question": "who plays the walking boss in cool hand luke", "ground_truth": ["Morgan Woodward"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_261", "question": "when did the jurassic park movies come out", "ground_truth": ["Jurassic Park (1993)", "2001", "2015", "2018", "1993", "Jurassic World (2015)", "1997"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_262", "question": "who has the most votes for the all star game", "ground_truth": ["fan voting"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_263", "question": "who is the guy that jumped from space", "ground_truth": ["Felix Baumgartner"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_264", "question": "who designed the traffic circle in long beach ca", "ground_truth": ["German engineer Werner Ruchti", "Werner Ruchti"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_265", "question": "striking the funny bone is actually compression of the", "ground_truth": ["The ulnar nerve", "ulnar nerve"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_266", "question": "who is the cast of the new tomb raider movie", "ground_truth": ["Alicia Vikander as Lara Croft"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_267", "question": "who wrote the song if i were a boy", "ground_truth": ["BC Jean and Toby Gad", "Toby Gad", "BC Jean"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_268", "question": "state the process that divides one nucleus into two genetically identical nuclei", "ground_truth": ["mitosis"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_269", "question": "who developed a set of postulates to prove that specific microorganisms cause disease", "ground_truth": ["Robert Koch", "Friedrich Loeffler"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_270", "question": "how tall is the tallest building in las vegas", "ground_truth": ["The Drew Las Vegas", "1,149 feet"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_271", "question": "oklahoma's 10 geographic regions are defined by surface features called", "ground_truth": ["ecological regions"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_272", "question": "who sings i will go down with this ship", "ground_truth": ["Dido"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_273", "question": "how oxygenated blood returns to the heart from the lungs", "ground_truth": ["pulmonary circulation"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_274", "question": "what does rt mean on a dodge car", "ground_truth": ["Road/Track"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_275", "question": "when does the new season of law and order svu come on", "ground_truth": ["September 27, 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_276", "question": "who is considered the father of modern behaviorism", "ground_truth": ["John B. Watson"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_277", "question": "when's the last time army won the army navy game", "ground_truth": ["2017", "Army"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_278", "question": "what album is help by the beatles on", "ground_truth": ["Help!"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_279", "question": "who is the owner of phoenix mall in chennai", "ground_truth": ["Sharyans Resources", "Phoenix Mills Limited"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_280", "question": "how do you spell padawan from star wars", "ground_truth": ["Padawan"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_281", "question": "what type of political system does el salvador have", "ground_truth": ["a presidential representative democratic republic", "\"flawed democracy\"", "presidential representative democratic republic"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_282", "question": "mount and blade with fire and sword time period", "ground_truth": ["1648-51"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_283", "question": "which abbott and costello movie has who on first", "ground_truth": ["The Naughty Nineties", "One Night in the Tropics"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_284", "question": "where was the movie the glass castle filmed", "ground_truth": ["in Welch, West Virginia", "Welch, West Virginia"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_285", "question": "who was elected president of the united states in 1928", "ground_truth": ["Herbert Hoover"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_286", "question": "how many seasons of prison break are on netflix", "ground_truth": ["five"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_287", "question": "where does the term pop music come from", "ground_truth": ["Britain"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_288", "question": "when was the last time minnesota vikings was in the super bowl", "ground_truth": ["1969", "XI"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_289", "question": "what is the meaning of shalom in english", "ground_truth": ["peace"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_290", "question": "when does the little couples new season start", "ground_truth": ["September 19, 2017"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_291", "question": "who sang one bad apple spoils the bunch", "ground_truth": ["The Osmonds"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_292", "question": "what position did doug peterson play in the nfl", "ground_truth": ["holder on placekicks", "quarterback"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_293", "question": "who sings the song let me love you", "ground_truth": ["DJ Snake featuring Justin Bieber", "Justin Bieber", "Singh H Spot"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_294", "question": "where does the last name waller come from", "ground_truth": ["Anglo-Saxon origin"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_295", "question": "when was the wheel introduced to north america", "ground_truth": ["about 1500 BC"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_296", "question": "who has the power to approve or veto legislation constitution", "ground_truth": ["the President"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_297", "question": "when did the apple iphone se come out", "ground_truth": ["March 31, 2016", "March 21, 2016"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_298", "question": "who played the face in the a team", "ground_truth": ["Dirk Benedict"], "dataset": "natural_questions", "task_type": "long_form"}
+{"id": "nq_299", "question": "who has won the 2018 formula one australia grand prix tournament", "ground_truth": ["Ferrari driver Sebastian Vettel", "Sebastian Vettel"], "dataset": "natural_questions", "task_type": "long_form"}
