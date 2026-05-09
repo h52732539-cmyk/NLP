@@ -203,3 +203,103 @@ a **Poincaré Ball** and computing hyperbolic distance — is aligned with:
 - Patil et al. *Hierarchical Mamba Meets Hyperbolic Geometry* (arXiv:2505.18973, 2025)
 
 Implementation decision pending current experiment results.
+
+---
+
+## TA Baseline Compatibility
+
+To evaluate the TA baseline datasets already prepared under:
+
+```bash
+/hpc2hdd/home/yuxuanzhao/xuhaodong/NLI Project v2/processed_data
+```
+
+run:
+
+```bash
+python scripts/evaluate_ta_baseline_compatibility.py
+```
+
+This script:
+
+- reads all four datasets from `merged_fb.json`
+- runs the original prediction → embedding → similarity workflow
+- adds HHEM-2.1-Open scores and labels for each sample
+- writes outputs to isolated directories so old benchmark artifacts are not overwritten
+
+Default output locations:
+
+```bash
+data/processed/ta_baseline_compatibility/
+results/ta_baseline_compatibility/
+```
+
+Datasets supported:
+
+- `sciq`
+- `simple_questions_wiki`
+- `nq`
+- `truthfulQA`
+
+Default run set:
+
+- `sciq`
+- `simple_questions_wiki`
+
+Useful options:
+
+```bash
+python scripts/evaluate_ta_baseline_compatibility.py --skip-generation
+python scripts/evaluate_ta_baseline_compatibility.py --thinking_modes no_thinking
+python scripts/evaluate_ta_baseline_compatibility.py --hhem-threshold 0.5
+python scripts/evaluate_ta_baseline_compatibility.py --datasets sciq simple_questions_wiki
+```
+
+Per-sample result CSVs include both the original correctness fields and:
+
+- `hhem_score`
+- `hhem_is_consistent`
+- `hhem_best_reference`
+
+The summary file `results/ta_baseline_compatibility/summary_auc.csv` also reports:
+
+- similarity AUC vs. original correctness labels
+- similarity AUC vs. HHEM labels
+- agreement between original correctness labels and HHEM labels
+
+---
+
+## HHEM Correctness Label Comparison
+
+The local HHEM model is expected at:
+
+```bash
+/hpc2hdd/home/yuxuanzhao/xuhaodong/NLI Project v2/models/HHEM-2.1-Open
+```
+
+To backfill HHEM scores for existing experiment CSVs in `results/`, run:
+
+```bash
+python scripts/recompute_hhem_for_results.py
+```
+
+By default this script:
+
+- scans existing `*_similarity.csv` files
+- recomputes HHEM scores from each row's `ground_truth` and `prediction`
+- writes augmented CSVs to `results/hhem_backfill/`
+- keeps the original experiment files unchanged
+
+Useful options:
+
+```bash
+python scripts/recompute_hhem_for_results.py --pattern '_similarity.csv'
+python scripts/recompute_hhem_for_results.py --hhem-threshold 0.5
+python scripts/recompute_hhem_for_results.py --in-place
+```
+
+The backfill summary is saved to:
+
+```bash
+results/hhem_backfill/hhem_backfill_summary.csv
+```

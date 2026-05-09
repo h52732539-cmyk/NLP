@@ -1,0 +1,3 @@
+dataset,mode,n_predictions,exact_rate,contains_rate,correct_rate,prediction_words_mean,prediction_words_median,prediction_words_max,note
+sciq,no_thinking,13679,0.4131880985452153,0.5584472549162951,0.5584472549162951,1.8861758900504424,1.0,196,Generated predictions exist; embedding/HHEM summary CSV was not present.
+simple_questions_wiki,no_thinking,49202,0.12088939474005121,0.1660704849396366,0.1660704849396366,2.828502906385919,2.0,222,Generated predictions exist; embedding/HHEM summary CSV was not present.
