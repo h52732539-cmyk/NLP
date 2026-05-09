@@ -1,7 +1,7 @@
 # Semantic Similarity Measurement in Latent Space for LLM Prediction Evaluation
 
 **Course:** AIAA 4051 — Final Research Project  
-**Authors:** Xuhaodong, Yuxuanzhao  
+**Authors:** Haodong Xu, Chi Kit WONG, Sida Zhang
 **Affiliation:** The Hong Kong University of Science and Technology (Guangzhou)  
 **Date:** April 2026
 

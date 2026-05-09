@@ -25,3 +25,9 @@ data/raw/*
 
 .cache/
 hf_cache/
+
+plan/
+
+report/overleaf_git/
+report/v2/
+poster/
