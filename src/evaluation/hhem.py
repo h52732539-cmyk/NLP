@@ -70,11 +70,26 @@ def load_hhem_model(model_path: str, device: str | None = None):
         model_path,
         trust_remote_code=True,
     )
+    retie_hhem_weights(model)
     if device is None:
         device = "cuda:0" if torch.cuda.is_available() else "cpu"
     model.to(device)
     model.eval()
     return model
+
+
+def retie_hhem_weights(model) -> None:
+    """
+    HHEM stores T5 embeddings as t5.transformer.shared.weight.  In some
+    Transformers versions this weight is not automatically tied back to
+    encoder.embed_tokens, which makes predict() return the classifier-bias prior
+    for every input.
+    """
+    if hasattr(model, "tie_weights"):
+        model.tie_weights()
+    t5 = getattr(model, "t5", None)
+    if t5 is not None and hasattr(t5, "tie_weights"):
+        t5.tie_weights()
 
 
 def _batched_predict(model, pairs: Sequence[tuple[str, str]], batch_size: int) -> list[float]:

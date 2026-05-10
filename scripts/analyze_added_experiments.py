@@ -243,14 +243,24 @@ def write_markdown(ta_rows: list[dict[str, Any]], nli_rows: list[dict[str, Any]]
             )
         )
 
-    lines.extend(
-        [
-            "",
-            "Key note: the original TA pipeline HHEM outputs for completed datasets are constant at 0.5021, "
-            "so thresholding at 0.5 marks every sample positive and cannot support ROC/AUC analysis.",
-            "",
-        ]
-    )
+    constant_rows = [
+        row["dataset"]
+        for row in nli_rows
+        if row["has_hhem"] and row["hhem_unique_count"] <= 1
+    ]
+    lines.append("")
+    if constant_rows:
+        lines.append(
+            "Key note: the original TA pipeline HHEM outputs remain constant for "
+            + ", ".join(constant_rows)
+            + ", so those datasets cannot support ROC/AUC analysis from HHEM labels."
+        )
+    else:
+        lines.append(
+            "Key note: corrected HHEM outputs are non-constant for completed datasets, "
+            "so thresholded HHEM labels can now be used for downstream analysis."
+        )
+    lines.append("")
     (OUT_DIR / "summary.md").write_text("\n".join(lines), encoding="utf-8")
 
 

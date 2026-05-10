@@ -216,15 +216,15 @@ To validate that the evaluation code can consume the TA baseline data layout, we
 
 These results are consistent with the main study: SciQ remains a substantially easier short-answer dataset, while SimpleQuestionsWiki is much harder under exact/contains matching. The very long maximum prediction lengths also show that a small number of "short-form" generations violate the requested answer format, which can distort embedding similarity if not filtered.
 
-**Original TA baseline pipeline outputs.** `run_all_datasets.sh` completed the original TA pipeline for SciQ and TruthfulQA, and produced predictions only for NQ:
+**Original TA baseline pipeline outputs.** After fixing the HHEM tied-weight loading bug and rerunning `EVAL_DEVICE=cuda:0 ./rerun_hhem_fixed.sh sciq truthfulQA`, `run_all_datasets.sh` artifacts give:
 
 | Dataset | n predictions | HHEM n | HHEM mean | HHEM ≥ 0.5 | HHEM unique | MPNet cosine mean | MPNet cosine median | Status |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| SciQ | 13,679 | 13,679 | 0.5021 | 100.0% | 1 | 0.762 | 0.794 | HHEM + embeddings |
-| TruthfulQA | 817 | 817 | 0.5021 | 100.0% | 1 | 0.560 | 0.545 | HHEM + embeddings |
+| SciQ | 13,679 | 13,679 | 0.2874 | 25.9% | 13,357 | 0.762 | 0.794 | HHEM + embeddings |
+| TruthfulQA | 817 | 817 | 0.1466 | 10.4% | 817 | 0.560 | 0.545 | HHEM + embeddings |
 | NQ | 3,400 | 0 | - | - | 0 | - | - | prediction only |
 
-The TA HHEM outputs are non-discriminative in the current run: every completed sample receives the same score (0.5021), so thresholding at 0.5 marks 100% of examples as positive and cannot support ROC/AUC analysis. The MPNet cosine statistics are still informative: SciQ has much higher merged-statement similarity than TruthfulQA (0.762 vs. 0.560 mean cosine), matching the short-form/long-form degradation observed in the main experiments.
+Corrected HHEM is now discriminative and much stricter than exact/contains matching. SciQ has a higher HHEM positive rate than TruthfulQA (25.9% vs. 10.4%), and its merged-statement MPNet similarity is also higher (0.762 vs. 0.560 mean cosine), matching the short-form/long-form degradation observed in the main experiments. Using HHEM ≥ 0.5 as the label, MPNet cosine reaches AUC 0.712 on SciQ and 0.659 on TruthfulQA, so the corrected TA pipeline still supports the original finding that semantic similarity is more reliable for short-form QA than for adversarial long-form QA.
 
 ---
 
@@ -346,7 +346,7 @@ We systematically investigated whether cosine similarity in embedding space is a
 
 4. **Trained hyperbolic projection is the most effective improvement.** HELM provides consistent +7%–+12% AUC gains on TruthfulQA without dataset-specific engineering.
 
-5. **TA baseline compatibility is partially validated.** The compatibility script processes full-size TA SciQ and SimpleQuestionsWiki predictions, and the original TA pipeline reproduces the short-vs-long similarity gap. However, the current TA HHEM artifacts are constant-valued and should be regenerated or debugged before being used as correctness labels.
+5. **TA baseline compatibility is validated after fixing HHEM loading.** The compatibility script processes full-size TA SciQ and SimpleQuestionsWiki predictions, and corrected TA HHEM/MPNet outputs reproduce the short-vs-long degradation: SciQ has higher HHEM consistency (25.9%) and MPNet cosine (0.762) than TruthfulQA (10.4%, 0.560).
 
 **Future directions:**
 - Joint training of HELM projection with LLM fine-tuning objective

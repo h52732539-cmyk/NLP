@@ -1,5 +1,5 @@
 dataset,n_predictions,has_hhem,has_embeddings,prediction_tokens_mean,prediction_tokens_median,prediction_tokens_max,hhem_n,hhem_mean,hhem_median,hhem_positive_rate_at_0_5,hhem_unique_count,mpnet_cosine_n,mpnet_cosine_mean,mpnet_cosine_median,mpnet_cosine_min,mpnet_cosine_max,note
 nq,3400,False,False,26.79529411764706,24.0,100,0,nan,nan,nan,0,0,nan,nan,nan,nan,HHEM is non-discriminative if unique_count=1.
-sciq,13679,True,True,1.9953212954163315,2.0,10,13679,0.5020980834960938,0.5020980834960938,1.0,1,13679,0.7622003555297852,0.7941791415214539,0.13636022806167603,1.0000001192092896,HHEM is non-discriminative if unique_count=1.
+sciq,13679,True,True,1.9953212954163315,2.0,10,13679,0.2874331772327423,0.14195595681667328,0.25864463776591856,13361,13679,0.7622003555297852,0.7941791415214539,0.13636022806167603,1.0000001192092896,HHEM is non-discriminative if unique_count=1.
 simple_questions_wiki,0,False,False,nan,nan,0,0,nan,nan,nan,0,0,nan,nan,nan,nan,HHEM is non-discriminative if unique_count=1.
-truthfulQA,817,True,True,24.69889840881273,24.0,100,817,0.5020980834960938,0.5020980834960938,1.0,1,817,0.5595322251319885,0.5450572967529297,0.09805408120155334,0.9886801242828369,HHEM is non-discriminative if unique_count=1.
+truthfulQA,817,True,True,24.69889840881273,24.0,100,817,0.14657646417617798,0.046071190387010574,0.10403916768665851,817,817,0.5595322251319885,0.5450572967529297,0.09805408120155334,0.9886801242828369,HHEM is non-discriminative if unique_count=1.
